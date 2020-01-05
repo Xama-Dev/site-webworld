@@ -245,45 +245,56 @@ li.slick-active button{
 
  /*-----------AREA DE CONTEÚDO 2----------------*/
 
- .content3{
-     height: 670px;
+ .secao2{
+     height: 720px;
      background-color: #efefef;
      margin-top: 100px;
  }
 
- .bloco-imagem1{
-     width: 980px;
-     margin-left: 25%;
- }
-
- .bloco-imagem2{
+ #container-de-linhas{
     width: 980px;
-    margin-left: 25%;
-    margin-top: 0px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
 
- .container-imgem-texto{
-     width: 30%;       
-     display: inline-block;
-     border: 1px solid #cccccc;
-     padding: 0px;
-     margin-left: 2%;
-     margin-top: 30px;
+ .linha-de-container1{
+     width: 100%;
+     display: flex;
+     margin: auto;
+
  }
 
- .container-imgem-texto p{
+ .linha-de-container2{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+ .container-imagem-texto{
+    width: 31%;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    margin: auto;
+ }
+
+ .container-imagem-texto p{
      padding: 2%;
      font-size: 15px;
      color: #999999;
 }
 
-.container-imgem-texto b{
+.container-imagem-texto b{
     line-height: 2;
 }
 
  .tamanho-iamgem-c3{
      width: 100%;
  }
+
+ 
 
  
 
