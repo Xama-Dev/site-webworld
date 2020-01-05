@@ -115,7 +115,7 @@ main{
     width: 100%;
     position: relative;
     float: left;   
-    height: 390px;
+    height: 450px;
 }
 .conteiner-img-texto-slider{
     width: 100%;
@@ -149,9 +149,14 @@ main{
 }
 
 
-/*-------------AREA DE CONTEÚDO 1----------------*/
+/*-------------SEÇÃO 2----------------*/
+#secao2{
+    position: relative;
+    float: left;
+    width: 100%;
 
-.content1{
+}
+.content1-secao2{
     width: 980px;
     margin-left: 25%;
     margin-top: 100px;
@@ -175,18 +180,18 @@ main{
     font-size: 15px;
  }
 
- .content2{
+ .content2-secao2{
     width: 980px;
     margin-left: 25%;
     margin-top: 50px;
 }
 
- .col-3{    
-     width: 31%;
-     display: inline-block;
-     padding-left: 10px;
-     padding-right: 10px;
-     text-align: center;
+ .conteiner-img-texto-secao2{    
+    width: 31%;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
  }
 
  .tamanho-iamgem-c2{
@@ -201,14 +206,16 @@ main{
      font-weight: normal;
  }
 
- /*-----------AREA DE CONTEÚDO 2----------------*/
+ /*-----------SEÇÃO 3----------------*/
 
- .secao2{
-     height: 720px;
-     background-color: #efefef;
-     margin-top: 100px;
+ #secao3{
+    height: 720px;
+    background-color: #efefef;
+    margin-top: 100px;
+    position: relative;
+    float: left;
+    width: 100%;
  }
-
  #container-de-linhas{
     width: 980px;
     margin: auto;
@@ -231,20 +238,20 @@ main{
     margin-top: 20px;
 }
 
- .container-imagem-texto{
+ .container-imagem-texto-secao3{
     width: 31%;
     display: inline-block;
     border: 1px solid #cccccc;
     margin: auto;
  }
 
- .container-imagem-texto p{
+ .container-imagem-texto-secao3 p{
      padding: 2%;
      font-size: 15px;
      color: #999999;
 }
 
-.container-imagem-texto b{
+.container-imagem-texto-secao3 b{
     line-height: 2;
 }
 
