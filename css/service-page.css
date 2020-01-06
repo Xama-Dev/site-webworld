@@ -200,80 +200,82 @@ main {
 
 /*------- SEÇÃO 1 - Services, what we do ---------*/
 #secao1 {
-    height: 1720px;
-}
-
-.conteiner-imagem-texto-secao1 {
-    width: 293px;
-    padding: 0px;
-    border: 0.5px solid #efefef;
-}
-
-.img-servicos {
-    width: 293px;
-}
-
-#linha1-secao1 {
-    margin-top: 30px;
-
+    height: 1480px;
 }
 
 #conteiner-principal-secao1 {
     margin-top: 80px;
 }
 
-.altura-especial {
-    height: 267px;
-}
-
-.margin-top-icones {
+#img-big {
     margin-top: 30px;
 }
 
-.p-serviços {
-    width: 238px;
-    margin-left: 25px;
-}
-
-.altura-padrao-secao1 {
-    height: 268px;
-}
-
-#indicador-servico1 {
+#box-informativo {
+    background-color: #00cccc;
+    width: 400px;
+    height: 400px;
+    margin-top: -147px;
     position: absolute;
-    margin-left: 145px;
-    margin-top: -138px;
 }
 
-#indicador-servico2 {
-    position: absolute;
-    margin-left: -34px;
-    margin-top: 19px;
+#icone-servico {
+    -webkit-filter: grayscale(100%) brightness(200%);
+    filter: grayscale(100%) brightness(200%);
+    filter: gray brightness(200%);
+    /* IE */
+    margin-top: 50px;
 }
 
-#indicador-servico3 {
+#indicador-servico {
+    margin-top: -301px;
     position: absolute;
-    margin-left: -174px;
-    margin-top: -138px;
+    right: 175px;
 }
 
-#indicador-servico6 {
-    position: absolute;
-    margin-left: -174px;
-    margin-top: -138px;
+#p-box-informatico {
+    width: 350px;
 }
 
-#indicador-servico4 {
-    position: absolute;
-    margin-left: 146px;
-    margin-top: -144px;
-
+#btn-contact-us {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-top: 30px;
+    border-radius: 23px;
 }
 
-#indicador-servico5 {
-    position: absolute;
-    margin-left: -30px;
-    margin-top: 19px;
+#btn-contact-us:hover {
+    cursor: pointer;
+}
+
+.div-contato {
+    width: 450px;
+    margin-left: 430px;
+    margin-top: 30px;
+}
+
+.img-contato {
+    width: 50px;
+    height: 50px;
+    margin-top: 13px;
+    margin-left: 30px;
+}
+
+.p-contato {
+    height: 80px;
+    font-size: 30px;
+    margin: 0px;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+#telefone-contato {
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 55px;
+    padding-bottom: 10px;
 }
 
 /*-------SEÇÃO 2 - Depoimento clientes---------*/
@@ -447,7 +449,7 @@ main {
 
 }
 
-.p-contato {
+.p-contato-footer {
     margin-top: -9px;
 }
 
