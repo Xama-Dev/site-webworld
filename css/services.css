@@ -56,6 +56,10 @@ main {
     margin: 0 auto;
 }
 
+.margin-0px {
+    margin: 0px;
+}
+
 .alinhamento-vertical {
     position: relative;
     top: 50%;
@@ -105,6 +109,14 @@ main {
 
 .text-align-center {
     text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
 }
 
 .position-relative {
@@ -185,6 +197,104 @@ main {
     background-position: 96%;
     border: 1px solid #cccccc;
 }
+
+/*------- SEÇÃO 1 - Services, what we do ---------*/
+#secao1 {
+    height: 1720px;
+}
+
+.conteiner-imagem-texto-secao1 {
+    width: 292px;
+    padding: 0px;
+    border: 0.5px solid #cccccc;
+}
+
+.img-servicos {
+    width: 293px;
+}
+
+
+
+
+#linha1-secao1 {
+    margin-top: 30px;
+
+}
+
+#linha2-secao1 {}
+
+#linha3-secao1 {}
+
+#linha4-secao1 {}
+
+#conteiner-principal-secao1 {
+    margin-top: 80px;
+}
+
+.altura-especial {
+    height: 267px;
+}
+
+.margin-top-icones {
+    margin-top: 30px;
+}
+
+.p-serviços {
+    width: 238px;
+    margin-left: 25px;
+}
+
+.altura-padrao-secao1 {
+    height: 268px;
+}
+
+/*54-53*/
+#link1-linha1:after {
+    content: url(../img/indicador-servicos-direita.png);
+    position: relative;
+    margin-left: 292px;
+    top: -141px;
+}
+
+#link4-linha3:after {
+    content: url(../img/indicador-servicos-direita.png);
+    position: relative;
+    margin-left: 292px;
+    top: -141px;
+}
+
+#link3-linha2:after {
+    content: url(../img/indicador-servicos-esquerdo.png);
+    position: relative;
+    margin-left: -320px;
+    top: -141px;
+
+}
+
+#link6-linha4:after {
+    content: url(../img/indicador-servicos-esquerdo.png);
+    position: relative;
+    margin-left: -320px;
+    top: -141px;
+
+}
+
+#link2-linha1:after {
+    content: url(../img/indicador-servicos-baixo.png);
+    position: relative;
+    margin-left: 0px;
+    top: 24px;
+}
+
+#link5-linha3:after {
+    content: url(../img/indicador-servicos-baixo.png);
+    position: relative;
+    margin-left: 0px;
+    top: 30px;
+}
+
+#icone-servico1 {}
+
 
 /*-------FOOTER 1 DA PÁGINA---------*/
 #footer1-da-pagina {

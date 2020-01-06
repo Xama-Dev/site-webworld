@@ -40,3 +40,22 @@ document.getElementById("a-contactUs").onmouseover = function () {
 document.getElementById("a-contactUs").onmouseout = function () {
     document.getElementById("p-contactUs").style.borderBottom = "2px solid #efefef";
 }
+
+/*troca fundo box servicços*/
+
+document.getElementById("link1-linha1").onmouseover = function () {
+    document.getElementById("link1-linha1").style.backgroundColor = "#00cccc";
+    document.getElementById("link1-linha1").style.border = "0.5px solid #00cccc";
+    document.getElementById("icone-servico1").style.filter = "grayscale(100%) brightness(200%)";
+    document.getElementById("h3-servico1").style.color = "white";
+    document.getElementById("p-servico1").style.color = "white";
+
+    document.styleSheets[0].addRule('#link1-linha1:after', 'content: "url(../img/indicadorAzul-servicos-direita.png)"');
+}
+document.getElementById("link1-linha1").onmouseout = function () {
+    document.getElementById("link1-linha1").style.backgroundColor = "white";
+    document.getElementById("link1-linha1").style.border = "0.5px solid #cccccc";
+    document.getElementById("icone-servico1").style.filter = "grayscale(0%) brightness(100%)";
+    document.getElementById("h3-servico1").style.color = "#666666"
+    document.getElementById("p-servico1").style.color = "#666666"
+}
