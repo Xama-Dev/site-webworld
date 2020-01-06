@@ -2,75 +2,58 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Primeira página - Projeto Teste Seção 2</title>
+    <title>Primeira página - Projeto Atual</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
 </head>
 
 <body>
-    <!-- CABEÇALHO CINZA: Logotipo, icones redes sociais-->
-    <header class="menu-principal">
-        <main>
-            <div class="header-1">
-                <div class="logo">
-                    <img src="img/logo.png">
-                </div>
-                <div class="redes-sociais">
-                    <ul>
-                        <li>
-                            <a href="">
-                                <img src="./img/rss.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./img/face.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./img/tw.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./img/linkedin.png">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- HEADER: Logotipo, icones redes sociais-->
+    <header class="header">
+        <div class="content-header">
+            <div class="logo-header">
+                <img src="img/logo.png">
             </div>
-        </main>
-
+            <div class="icones-redesSociais-header">
+                <a href="">
+                    <img src="./img/rss.png">
+                </a>
+                <a href="">
+                    <img src="./img/face.png">
+                </a>
+                <a href="">
+                    <img src="./img/tw.png">
+                </a>
+                <a href="">
+                    <img src="./img/linkedin.png">
+                </a>
+            </div>
+        </div>
     </header>
 
-    <!-- MENU TOPO: Links para as sessões, campo de busca-->
-    <main class="menu-urls">
-        <div class="header-2">
+    <!-- MENU NAVEGAÇÃO: Links para as sessões do site, campo de busca-->
+    <nav class="menu-navegacao">
+        <div class="conteiner-menu-navegacao">
             <div class="menu">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Pages</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
+                <p id="p-home"><a id="a-home" href="">Home</a></p>
+                <p id="p-aboutUs"><a id="a-aboutUs" href="">About Us</a></p>
+                <p id="p-service"><a id="a-service" href="">Service</a></p>
+                <p id="p-pages"><a id="a-pages" href="">Pages</a></p>
+                <p id="p-blog"><a id="a-blog" href="">Blog</a></p>
+                <p id="p-contactUs"><a id="a-contactUs" href="">Contact Us</a></p>
             </div>
-            <div class="busca">
+            <div class="campo-de-busca">
                 <input placeholder="Sourch Something" type="text">
             </div>
         </div>
-    </main>
+    </nav>
 
     <!-- SLIDER -->
-    <div class="secao-slider" id="secao-slider">
-        <div class="conteiner-img-texto-slider">
-            <img src="./img/slider.png" alt="Ponte golden gate">
-            <h1>Welcome to our web site</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-        </div>
+    <div class="secao-slider">
+        <img src="./img/slider.png" alt="Ponte golden gate">
+        <img src="./img/slider.png" alt="Ponte golden gate">
+        <img src="./img/slider.png" alt="Ponte golden gate">
+        <img src="./img/slider.png" alt="Ponte golden gate">
     </div>
 
     <!-- SEÇÃO 2 -->
@@ -85,24 +68,24 @@
         </div>
 
         <div class="content2-secao2">
-            <div class="conteiner-img-texto-secao2">
-                <img src="./img/imac.png" alt="computador icone" class="tamanho-iamgem-c2">
+            <div class="conteiner-img-texto-secao2" id="conteiner-img-texto-secao2-esquerda">
+                <img src="./img/imac.png" alt="computador icone" class="tamanho-iamgem-c2" id="imac-icone">
                 <h3><b>Lorem Ipsum</b> is simply</h3>
                 <p class="subtexto-img">Lorem Ipsum is simply dummy text of the printing and typesetting of the
                     industry. Lorem
                     Ipsum has been
                 </p>
             </div>
-            <div class="conteiner-img-texto-secao2">
-                <img src="./img/lapis.png" alt="lapis icone" class="tamanho-iamgem-c2">
+            <div class="conteiner-img-texto-secao2" id="conteiner-img-texto-secao2-central">
+                <img src="./img/lapis.png" alt="lapis icone" class="tamanho-iamgem-c2" id="lapis-icone">
                 <h3><b>Lorem Ipsum</b> is simply</h3>
                 <p class="subtexto-img">Lorem Ipsum is simply dummy text of the printing and typesetting of the
                     industry. Lorem
                     Ipsum has been
                 </p>
             </div>
-            <div class="conteiner-img-texto-secao2">
-                <img src="./img/paisagem.png" alt="paisagem icone" class="tamanho-iamgem-c2">
+            <div class="conteiner-img-texto-secao2" id="conteiner-img-texto-secao2-direita">
+                <img src="./img/paisagem.png" alt="paisagem icone" class="tamanho-iamgem-c2" id="paisagem-icone">
                 <h3><b>Lorem Ipsum</b> is simply</h3>
                 <p class="subtexto-img">Lorem Ipsum is simply dummy text of the printing and typesetting of the
                     industry. Lorem
@@ -111,48 +94,122 @@
             </div>
 
         </div>
+        <div class="indicador-de-subsecao">
+            <img src="./img/indicador.png" alt="indicador" id="indicador-da-seção">
+        </div>
     </div>
-
     <!-- SEÇÃO 3 -->
     <div id="secao3">
 
-        <div id="container-de-linhas">
-
-            <div class="linha-de-container1">
-                <div class="container-imagem-texto-secao3">
-                    <img src="./img/bloco-imagem1.png" alt="carro" class="tamanho-iamgem-c3">
+        <div class="subsecao" id="subsecaoLapis">
+            <div class="linha1-subsecao">
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoLapis-imagem1.png" alt="carro" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-secao3">
-                    <img src="./img/bloco-imagem2.png" alt="arvore" class="tamanho-iamgem-c3">
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoLapis-imagem2.png" alt="arvore" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-secao3">
-                    <img src="./img/bloco-imagem3.png" alt="trigo" class="tamanho-iamgem-c3">
-                    <p><b>Lorem Ipsum is simply</b><br>
-                        Lorem Ipsum is simply dummy text of the printing </p>
-                </div>
-            </div>
-            <div class="linha-de-container2">
-                <div class="container-imagem-texto-secao3">
-                    <img src="./img/bloco-imagem4.png" alt="café" class="tamanho-iamgem-c3">
-                    <p><b>Lorem Ipsum is simply</b><br>
-                        Lorem Ipsum is simply dummy text of the printing </p>
-                </div>
-                <div class="container-imagem-texto-secao3">
-                    <img src="./img/bloco-imagem5.png" alt="matinho" class="tamanho-iamgem-c3">
-                    <p><b>Lorem Ipsum is simply</b><br>
-                        Lorem Ipsum is simply dummy text of the printing </p>
-                </div>
-                <div class="container-imagem-texto-secao3">
-                    <img src="./img/bloco-imagem6.png" alt="framboesa" class="tamanho-iamgem-c3">
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoLapis-imagem3.png" alt="trigo" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
             </div>
+            <div class="linha2-subsecao">
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoLapis-imagem4.png" alt="café" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoLapis-imagem5.png" alt="matinho" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoLapis-imagem6.png" alt="framboesa" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+            </div>
+        </div>
 
+        <div class="subsecao" id="subsecaoImac">
+            <div class="linha1-subsecao">
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoImac-imagem1.png" alt="carro" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoImac-imagem2.png" alt="arvore" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoImac-imagem3.png" alt="trigo" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+            </div>
+            <div class="linha2-subsecao">
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoImac-imagem4.png" alt="café" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoImac-imagem5.png" alt="matinho" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoImac-imagem6.png" alt="framboesa" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="subsecao" id="subsecaoPaisagem">
+            <div class="linha1-subsecao">
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoPaisagem-imagem1.png" alt="carro" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoPaisagem-imagem2.png" alt="arvore" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoPaisagem-imagem3.png" alt="trigo" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+            </div>
+            <div class="linha2-subsecao">
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoPaisagem-imagem4.png" alt="café" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoPaisagem-imagem5.png" alt="matinho" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+                <div class="container-imagem-texto-subsecao">
+                    <img src="./img/secaoPaisagem-imagem6.png" alt="framboesa" class="tamanho-imagem-subsecao">
+                    <p><b>Lorem Ipsum is simply</b><br>
+                        Lorem Ipsum is simply dummy text of the printing </p>
+                </div>
+            </div>
         </div>
 
     </div>
