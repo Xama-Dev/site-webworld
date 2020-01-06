@@ -5,6 +5,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.fadeIn {
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
 button:focus {
     outline: none;
 }
@@ -98,6 +105,7 @@ a {
     height: 100%;
     border-bottom: 2px solid #efefef;
     margin-right: 10px;
+    transition: border-bottom 0.5s;
 }
 
 .menu a {
@@ -109,6 +117,7 @@ a {
     position: relative;
     top: 40%;
     transform: translateY(-50%);
+    transition: color 0.5s;
 }
 
 .menu a:hover {
@@ -136,6 +145,7 @@ a {
 /*----------------SLIDER--------------------------*/
 .secao-slider:hover {
     cursor: pointer;
+    transition: content 0.5s;
 }
 
 .slick-list {
@@ -235,6 +245,7 @@ ul.slick-dots {
     border: none;
     background-color: transparent;
     background-repeat: no-repeat;
+    transition: background-image 0.5s;
 }
 
 #btn-secao-imac {
@@ -280,7 +291,7 @@ ul.slick-dots {
 
 .container-imagem-texto-subsecao {
     display: inline-block;
-    border: 1px solid #cccccc;
+    border: 0.5px solid #dddddd;
 }
 
 .container-imagem-texto-subsecao p {
@@ -338,6 +349,10 @@ ul.slick-dots {
 
 #img-logotipo-dribbble:hover {
     content: url(../img/logoAzul-parceiro1.png);
+    -webkit-transition: 5s ease-out;
+    -moz-transition: 5s ease-out;
+    -o-transition: 5s ease-out;
+    transition: 5s ease-out;
 }
 
 #img-logotipo-leopardsMedia:hover {

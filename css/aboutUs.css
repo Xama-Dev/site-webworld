@@ -1,0 +1,468 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    height: 1500PX;
+}
+
+.largura-100porcento {
+    width: 100%;
+}
+
+.largura-31porcento {
+    width: 31%;
+}
+
+.background-color-cinzaEscuro-padrão {
+    background-color: #333333;
+}
+
+.background-color-cinzaClarinho-padrão {
+    background-color: #efefef;
+}
+
+.background-color-branco {
+    background-color: white;
+}
+
+.grid-largura-padrão {
+    width: 880px;
+}
+
+.altura-100porcento {
+    height: 100%;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.alinhamento-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.cor-texto-branco-padrão {
+    color: white;
+}
+
+.cor-texto-cinza-padrão {
+    color: #999999;
+}
+
+.cor-texto-azul-esverdeado-padrão {
+    color: #00cccc;
+}
+
+.cor-strong-padrão {
+    color: #666666;
+}
+
+.tamanho-texto-pequeno-13px {
+    font-size: 13px;
+}
+
+.tamanho-texto-medio-15px {
+    font-size: 15px;
+}
+
+.tamanho-texto-grande-20px {
+    font-size: 20px;
+}
+
+.tamanho-texto-h1 {
+    font-size: 30px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-flex {
+    display: flex;
+}
+
+/*-------HEADER: Logotipo, icones redes sociais-------*/
+#header {
+    height: 50px;
+}
+
+.link-redes-socias-header {
+    margin-left: 20px;
+}
+
+/*-------MENU NAVEGAÇÃO: Links para as sessões, campo de busca ---------*/
+
+#menu-navegacao {
+    border-bottom: 4px solid #efefef;
+    height: 60px;
+}
+
+.menu p {
+    display: inline-block;
+    margin: 0px;
+    height: 100%;
+    border-bottom: 2px solid #efefef;
+    margin-right: 10px;
+    transition: border-bottom 0.5s;
+}
+
+.menu a {
+    color: #999999;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    transition: color 0.5s;
+}
+
+.menu a:hover {
+    color: #00cccc;
+}
+
+.campo-de-busca {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+}
+
+#campo-de-busca {
+    width: 168px;
+    height: 8px;
+    padding: 10px;
+    background-image: url('../img/lupa.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    border: 1px solid #cccccc;
+}
+
+/*-------SEÇÃO 1 - Quem somos---------*/
+
+.conteiner-imagem-texto {
+    width: 438px;
+}
+
+.conteinerPequeno-imagem-texto {
+    display: inline-block;
+    border: 0.5px solid #cccccc;
+    margin: 0px;
+    margin-top: 30px;
+    height: 65px;
+    width: 49%;
+}
+
+.conteinerPequeno-imagem-texto img {
+    margin-left: 25px;
+}
+
+.conteinerPequeno-imagem-texto p {
+    margin: 0px;
+    padding-left: 12px;
+}
+
+#conteinerPequeno-esquerdo {
+    margin-left: -5px;
+}
+
+#grid-texto-img {
+    height: 450px;
+}
+
+#p-conteinerDireito-imagem-texto {
+    top: 100px;
+    margin-left: 30px;
+}
+
+
+/*-------SEÇÃO 2 - Porque nos escolher---------*/
+#secao2 {
+    height: 950px;
+}
+
+.conteiner-imagem-texto-secao2 {
+    height: 300px;
+    padding: 18px;
+    margin: 0 auto;
+    width: 27%;
+    border: 2px solid transparent;
+    transition: border 0.5s;
+}
+
+.conteiner-imagem-texto-secao2:hover {
+    border: 2px solid #00cccc;
+}
+
+#linha1-secao2 {
+    margin-top: 45px;
+    margin-bottom: 20px;
+
+}
+
+.conteiner-imagem-texto-secao2 img {
+    margin-top: 30px;
+}
+
+#h1-secao2 {
+    margin-top: 50px;
+}
+
+/*-------SEÇÃO 3 - Nossa equipe---------*/
+
+#secao3 {
+    height: 650px;
+}
+
+#conteiner-secao3 {
+    float: left;
+    margin-top: 50px;
+}
+
+#foto1 {
+    margin-left: 21%;
+}
+
+#foto3 {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.fotoSecao3 {
+    border-radius: 50%;
+    margin-right: 20px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    filter: gray;
+    /* IE */
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+
+#indicador-funcionario {
+    border-right: 2px solid #efefef;
+    height: 30px;
+    width: 1px;
+    margin: auto;
+    margin-left: 49%;
+    margin-top: -5px;
+}
+
+.p-box-depoimento {
+    width: 710px;
+    height: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.abre-aspas {
+    margin-top: 56px;
+}
+
+.fecha-aspas {
+    margin-top: -24px;
+}
+
+.box-depoimento {
+    width: 880px;
+    padding-top: 65px;
+    float: left;
+}
+
+#conteiner-fotos-secao3 {
+    border-bottom: 2px solid #efefef;
+}
+
+#box-depoimento1 {
+    display: none;
+}
+
+#box-depoimento2 {
+    display: none;
+}
+
+#box-depoimento3 {
+    display: block;
+}
+
+#box-depoimento4 {
+    display: none;
+}
+
+#box-depoimento5 {
+    display: none;
+}
+
+
+/*-------FOOTER 1 DA PÁGINA---------*/
+#footer1-da-pagina {
+    height: 330px;
+    background-color: #666666;
+}
+
+#footer1-conteiner-line {
+    height: 330px;
+    display: flex;
+}
+
+.bloco-imagem-texto-footer1 {
+    width: 24%;
+    height: 330px;
+    display: inline-block;
+}
+
+.bloco-imagem-texto-footer1 hr {
+    width: 75%;
+    position: relative;
+    margin-left: 0px;
+    border: 0.5px solid #cccccc;
+}
+
+.bloco-imagem-texto-footer1 p {
+    color: #cccccc;
+    width: 85%;
+}
+
+.bloco-imagem-texto-footer1 span {
+    color: white;
+    font-size: 17px;
+}
+
+#adress:before {
+    content: '';
+    width: 17px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/adress-icon.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+#email:before {
+    content: '';
+    width: 17px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/email-icon.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+}
+
+#tel:before {
+    content: '';
+    width: 17px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/tel-icon.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
+    left: 2px;
+}
+
+#data-post:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(../img/clock-icone.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+
+}
+
+.p-contato {
+    margin-top: -9px;
+}
+
+#data-post {
+    margin-top: -12px;
+}
+
+#bloco2 {
+    margin-left: 30px;
+}
+
+#bloco3 {
+    margin-left: 30px;
+}
+
+#bloco4 {
+    margin-left: 30px;
+}
+
+/*-------FOOTER 2 DA PÁGINA---------*/
+#footer2-da-pagina {
+    height: 70px;
+    background-color: #333333;
+}
+
+#footer2-conteiner-line {
+    height: 70px;
+}
+
+#p-footer2 {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.icones-redesSociais-footer a {
+    margin-left: 20px;
+    text-decoration: none;
+}

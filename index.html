@@ -2,13 +2,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home - Projeto versão.6 - refatoração</title>
+    <title>Home - Projeto versão.7 - about us</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fadeIn.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="fadeIn">
     <!-- HEADER: Logotipo, icones redes sociais-->
     <header id="header" class="largura-100porcento background-color-cinzaEscuro-padrão">
         <div class="grid-largura-padrão altura-100porcento margin-0-auto">
@@ -37,12 +38,12 @@
     <nav id="menu-navegacao" class="largura-100porcento">
         <div class="grid-largura-padrão altura-100porcento margin-0-auto">
             <div class="menu alinhamento-vertical">
-                <p id="p-home"><a id="a-home" href="">Home</a></p>
-                <p id="p-aboutUs"><a id="a-aboutUs" href="">About Us</a></p>
-                <p id="p-service"><a id="a-service" href="">Service</a></p>
-                <p id="p-pages"><a id="a-pages" href="">Pages</a></p>
-                <p id="p-blog"><a id="a-blog" href="">Blog</a></p>
-                <p id="p-contactUs"><a id="a-contactUs" href="">Contact Us</a></p>
+                <p id="p-home"><a id="a-home" href="index.html">Home</a></p>
+                <p id="p-aboutUs"><a id="a-aboutUs" href="aboutUs.html">About Us</a></p>
+                <p id="p-service"><a id="a-service" href="services.html">Services</a></p>
+                <p id="p-pages"><a id="a-pages" href="pages.html">Pages</a></p>
+                <p id="p-blog"><a id="a-blog" href="blog.html">Blog</a></p>
+                <p id="p-contactUs"><a id="a-contactUs" href="contactUs.html">Contact Us</a></p>
             </div>
             <div class="alinhamento-vertical float-right">
                 <input id="campo-de-busca" placeholder="Sourch Something" type="text">
@@ -102,7 +103,7 @@
 
     <!-- SEÇÃO 2 -->
     <section id="secao2" class="largura-100porcento float-left tamanho-texto-pequeno-13px cor-texto-cinza-padrão">
-        <div class=" grid-largura-padrão margin-0-auto alinhamento-vertical" id="subsecaoLapis">
+        <div class=" grid-largura-padrão margin-0-auto alinhamento-vertical fadeIn" id="subsecaoLapis">
             <div id="linha1-subsecao" class=" largura-100porcento margin-0-auto">
                 <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoLapis-imagem1.png" alt="carro" class="tamanho-imagem-subsecao">
@@ -138,8 +139,8 @@
                 </div>
             </div>
         </div>
+        <div class="grid-largura-padrão margin-0-auto alinhamento-vertical fadeIn" id="subsecaoImac">
 
-        <div class="grid-largura-padrão margin-0-auto alinhamento-vertical" id="subsecaoImac">
             <div id="linha1-subsecao" class=" largura-100porcento margin-0-auto">
                 <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoImac-imagem1.png" alt="carro" class="tamanho-imagem-subsecao">
@@ -157,11 +158,14 @@
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
             </div>
-            <div id="linha2-subsecao" class="largura-100porcento margin-0-auto margin-0-auto">
-                <div class="container-imagem-texto-subsecao largura-31porcento">
-                    <img src="./img/secaoImac-imagem4.png" alt="café" class="tamanho-imagem-subsecao">
-                    <p><b>Lorem Ipsum is simply</b><br>
-                        Lorem Ipsum is simply dummy text of the printing </p>
+
+            <div id="linha2-subsecao" class="largura-100porcento margin-0-auto">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
+                    <div class="container-imagem-texto-subsecao">
+                        <img src="./img/secaoImac-imagem4.png" alt="café" class="tamanho-imagem-subsecao">
+                        <p><b>Lorem Ipsum is simply</b><br>
+                            Lorem Ipsum is simply dummy text of the printing </p>
+                    </div>
                 </div>
                 <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoImac-imagem5.png" alt="matinho" class="tamanho-imagem-subsecao">
@@ -176,9 +180,11 @@
             </div>
         </div>
 
-        <div class="grid-largura-padrão margin-0-auto alinhamento-vertical" id="subsecaoPaisagem">
-            <div id="linha1-subsecao" class=" largura-100porcento margin-0-auto margin-0-auto">
-                <div class="container-imagem-texto-subsecao largura-31porcento">
+        </div>
+
+        <div class="grid-largura-padrão margin-0-auto alinhamento-vertical fadeIn" id="subsecaoPaisagem">
+            <div id="linha1-subsecao" class=" largura-100porcento">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoPaisagem-imagem1.png" alt="carro" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
@@ -194,8 +200,8 @@
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
             </div>
-            <div id="linha2-subsecao" class="largura-100porcento margin-0-auto margin-0-auto">
-                <div class="container-imagem-texto-subsecao largura-31porcento">
+            <div id="linha2-subsecao" class="largura-100porcento">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoPaisagem-imagem4.png" alt="café" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
@@ -269,7 +275,7 @@
                 <p id="data-post" class="tamanho-texto-pequeno-13px">25-September 2013</p>
                 <hr>
                 <p class="tamanho-texto-pequeno-13px">Lorem Ipsum is simply dummy text of the printing.</p>
-                <p id="data-post">25-September 2013</p>
+                <p id="data-post" class="tamanho-texto-pequeno-13px">25-September 2013</p>
             </div>
             <div id="bloco2" class="bloco-imagem-texto-footer1">
                 <h3 class="cor-texto-branco-padrão">Tags</h3>
