@@ -515,7 +515,7 @@ a {
     border-radius: 100% !important;
     width: 40px !important;
     height: 40px !important;
-    margin-top: -250px !important;
+    margin-top: -247px !important;
     margin-left: -31px;
 }
 
@@ -530,7 +530,7 @@ a {
     border-radius: 100% !important;
     width: 40px !important;
     height: 40px !important;
-    margin-top: -250px !important;
+    margin-top: -247px !important;
     margin-left: -231px;
 }
 
@@ -625,7 +625,7 @@ a {
 .slick-prev {
     background-color: #333333 !important;
     left: 164px !important;
-    top: 286px !important;
+    top: 282px !important;
     width: 34px !important;
     height: 34px !important;
     z-index: 9;
@@ -649,7 +649,7 @@ a {
 .slick-next {
     background-color: #333333 !important;
     left: 198px !important;
-    top: 286px !important;
+    top: 282px !important;
     width: 34px !important;
     height: 34px !important;
     z-index: 9;

@@ -632,7 +632,7 @@ a {
 .slick-prev {
     background-color: #333333 !important;
     left: 164px !important;
-    top: 286px !important;
+    top: 282px !important;
     width: 34px !important;
     height: 34px !important;
     z-index: 9;
@@ -656,7 +656,7 @@ a {
 .slick-next {
     background-color: #333333 !important;
     left: 198px !important;
-    top: 286px !important;
+    top: 282px !important;
     width: 34px !important;
     height: 34px !important;
     z-index: 9;
