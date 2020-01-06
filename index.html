@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home - Projeto versão.5</title>
+    <title>Home - Projeto versão.6 - refatoração</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -10,23 +10,23 @@
 
 <body>
     <!-- HEADER: Logotipo, icones redes sociais-->
-    <header class="header">
-        <div class="conteiner-header">
+    <header id="header" class="largura-100porcento background-color-cinzaEscuro-padrão">
+        <div class="grid-largura-padrão altura-100porcento margin-0-auto">
             <a href="">
-                <img id="logo-header" src="img/logo.png" alt="logotipo WebWorld" title="WebWorld">
+                <img class="alinhamento-vertical" src="img/logo.png" alt="logotipo WebWorld" title="WebWorld">
             </a>
 
-            <div class="icones-redesSociais-header">
-                <a href="https://pt.wikihow.com/Criar-um-Feed-RSS" target="_blank">
+            <div class="alinhamento-vertical float-right">
+                <a class="link-redes-socias-header" href="https://pt.wikihow.com/Criar-um-Feed-RSS" target="_blank">
                     <img src="./img/rss.png" alt="logotipo RSS" title="feed RSS">
                 </a>
-                <a href="https://www.facebook.com/" target="_blank">
+                <a class="link-redes-socias-header" href="https://www.facebook.com/" target="_blank">
                     <img src="./img/face.png" alt="logotipo facebook" title="Facebook">
                 </a>
-                <a href="https://twitter.com/" target="_blank">
+                <a class="link-redes-socias-header" href="https://twitter.com/" target="_blank">
                     <img src="./img/tw.png" alt="logotipo twetter" title="twetter">
                 </a>
-                <a href="https://www.linkedin.com" target="_blank">
+                <a class="link-redes-socias-header" href="https://www.linkedin.com" target="_blank">
                     <img src="./img/linkedin.png" alt="logotipo linkeIn" title="LinkedIn">
                 </a>
             </div>
@@ -34,9 +34,9 @@
     </header>
 
     <!-- MENU NAVEGAÇÃO: Links para as sessões do site, campo de busca-->
-    <nav class="menu-navegacao">
-        <div class="conteiner-menu-navegacao">
-            <div class="menu">
+    <nav id="menu-navegacao" class="largura-100porcento">
+        <div class="grid-largura-padrão altura-100porcento margin-0-auto">
+            <div class="menu alinhamento-vertical">
                 <p id="p-home"><a id="a-home" href="">Home</a></p>
                 <p id="p-aboutUs"><a id="a-aboutUs" href="">About Us</a></p>
                 <p id="p-service"><a id="a-service" href="">Service</a></p>
@@ -44,14 +44,14 @@
                 <p id="p-blog"><a id="a-blog" href="">Blog</a></p>
                 <p id="p-contactUs"><a id="a-contactUs" href="">Contact Us</a></p>
             </div>
-            <div class="campo-de-busca">
-                <input placeholder="Sourch Something" type="text">
+            <div class="alinhamento-vertical float-right">
+                <input id="campo-de-busca" placeholder="Sourch Something" type="text">
             </div>
         </div>
     </nav>
 
     <!-- SLIDER -->
-    <div class="secao-slider">
+    <div class="secao-slider ">
         <img src="./img/slider.png" alt="Ponte golden gate">
         <img src="./img/slider2.png" alt="Ferrovia">
         <img src="./img/slider3.png" alt="montanha">
@@ -59,74 +59,79 @@
     </div>
 
     <!-- SEÇÃO 1 -->
-    <div id="secao1">
+    <section class="float-left largura-100porcento">
 
-        <div class="conteiner1-secao1">
-            <h1>Lorem Ipsum is <strong>simply dummy</strong> of the printing.</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make atype specimen book. It has survived not only five centuries.</p>
+        <div class="conteiner1-secao1 grid-largura-padrão margin-0-auto text-align-center cor-texto-cinza-padrão">
+            <h1>Lorem Ipsum is <strong class="cor-strong-padrão">simply dummy</strong> of the printing.</h1>
+            <p class="tamanho-texto-pequeno-13px">Lorem Ipsum is simply dummy text of the printing and
+                typesettingindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                an unknown printer took a galley of type and scrambled it to make atype specimen book. It has survived
+                not only five centuries. Lorem Ipsum is simply dummy text of the printing andtypesettingindustry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, whenan
+                unknown printer took a galley of type and scrambled it to make atype specimen book. It has survived
+                not only five.</p>
         </div>
 
-        <div class="conteiner2-secao1">
-            <div class="conteiner-img-texto-secao1" id="conteiner-img-texto-secao1-esquerda">
+        <div class="conteiner2-secao1 cor-texto-cinza-padrão grid-largura-padrão margin-0-auto">
+            <div id="conteiner-img-texto-secao1-esquerda"
+                class="conteiner-img-texto-secao1 largura-31porcento text-align-center margin-0-auto">
                 <button id="btn-secao-imac" class="btn-troca-secao"></button>
                 <h4><b>Lorem Ipsum</b> is simply</h4>
-                <p class="subtexto-img">Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. </p>
+                <p class="tamanho-texto-pequeno-13px">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    of the industry. </p>
             </div>
-            <div class="conteiner-img-texto-secao1" id="conteiner-img-texto-secao1-central">
+            <div id="conteiner-img-texto-secao1-central"
+                class="conteiner-img-texto-secao1 largura-31porcento text-align-center margin-0-auto">
                 <button id="btn-secao-lapis" class="btn-troca-secao"></button>
                 <h4><b>Lorem Ipsum</b> is simply</h4>
-                <p class="subtexto-img">Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. </p>
+                <p class="tamanho-texto-pequeno-13px">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    of the industry. </p>
             </div>
-            <div class="conteiner-img-texto-secao1" id="conteiner-img-texto-secao1-direita">
+            <div id="conteiner-img-texto-secao1-direita"
+                class="conteiner-img-texto-secao1 largura-31porcento text-align-center margin-0-auto">
                 <button id="btn-secao-paisagem" class="btn-troca-secao"></button>
                 <h4><b>Lorem Ipsum</b> is simply</h4>
-                <p class="subtexto-img">Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. </p>
+                <p class="tamanho-texto-pequeno-13px">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    of the industry. </p>
             </div>
-
         </div>
-        <div class="indicador-de-subsecao">
-            <img src="./img/indicador.png" alt="indicador" id="indicador-da-seção">
+        <div class="grid-largura-padrão margin-0-auto">
+            <img id="indicador-da-seção" class="margin-0-auto" src="./img/indicador.png" alt="indicador">
         </div>
-    </div>
+    </section>
 
     <!-- SEÇÃO 2 -->
-    <div id="secao2">
-
-        <div class="subsecao" id="subsecaoLapis">
-            <div class="linha1-subsecao">
-                <div class="container-imagem-texto-subsecao">
+    <section id="secao2" class="largura-100porcento float-left tamanho-texto-pequeno-13px cor-texto-cinza-padrão">
+        <div class=" grid-largura-padrão margin-0-auto alinhamento-vertical" id="subsecaoLapis">
+            <div id="linha1-subsecao" class=" largura-100porcento margin-0-auto">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoLapis-imagem1.png" alt="carro" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoLapis-imagem2.png" alt="arvore" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoLapis-imagem3.png" alt="trigo" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
             </div>
-            <div class="linha2-subsecao">
-                <div class="container-imagem-texto-subsecao">
+            <div id="linha2-subsecao" class="largura-100porcento margin-0-auto">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoLapis-imagem4.png" alt="café" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoLapis-imagem5.png" alt="matinho" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoLapis-imagem6.png" alt="framboesa" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
@@ -134,36 +139,36 @@
             </div>
         </div>
 
-        <div class="subsecao" id="subsecaoImac">
-            <div class="linha1-subsecao">
-                <div class="container-imagem-texto-subsecao">
+        <div class="grid-largura-padrão margin-0-auto alinhamento-vertical" id="subsecaoImac">
+            <div id="linha1-subsecao" class=" largura-100porcento margin-0-auto">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoImac-imagem1.png" alt="carro" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoImac-imagem2.png" alt="arvore" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoImac-imagem3.png" alt="trigo" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
             </div>
-            <div class="linha2-subsecao">
-                <div class="container-imagem-texto-subsecao">
+            <div id="linha2-subsecao" class="largura-100porcento margin-0-auto margin-0-auto">
+                <div class="container-imagem-texto-subsecao largura-31porcento">
                     <img src="./img/secaoImac-imagem4.png" alt="café" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoImac-imagem5.png" alt="matinho" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoImac-imagem6.png" alt="framboesa" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
@@ -171,36 +176,36 @@
             </div>
         </div>
 
-        <div class="subsecao" id="subsecaoPaisagem">
-            <div class="linha1-subsecao">
-                <div class="container-imagem-texto-subsecao">
+        <div class="grid-largura-padrão margin-0-auto alinhamento-vertical" id="subsecaoPaisagem">
+            <div id="linha1-subsecao" class=" largura-100porcento margin-0-auto margin-0-auto">
+                <div class="container-imagem-texto-subsecao largura-31porcento">
                     <img src="./img/secaoPaisagem-imagem1.png" alt="carro" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoPaisagem-imagem2.png" alt="arvore" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoPaisagem-imagem3.png" alt="trigo" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
             </div>
-            <div class="linha2-subsecao">
-                <div class="container-imagem-texto-subsecao">
+            <div id="linha2-subsecao" class="largura-100porcento margin-0-auto margin-0-auto">
+                <div class="container-imagem-texto-subsecao largura-31porcento">
                     <img src="./img/secaoPaisagem-imagem4.png" alt="café" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoPaisagem-imagem5.png" alt="matinho" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
-                <div class="container-imagem-texto-subsecao">
+                <div class="container-imagem-texto-subsecao largura-31porcento margin-0-auto">
                     <img src="./img/secaoPaisagem-imagem6.png" alt="framboesa" class="tamanho-imagem-subsecao">
                     <p><b>Lorem Ipsum is simply</b><br>
                         Lorem Ipsum is simply dummy text of the printing </p>
@@ -208,81 +213,98 @@
             </div>
         </div>
 
-    </div>
+    </section>
 
     <!-- SEÇÃO 3 -->
-    <section class="secao3">
-        <div class="conteiner-secao3">
-            <p>Nossos clientes:</p>
-            <div class="div-logo-parceiros-linha1">
-                <a id="link-logotipo-dribbble" href="https://dribbble.com/" target="_blank"><img
-                        id="img-logotipo-dribbble" src="./img/logo-parceiro1.png" alt="logotipo dribbble"
-                        title="Dribbble"></a>
-                <a id="link-logotipo-leopardsMedia" href="https://www.leopardmediagroup.com/" target="_blank"><img
-                        id="img-logotipo-leopardsMedia" src="./img/logo-parceiro2.png" alt="logotipo leopards media"
-                        title="Leopards media"></a>
-                <a id="link-logotipo-behance" href="https://www.behance.net/" target="_blank"><img
-                        id="img-logotipo-behance" src="./img/logo-parceiro3.png" alt="logotipo behance"
-                        title="Behance"></a>
-                <a id="link-logotipo-puma" href="https://us.puma.com/" target="_blank"><img id="img-logotipo-puma"
-                        src="./img/logo-parceiro4.png" alt="logotipo puma" title="Puma"></a>
+    <section id="secao3" class="largura-100porcento float-left">
+        <div class="grid-largura-padrão margin-0-auto">
+
+            <p id="p-secao3" class="tamanho-texto-medio-15px cor-texto-cinza-padrão">Nossos clientes:</p>
+
+            <div id="div-logo-parceiros-linha1" class=" grid-largura-padrão">
+                <a id="link-logotipo-dribbble" href="https://dribbble.com/" target="_blank">
+                    <img id="img-logotipo-dribbble" class="img-logo-parceiros-linha" src="./img/logo-parceiro1.png"
+                        alt="logotipo dribbble" title="Dribbble">
+                </a>
+                <a id="link-logotipo-leopardsMedia" href="https://www.leopardmediagroup.com/" target="_blank">
+                    <img id="img-logotipo-leopardsMedia" class="img-logo-parceiros-linha" src="./img/logo-parceiro2.png"
+                        alt="logotipo leopards media" title="Leopards media">
+                </a>
+                <a id="link-logotipo-behance" href="https://www.behance.net/" target="_blank">
+                    <img id="img-logotipo-behance" class="img-logo-parceiros-linha" src="./img/logo-parceiro3.png"
+                        alt="logotipo behance" title="Behance">
+                </a>
+                <a id="link-logotipo-puma" href="https://us.puma.com/" target="_blank">
+                    <img id="img-logotipo-puma" class="img-logo-parceiros-linha" src="./img/logo-parceiro4.png"
+                        alt="logotipo puma" title="Puma">
+                </a>
             </div>
-            <div class="div-logo-parceiros-linha2">
-                <a id="link-logotipo-b2w" href="https://ri.b2w.digital/" target="_blank"><img id="img-logotipo-b2w"
-                        src="./img/logo-parceiro5.png" alt="logotipo b2w" title="B2w Digital"></a>
-                <a id="link-logotipo-netshoes" href="https://www.netshoes.com.br/" target="_blank"><img
-                        id="img-logotipo-netshoes" src="./img/logo-parceiro6.png" alt="logotipo netshoes"
-                        title="Netshoes"></a>
-                <a id="link-logotipo-adidas" href="https://www.adidas.com.br/" target="_blank"><img
-                        id="img-logotipo-adidas" src="./img/logo-parceiro7.png" alt="logotipo Adidas"
-                        title="Adidas"></a>
-                <a id="link-logotipo-ferrari" href="https://www.ferrari.com/" target="_blank"><img
-                        id="img-logotipo-ferrari" src="./img/logo-parceiro8.png" alt="logotipo ferrari"
-                        title="Ferrari"></a>
+            <div id="div-logo-parceiros-linha2" class="grid-largura-padrão">
+                <a id="link-logotipo-b2w" href="https://ri.b2w.digital/" target="_blank">
+                    <img id="img-logotipo-b2w" class="img-logo-parceiros-linha" src="./img/logo-parceiro5.png"
+                        alt="logotipo b2w" title="B2w Digital">
+                </a>
+                <a id="link-logotipo-netshoes" href="https://www.netshoes.com.br/" target="_blank">
+                    <img id="img-logotipo-netshoes" class="img-logo-parceiros-linha" src="./img/logo-parceiro6.png"
+                        alt="logotipo netshoes" title="Netshoes">
+                </a>
+                <a id="link-logotipo-adidas" href="https://www.adidas.com.br/" target="_blank">
+                    <img id="img-logotipo-adidas" class="img-logo-parceiros-linha" src="./img/logo-parceiro7.png"
+                        alt="logotipo Adidas" title="Adidas">
+                </a>
+                <a id="link-logotipo-ferrari" href="https://www.ferrari.com/" target="_blank">
+                    <img id="img-logotipo-ferrari" class="img-logo-parceiros-linha" src="./img/logo-parceiro8.png"
+                        alt="logotipo ferrari" title="Ferrari">
+                </a>
             </div>
         </div>
     </section>
 
     <!-- FOOTER DA PÁGINA-->
-    <footer id="footer1-da-pagina">
-        <div class="footer1-conteiner-line">
-            <div id="bloco1" class="bloco-imagem-texto-footer1">
-                <h3>Populr Post</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                <p id="data-post">25-September 2013</p>
+    <footer id="footer1-da-pagina" class="largura-100porcento float-left">
+        <div id="footer1-conteiner-line" class="grid-largura-padrão margin-0-auto">
+            <div id=" bloco1" class="bloco-imagem-texto-footer1">
+                <h3 class="cor-texto-branco-padrão">Popular Post</h3>
+                <p class="tamanho-texto-pequeno-13px">Lorem Ipsum is simply dummy text of the printing.</p>
+                <p id="data-post" class="tamanho-texto-pequeno-13px">25-September 2013</p>
                 <hr>
-                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                <p class="tamanho-texto-pequeno-13px">Lorem Ipsum is simply dummy text of the printing.</p>
                 <p id="data-post">25-September 2013</p>
             </div>
             <div id="bloco2" class="bloco-imagem-texto-footer1">
-                <h3>Tags</h3>
-                <p>apps <span>blog</span> blogroll coda concert <span>daily design</span> develop dialog
+                <h3 class="cor-texto-branco-padrão">Tags</h3>
+                <p class="tamanho-texto-pequeno-13px">apps <span>blog</span> blogroll coda concert <span>daily
+                        design</span> develop dialog
                     drinks gallery holiday icon <span>illustration</span> ipad iphone journal
                     <span>jquery</span> label link marketing photo <span>profession</span> quotation
                     recipes typography <span>video</span></p>
             </div>
             <div id="bloco3" class="bloco-imagem-texto-footer1">
-                <h3>A little about us</h3>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                <h3 class="cor-texto-branco-padrão">A little about us</h3>
+                <p class="tamanho-texto-pequeno-13px">There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered
                     alteration in some form, by injected humour, even slightly believable.
                     <br><br>
                     If you are going to use a passage of Lorem Ipsum, you need to be .</p>
             </div>
             <div id="bloco4" class="bloco-imagem-texto-footer1">
-                <h3>Get in touch</h3>
-                <p>Lorem Ipsum is of the printing and typesetting industry. Lorem Ipsum has been the
+                <h3 class="cor-texto-branco-padrão">Get in touch</h3>
+                <p class="tamanho-texto-pequeno-13px">Lorem Ipsum is of the printing and typesetting industry. Lorem
+                    Ipsum has been the
                     industry's standard dummy text ever since.<br><br></p>
-                <p id="adress" class="p-contato">Texas, US</p>
-                <p id="email" class="p-contato">email@email.com</p>
-                <p id="tel" class="p-contato"> 890-09880-45590</p>
+                <p id="adress" class="p-contato tamanho-texto-pequeno-13px">Texas, US</p>
+                <p id="email" class="p-contato tamanho-texto-pequeno-13px">email@email.com</p>
+                <p id="tel" class="p-contato tamanho-texto-pequeno-13px"> 890-09880-45590</p>
             </div>
         </div>
 
     </footer>
-    <footer id="footer2-da-pagina">
-        <div class="footer2-conteiner-line">
-            <p>© 2013 Web world. All rights reserved. Theme by cssautther</p>
-            <div class="icones-redesSociais-footer">
+    <footer id="footer2-da-pagina" class="largura-100porcento float-left">
+        <div id="footer2-conteiner-line" class=" grid-largura-padrão margin-0-auto">
+            <p id="p-footer2" class="alinhamento-vertical margin-0-auto">© 2013 Web world. All rights reserved.
+                Theme bycssautther</p>
+
+            <div class="icones-redesSociais-footer float-right alinhamento-vertical">
                 <a href="https://pt.wikihow.com/Criar-um-Feed-RSS" target="_blank">
                     <img src="./img/rss.png" alt="logotipo RSS" title="feed RSS">
                 </a>

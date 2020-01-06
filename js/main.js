@@ -114,7 +114,7 @@ function trocaSubsecaoImac() {
   document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "";
   document.getElementById("conteiner-img-texto-secao1-direita").style.marginTop = "";
 
-  document.getElementById("indicador-da-seção").style.marginLeft = "12%";
+  document.getElementById("indicador-da-seção").style.marginLeft = "11%";
 
   if (btnImacLigado == 0) {
     btnImacLigado = 1;

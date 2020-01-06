@@ -9,64 +9,87 @@ button:focus {
     outline: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+.alinhamento-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.largura-100porcento {
+    width: 100%;
+}
+
+.altura-100porcento {
+    height: 100%;
+}
+
+.grid-largura-padrão {
+    width: 880px;
+}
+
+.cor-texto-cinza-padrão {
+    color: #999999;
+}
+
+.cor-texto-branco-padrão {
+    color: white;
+}
+
+.cor-strong-padrão {
+    color: #666666;
+}
+
+.tamanho-texto-pequeno-13px {
+    font-size: 13px;
+}
+
+.tamanho-texto-medio-15px {
+    font-size: 15px;
+}
+
+.background-color-cinzaEscuro-padrão {
+    background-color: #333333;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.largura-31porcento {
+    width: 31%;
+}
 
 /*-------HEADER: Logotipo, icones redes sociais-------*/
-
-
-
-.header {
-    width: 100%;
-    background-color: #333333;
+#header {
     height: 50px;
 }
 
-.conteiner-header {
-    width: 880px;
-    height: 100%;
-    margin: auto;
-}
-
-#logo-header {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-}
-
-.icones-redesSociais-header {
-    float: right;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-}
-
-.icones-redesSociais-header a {
+.link-redes-socias-header {
     margin-left: 20px;
-    text-decoration: none;
 }
 
 /*-------MENU NAVEGAÇÃO: Links para as sessões, campo de busca ---------*/
 
-.menu-navegacao {
-    width: 100%;
+#menu-navegacao {
     border-bottom: 4px solid #efefef;
-    background-color: #ffffff;
     height: 60px;
-}
-
-.conteiner-menu-navegacao {
-    width: 880px;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.menu {
-    display: inline-block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-
 }
 
 .menu p {
@@ -86,7 +109,6 @@ button:focus {
     position: relative;
     top: 40%;
     transform: translateY(-50%);
-
 }
 
 .menu a:hover {
@@ -101,7 +123,7 @@ button:focus {
     float: right;
 }
 
-.campo-de-busca input {
+#campo-de-busca {
     width: 190px;
     height: 30px;
     padding: 10px;
@@ -112,13 +134,6 @@ button:focus {
 }
 
 /*----------------SLIDER--------------------------*/
-
-.secao-slider {
-    width: 100%;
-    position: relative;
-    float: left;
-}
-
 .secao-slider:hover {
     cursor: pointer;
 }
@@ -193,56 +208,24 @@ ul.slick-dots {
 
 
 /*-------------SEÇÃO 1----------------*/
-#secao1 {
-    position: relative;
-    float: left;
-    width: 100%;
-}
 
 .conteiner1-secao1 {
-    width: 880px;
-    margin: auto;
     margin-top: 50px;
-    text-align: center;
 }
 
 .conteiner1-secao1 h1 {
     text-transform: uppercase;
     font-size: 24px;
-    color: #999999;
-}
-
-.conteiner1-secao1 p {
-    font-size: 15px;
-    color: #999999;
-}
-
-.conteiner1-secao1 strong {
-    color: #666666;
 }
 
 .conteiner2-secao1 {
-    width: 880px;
     height: 290px;
-    margin: auto;
     display: flex;
     margin-top: 50px;
 }
 
-.conteiner-img-texto-secao1 h4 {
-    color: #999999;
-}
-
-.conteiner-img-texto-secao1 p {
-    color: #999999;
-    font-size: 13px;
-}
-
-.conteiner-img-texto-secao1 {
-    width: 31%;
-    display: inline-block;
-    text-align: center;
-    margin: auto;
+#indicador-da-seção {
+    display: flex;
 }
 
 .btn-troca-secao {
@@ -267,44 +250,15 @@ ul.slick-dots {
     background-image: url(../img/paisagem.png);
 }
 
-.subtexto-img {
-    font-size: 12px;
-}
-
-h3 {
-    font-weight: normal;
-}
-
-.indicador-de-subsecao {
-    width: 880px;
-    margin: auto;
-}
-
 /*-----------SEÇÃO 2----------------*/
 
 #secao2 {
     height: 620px;
     background-color: #efefef;
-    position: relative;
-    float: left;
-    width: 100%;
-}
-
-#indicador-da-seção {
-    display: flex;
-    margin: auto;
-}
-
-.subsecao {
-    width: 880px;
-    margin: auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 #subsecaoLapis {
-    display: ;
+    display: block;
 }
 
 #subsecaoImac {
@@ -315,32 +269,22 @@ h3 {
     display: none;
 }
 
-
-
-.linha1-subsecao {
-    width: 100%;
+#linha1-subsecao {
     display: flex;
-    margin: auto;
-
 }
 
-.linha2-subsecao {
-    width: 100%;
+#linha2-subsecao {
     display: flex;
     margin-top: 20px;
 }
 
 .container-imagem-texto-subsecao {
-    width: 31%;
     display: inline-block;
     border: 1px solid #cccccc;
-    margin: auto;
 }
 
 .container-imagem-texto-subsecao p {
     padding: 4%;
-    font-size: 13px;
-    color: #999999;
     margin: 0px;
 }
 
@@ -353,46 +297,26 @@ h3 {
 }
 
 /*-----------SEÇÃO 3----------------*/
-.secao3 {
-    width: 100%;
+#secao3 {
     height: 382px;
-    background-color: #ffffff;
-    position: relative;
-    float: left;
 }
 
-.conteiner-secao3 {
-    width: 880px;
-    height: 382px;
-    background-color: #ffffff;
-    margin: auto;
-}
-
-.conteiner-secao3 p {
-    font-size: 15px;
-    color: #999999;
+#p-secao3 {
     height: 30px;
     margin: 0px;
     margin-top: 30px;
 }
 
-.div-logo-parceiros-linha1 {
-    width: 880px;
+#div-logo-parceiros-linha1 {
     height: 161px;
 }
 
-.div-logo-parceiros-linha2 {
-    width: 880px;
+#div-logo-parceiros-linha2 {
     height: 161px;
-    margin-top: -15px;
+    margin-top: -35px;
 }
 
-.div-logo-parceiros-linha1 img {
-    margin-right: 117px;
-    margin-top: 53px;
-}
-
-.div-logo-parceiros-linha2 img {
+.img-logo-parceiros-linha {
     margin-right: 117px;
     margin-top: 53px;
 }
@@ -414,11 +338,6 @@ h3 {
 
 #img-logotipo-dribbble:hover {
     content: url(../img/logoAzul-parceiro1.png);
-    -webkit-content: url(../img/logoAzul-parceiro1.png);
-    -moz-content: url(../img/logoAzul-parceiro1.png);
-    -ms-content: url(../img/logoAzul-parceiro1.png);
-    -o-content: url(../img/logoAzul-parceiro1.png);
-
 }
 
 #img-logotipo-leopardsMedia:hover {
@@ -449,27 +368,14 @@ h3 {
     content: url(../img/logoAzul-parceiro8.png);
 }
 
-/*-------FOOTER DA PÁGINA---------*/
+/*-------FOOTER 1 DA PÁGINA---------*/
 #footer1-da-pagina {
-    width: 100%;
     height: 330px;
-    position: relative;
-    float: left;
     background-color: #666666;
 }
 
-#footer2-da-pagina {
-    width: 100%;
-    height: 70px;
-    position: relative;
-    float: left;
-    background-color: #333333;
-}
-
-.footer1-conteiner-line {
-    width: 880px;
+#footer1-conteiner-line {
     height: 330px;
-    margin: 0 auto;
     display: flex;
 }
 
@@ -479,40 +385,16 @@ h3 {
     display: inline-block;
 }
 
-
-.footer1-conteiner-line h3 {
-    color: white;
-    margin-top: 38px;
-}
-
-#data-post:before {
-    content: '';
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    background-image: url(../img/clock-icone.png);
-    background-repeat: no-repeat;
-    margin-right: 5px;
-    position: relative;
-    top: 2px;
-
-}
-
-#data-post {
-    margin-top: -12px;
-}
-
 .bloco-imagem-texto-footer1 hr {
     width: 75%;
     position: relative;
     margin-left: 0px;
-    border: 0.5px solid #666666;
+    border: 0.5px solid #cccccc;
 }
 
 .bloco-imagem-texto-footer1 p {
     color: #cccccc;
     width: 85%;
-    font-size: 13px;
 }
 
 .bloco-imagem-texto-footer1 span {
@@ -557,37 +439,25 @@ h3 {
     left: 2px;
 }
 
+#data-post:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(../img/clock-icone.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+
+}
+
 .p-contato {
     margin-top: -9px;
 }
 
-.footer2-conteiner-line {
-    width: 880px;
-    height: 70px;
-    position: relative;
-    margin: auto;
-}
-
-.footer2-conteiner-line p {
-    color: #cccccc;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    font-size: 14px;
-}
-
-.icones-redesSociais-footer {
-    float: right;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-}
-
-.icones-redesSociais-footer a {
-    margin-left: 20px;
-    text-decoration: none;
+#data-post {
+    margin-top: -12px;
 }
 
 #bloco2 {
@@ -600,4 +470,24 @@ h3 {
 
 #bloco4 {
     margin-left: 30px;
+}
+
+/*-------FOOTER 2 DA PÁGINA---------*/
+#footer2-da-pagina {
+    height: 70px;
+    background-color: #333333;
+}
+
+#footer2-conteiner-line {
+    height: 70px;
+}
+
+#p-footer2 {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.icones-redesSociais-footer a {
+    margin-left: 20px;
+    text-decoration: none;
 }
