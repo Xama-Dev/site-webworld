@@ -110,11 +110,13 @@ function trocaSubsecaoImac() {
   document.getElementById("btn-secao-lapis").style.backgroundImage = "url(./img/lapis.png)";
   document.getElementById("btn-secao-paisagem").style.backgroundImage = "url(./img/paisagem.png)";
 
-  document.getElementById("conteiner-img-texto-secao1-esquerda").style.marginTop = "85px";
-  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "";
-  document.getElementById("conteiner-img-texto-secao1-direita").style.marginTop = "";
+  document.getElementById("conteiner-img-texto-secao1-esquerda").style.marginTop = "11%";
+  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "0%";
+  document.getElementById("conteiner-img-texto-secao1-direita").style.marginTop = "0%";
 
-  document.getElementById("indicador-da-seção").style.marginLeft = "11%";
+  document.getElementById("indicador-da-secao-esquerda").style.opacity = "1";
+  document.getElementById("indicador-da-secao-central").style.opacity = "0";
+  document.getElementById("indicador-da-secao-direita").style.opacity = "0";
 
   if (btnImacLigado == 0) {
     btnImacLigado = 1;
@@ -133,11 +135,13 @@ function trocaSubsecaoLapis() {
   document.getElementById("btn-secao-paisagem").style.backgroundImage = "url(./img/paisagem.png)";
   document.getElementById("btn-secao-imac").style.backgroundImage = "url(./img/imac.png)";
 
-  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "85px";
-  document.getElementById("conteiner-img-texto-secao1-direita").style.marginTop = "";
-  document.getElementById("conteiner-img-texto-secao1-esquerda").style.marginTop = "";
+  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "11%";
+  document.getElementById("conteiner-img-texto-secao1-direita").style.marginTop = "0%";
+  document.getElementById("conteiner-img-texto-secao1-esquerda").style.marginTop = "0%";
 
-  document.getElementById("indicador-da-seção").style.marginLeft = "";
+  document.getElementById("indicador-da-secao-esquerda").style.opacity = "0";
+  document.getElementById("indicador-da-secao-central").style.opacity = "1";
+  document.getElementById("indicador-da-secao-direita").style.opacity = "0";
 
   if (btnLapisLigado == 0) {
     btnLapisLigado = 1;
@@ -156,11 +160,13 @@ function trocaSubsecaoPaisagem() {
   document.getElementById("btn-secao-imac").style.backgroundImage = "url(./img/imac.png)";
   document.getElementById("btn-secao-lapis").style.backgroundImage = "url(./img/lapis.png)";
 
-  document.getElementById("conteiner-img-texto-secao1-direita").style.marginTop = "85px"
-  document.getElementById("conteiner-img-texto-secao1-esquerda").style.marginTop = "";
-  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "";
+  document.getElementById("conteiner-img-texto-secao1-direita").style.marginTop = "11%"
+  document.getElementById("conteiner-img-texto-secao1-esquerda").style.marginTop = "0%";
+  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "0%";
 
-  document.getElementById("indicador-da-seção").style.marginLeft = "78%";
+  document.getElementById("indicador-da-secao-esquerda").style.opacity = "0";
+  document.getElementById("indicador-da-secao-central").style.opacity = "0";
+  document.getElementById("indicador-da-secao-direita").style.opacity = "1";
 
   if (btnPaisagemLigado == 0) {
     btnPaisagemLigado = 1;
@@ -169,8 +175,3 @@ function trocaSubsecaoPaisagem() {
   }
 }
 document.getElementById("btn-secao-paisagem").addEventListener("click", trocaSubsecaoPaisagem);
-
-function setMarginTop() {
-  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "85px";
-}
-window.addEventListener("load", setMarginTop);

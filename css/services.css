@@ -5,6 +5,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.fadeIn {
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
 button:focus {
     outline: none;
 }
@@ -17,16 +24,24 @@ main {
     height: 1500PX;
 }
 
-#p-main {
-    text-align: center;
-}
-
 .largura-100porcento {
     width: 100%;
 }
 
+.largura-31porcento {
+    width: 31%;
+}
+
 .background-color-cinzaEscuro-padrão {
     background-color: #333333;
+}
+
+.background-color-cinzaClarinho-padrão {
+    background-color: #efefef;
+}
+
+.background-color-branco {
+    background-color: white;
 }
 
 .grid-largura-padrão {
@@ -60,12 +75,56 @@ main {
     color: white;
 }
 
+.cor-texto-cinza-padrão {
+    color: #999999;
+}
+
+.cor-texto-azul-esverdeado-padrão {
+    color: #00cccc;
+}
+
+.cor-strong-padrão {
+    color: #666666;
+}
+
 .tamanho-texto-pequeno-13px {
     font-size: 13px;
 }
 
 .tamanho-texto-medio-15px {
     font-size: 15px;
+}
+
+.tamanho-texto-grande-20px {
+    font-size: 20px;
+}
+
+.tamanho-texto-h1 {
+    font-size: 30px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-flex {
+    display: flex;
 }
 
 /*-------HEADER: Logotipo, icones redes sociais-------*/

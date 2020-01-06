@@ -83,6 +83,10 @@ a {
     width: 31%;
 }
 
+.display-flex {
+    display: flex;
+}
+
 /*-------HEADER: Logotipo, icones redes sociais-------*/
 #header {
     height: 50px;
@@ -234,8 +238,8 @@ ul.slick-dots {
     margin-top: 50px;
 }
 
-#indicador-da-seção {
-    display: flex;
+.conteiner-img-texto-secao1 {
+    transition: margin-top 0.5s;
 }
 
 .btn-troca-secao {
@@ -246,6 +250,27 @@ ul.slick-dots {
     background-color: transparent;
     background-repeat: no-repeat;
     transition: background-image 0.5s;
+
+}
+
+.indicador-de-secao {}
+
+#indicador-da-secao-esquerda {
+    margin-left: 11%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#indicador-da-secao-central {
+    margin-left: 23%;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#indicador-da-secao-direita {
+    margin-left: 23%;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 #btn-secao-imac {
@@ -254,11 +279,14 @@ ul.slick-dots {
 
 #btn-secao-lapis {
     background-image: url(../img/lapis-azul.png);
-    cursor: pointer;
 }
 
 #btn-secao-paisagem {
     background-image: url(../img/paisagem.png);
+}
+
+#conteiner-img-texto-secao1-central {
+    margin-top: 11%;
 }
 
 /*-----------SEÇÃO 2----------------*/
@@ -307,7 +335,7 @@ ul.slick-dots {
     width: 100%;
 }
 
-/*-----------SEÇÃO 3----------------*/
+/*-----------SEÇÃO 3 nossos parceiros----------------*/
 #secao3 {
     height: 382px;
 }
@@ -330,6 +358,16 @@ ul.slick-dots {
 .img-logo-parceiros-linha {
     margin-right: 117px;
     margin-top: 53px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+
+    filter: gray;
+    /* IE */
+    transition: filter 0.5s;
+}
+
+.img-logo-parceiros-linha:hover {
+    filter: grayscale(0%);
 }
 
 #img-logotipo-behance {
@@ -347,41 +385,7 @@ ul.slick-dots {
     margin-right: 0px;
 }
 
-#img-logotipo-dribbble:hover {
-    content: url(../img/logoAzul-parceiro1.png);
-    -webkit-transition: 5s ease-out;
-    -moz-transition: 5s ease-out;
-    -o-transition: 5s ease-out;
-    transition: 5s ease-out;
-}
 
-#img-logotipo-leopardsMedia:hover {
-    content: url(../img/logoAzul-parceiro2.png);
-}
-
-#img-logotipo-behance:hover {
-    content: url(../img/logoAzul-parceiro3.png);
-}
-
-#img-logotipo-puma:hover {
-    content: url(../img/logoAzul-parceiro4.png);
-}
-
-#img-logotipo-b2w:hover {
-    content: url(../img/logoAzul-parceiro5.png);
-}
-
-#img-logotipo-netshoes:hover {
-    content: url(../img/logoAzul-parceiro6.png);
-}
-
-#img-logotipo-adidas:hover {
-    content: url(../img/logoAzul-parceiro7.png);
-}
-
-#img-logotipo-ferrari:hover {
-    content: url(../img/logoAzul-parceiro8.png);
-}
 
 /*-------FOOTER 1 DA PÁGINA---------*/
 #footer1-da-pagina {

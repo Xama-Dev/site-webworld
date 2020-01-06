@@ -284,7 +284,6 @@ main {
 
     filter: gray;
     /* IE */
-    filter: grayscale(100%);
     transition: filter 0.5s;
 }
 
@@ -340,6 +339,58 @@ main {
 
 #box-depoimento5 {
     display: none;
+}
+
+/*-----------SEÇÃO 4 - nossos clientes----------------*/
+#secao4 {
+    height: 382px;
+    border-top: 2px solid #efefef;
+
+}
+
+#p-secao4 {
+    height: 30px;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+#div-logo-parceiros-linha1 {
+    height: 161px;
+}
+
+#div-logo-parceiros-linha2 {
+    height: 161px;
+    margin-top: -35px;
+}
+
+.img-logo-parceiros-linha {
+    margin-right: 117px;
+    margin-top: 53px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+
+    filter: gray;
+    /* IE */
+    transition: filter 0.5s;
+}
+
+.img-logo-parceiros-linha:hover {
+    filter: grayscale(0%);
+}
+
+#img-logotipo-behance {
+    padding-bottom: 9px;
+}
+
+#img-logotipo-puma {
+    float: right;
+    margin-right: 0px;
+    margin-top: 38px;
+}
+
+#img-logotipo-ferrari {
+    float: right;
+    margin-right: 0px;
 }
 
 
