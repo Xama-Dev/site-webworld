@@ -1,7 +1,3 @@
-/*
-$('').slick();
-  */
-
 $('.secao-slider').slick({
   dots: true, //legenda do slider que informa a quantidade de itens e a seleção atual
   infinite: true,

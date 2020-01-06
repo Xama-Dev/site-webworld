@@ -5,13 +5,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.fadeIn {
-    -webkit-animation: fadeIn 1s ease-in-out;
-    -moz-animation: fadeIn 1s ease-in-out;
-    -o-animation: fadeIn 1s ease-in-out;
-    animation: fadeIn 1s ease-in-out;
-}
-
 button:focus {
     outline: none;
 }
