@@ -8,7 +8,10 @@ $('.secao-slider').slick({
   speed: 300,
   slidesToShow: 1, //quantidade de slider mostrados por vez
   adaptiveHeight: false,
-  autoplay: true
+  autoplay: true,
+  arrows: true,
+  pauseOnDotsHover: true,
+  pauseOnFocus: false
 });
 
 
@@ -55,6 +58,47 @@ document.getElementById("a-contactUs").onmouseout = function () {
   document.getElementById("p-contactUs").style.borderBottom = "2px solid #efefef";
 }
 
+/*Função para troca de imagem no onmouseover subseção na seção 3*/
+var btnImacLigado = 0;
+var btnLapisLigado = 1;
+var btnPaisagemLigado = 0;
+
+document.getElementById("btn-secao-imac").onmouseover = function () {
+  document.getElementById("btn-secao-imac").style.cursor = "pointer";
+  if (btnImacLigado == 0) {
+    document.getElementById("btn-secao-imac").style.backgroundImage = "url(./img/imac-azul.png)";
+  }
+
+}
+document.getElementById("btn-secao-imac").onmouseout = function () {
+  if (btnImacLigado == 0) {
+    document.getElementById("btn-secao-imac").style.backgroundImage = "url(./img/imac.png)";
+  }
+}
+
+document.getElementById("btn-secao-lapis").onmouseover = function () {
+  document.getElementById("btn-secao-lapis").style.cursor = "pointer";
+  if (btnLapisLigado == 0) {
+    document.getElementById("btn-secao-lapis").style.backgroundImage = "url(./img/lapis-azul.png)";
+  }
+}
+document.getElementById("btn-secao-lapis").onmouseout = function () {
+  if (btnLapisLigado == 0) {
+    document.getElementById("btn-secao-lapis").style.backgroundImage = "url(./img/lapis.png)";
+  }
+}
+
+document.getElementById("btn-secao-paisagem").onmouseover = function () {
+  document.getElementById("btn-secao-paisagem").style.cursor = "pointer";
+  if (btnPaisagemLigado == 0) {
+    document.getElementById("btn-secao-paisagem").style.backgroundImage = "url(./img/paisagem-azul.png)";
+  }
+}
+document.getElementById("btn-secao-paisagem").onmouseout = function () {
+  if (btnPaisagemLigado == 0) {
+    document.getElementById("btn-secao-paisagem").style.backgroundImage = "url(./img/paisagem.png)";
+  }
+}
 
 /*Função para troca de subseção na seção 3*/
 function trocaSubsecaoImac() {
@@ -62,53 +106,71 @@ function trocaSubsecaoImac() {
   document.getElementById("subsecaoLapis").style.display = "none";
   document.getElementById("subsecaoPaisagem").style.display = "none";
 
-  /*document.getElementById("imac-icone").style.content = "url(./img/imac-azul.png)";
-  document.getElementById("lapis-icone").style.content = "url(./img/lapis.png)";
-  document.getElementById("paisagem-icone").style.content = "url(./img/paisagem.png)";*/
+  document.getElementById("btn-secao-imac").style.backgroundImage = "url(./img/imac-azul.png)";
+  document.getElementById("btn-secao-lapis").style.backgroundImage = "url(./img/lapis.png)";
+  document.getElementById("btn-secao-paisagem").style.backgroundImage = "url(./img/paisagem.png)";
 
-  document.getElementById("conteiner-img-texto-secao2-esquerda").style.marginTop = "120px";
-  document.getElementById("conteiner-img-texto-secao2-central").style.marginTop = "";
-  document.getElementById("conteiner-img-texto-secao2-direita").style.marginTop = "";
+  document.getElementById("conteiner-img-texto-secao1-esquerda").style.marginTop = "85px";
+  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "";
+  document.getElementById("conteiner-img-texto-secao1-direita").style.marginTop = "";
 
-  document.getElementById("indicador-da-seção").style.marginRight = "665px";
+  document.getElementById("indicador-da-seção").style.marginLeft = "12%";
+
+  if (btnImacLigado == 0) {
+    btnImacLigado = 1;
+    btnLapisLigado = 0;
+    btnPaisagemLigado = 0;
+  }
 }
-document.getElementById("imac-icone").addEventListener("click", trocaSubsecaoImac);
+document.getElementById("btn-secao-imac").addEventListener("click", trocaSubsecaoImac);
 
 function trocaSubsecaoLapis() {
   document.getElementById("subsecaoLapis").style.display = "block";
   document.getElementById("subsecaoImac").style.display = "none";
   document.getElementById("subsecaoPaisagem").style.display = "none";
 
-  /*document.getElementById("lapis-icone").style.content = "url(./img/lapis-azul.png)";
-  document.getElementById("paisagem-icone").style.content = "url(./img/paisagem.png)";
-  document.getElementById("imac-icone").style.content = "url(./img/imac.png)";*/
+  document.getElementById("btn-secao-lapis").style.backgroundImage = "url(./img/lapis-azul.png)";
+  document.getElementById("btn-secao-paisagem").style.backgroundImage = "url(./img/paisagem.png)";
+  document.getElementById("btn-secao-imac").style.backgroundImage = "url(./img/imac.png)";
 
-  document.getElementById("conteiner-img-texto-secao2-central").style.marginTop = "120px";
-  document.getElementById("conteiner-img-texto-secao2-direita").style.marginTop = "";
-  document.getElementById("conteiner-img-texto-secao2-esquerda").style.marginTop = "";
+  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "85px";
+  document.getElementById("conteiner-img-texto-secao1-direita").style.marginTop = "";
+  document.getElementById("conteiner-img-texto-secao1-esquerda").style.marginTop = "";
 
-  document.getElementById("indicador-da-seção").style.marginRight = "";
+  document.getElementById("indicador-da-seção").style.marginLeft = "";
+
+  if (btnLapisLigado == 0) {
+    btnLapisLigado = 1;
+    btnImacLigado = 0;
+    btnPaisagemLigado = 0;
+  }
 }
-document.getElementById("lapis-icone").addEventListener("click", trocaSubsecaoLapis);
+document.getElementById("btn-secao-lapis").addEventListener("click", trocaSubsecaoLapis);
 
 function trocaSubsecaoPaisagem() {
   document.getElementById("subsecaoPaisagem").style.display = "block";
   document.getElementById("subsecaoImac").style.display = "none";
   document.getElementById("subsecaoLapis").style.display = "none";
 
-  /*document.getElementById("paisagem-icone").style.content = "url(./img/paisagem-azul.png)";
-  document.getElementById("imac-icone").style.content = "url(./img/imac.png)";
-  document.getElementById("lapis-icone").style.content = "url(./img/lapis.png)";*/
+  document.getElementById("btn-secao-paisagem").style.backgroundImage = "url(./img/paisagem-azul.png)";
+  document.getElementById("btn-secao-imac").style.backgroundImage = "url(./img/imac.png)";
+  document.getElementById("btn-secao-lapis").style.backgroundImage = "url(./img/lapis.png)";
 
-  document.getElementById("conteiner-img-texto-secao2-direita").style.marginTop = "120px"
-  document.getElementById("conteiner-img-texto-secao2-esquerda").style.marginTop = "";
-  document.getElementById("conteiner-img-texto-secao2-central").style.marginTop = "";
+  document.getElementById("conteiner-img-texto-secao1-direita").style.marginTop = "85px"
+  document.getElementById("conteiner-img-texto-secao1-esquerda").style.marginTop = "";
+  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "";
 
-  document.getElementById("indicador-da-seção").style.marginRight = "-665px";
+  document.getElementById("indicador-da-seção").style.marginLeft = "78%";
+
+  if (btnPaisagemLigado == 0) {
+    btnPaisagemLigado = 1;
+    btnLapisLigado = 0;
+    btnImacLigado = 0;
+  }
 }
-document.getElementById("paisagem-icone").addEventListener("click", trocaSubsecaoPaisagem);
+document.getElementById("btn-secao-paisagem").addEventListener("click", trocaSubsecaoPaisagem);
 
 function setMarginTop() {
-  document.getElementById("conteiner-img-texto-secao2-central").style.marginTop = "120px";
+  document.getElementById("conteiner-img-texto-secao1-central").style.marginTop = "85px";
 }
 window.addEventListener("load", setMarginTop);

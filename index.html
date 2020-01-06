@@ -2,30 +2,32 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Primeira página - Projeto Atual</title>
+    <title>Home - Projeto versão.5</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- HEADER: Logotipo, icones redes sociais-->
     <header class="header">
-        <div class="content-header">
-            <div class="logo-header">
-                <img src="img/logo.png">
-            </div>
+        <div class="conteiner-header">
+            <a href="">
+                <img id="logo-header" src="img/logo.png" alt="logotipo WebWorld" title="WebWorld">
+            </a>
+
             <div class="icones-redesSociais-header">
-                <a href="">
-                    <img src="./img/rss.png">
+                <a href="https://pt.wikihow.com/Criar-um-Feed-RSS" target="_blank">
+                    <img src="./img/rss.png" alt="logotipo RSS" title="feed RSS">
                 </a>
-                <a href="">
-                    <img src="./img/face.png">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./img/face.png" alt="logotipo facebook" title="Facebook">
                 </a>
-                <a href="">
-                    <img src="./img/tw.png">
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="./img/tw.png" alt="logotipo twetter" title="twetter">
                 </a>
-                <a href="">
-                    <img src="./img/linkedin.png">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="./img/linkedin.png" alt="logotipo linkeIn" title="LinkedIn">
                 </a>
             </div>
         </div>
@@ -51,46 +53,39 @@
     <!-- SLIDER -->
     <div class="secao-slider">
         <img src="./img/slider.png" alt="Ponte golden gate">
-        <img src="./img/slider.png" alt="Ponte golden gate">
-        <img src="./img/slider.png" alt="Ponte golden gate">
-        <img src="./img/slider.png" alt="Ponte golden gate">
+        <img src="./img/slider2.png" alt="Ferrovia">
+        <img src="./img/slider3.png" alt="montanha">
+        <img src="./img/slider4.png" alt="Ponte golden gate">
     </div>
 
-    <!-- SEÇÃO 2 -->
-    <div id="secao2" class="texto-destaque">
+    <!-- SEÇÃO 1 -->
+    <div id="secao1">
 
-        <div class="content1-secao2">
+        <div class="conteiner1-secao1">
             <h1>Lorem Ipsum is <strong>simply dummy</strong> of the printing.</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make atype specimen book.<br>
-                It has survived not only five centuries.</p>
+                scrambled it to make atype specimen book. It has survived not only five centuries.</p>
         </div>
 
-        <div class="content2-secao2">
-            <div class="conteiner-img-texto-secao2" id="conteiner-img-texto-secao2-esquerda">
-                <img src="./img/imac.png" alt="computador icone" class="tamanho-iamgem-c2" id="imac-icone">
-                <h3><b>Lorem Ipsum</b> is simply</h3>
+        <div class="conteiner2-secao1">
+            <div class="conteiner-img-texto-secao1" id="conteiner-img-texto-secao1-esquerda">
+                <button id="btn-secao-imac" class="btn-troca-secao"></button>
+                <h4><b>Lorem Ipsum</b> is simply</h4>
                 <p class="subtexto-img">Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                </p>
+                    industry. </p>
             </div>
-            <div class="conteiner-img-texto-secao2" id="conteiner-img-texto-secao2-central">
-                <img src="./img/lapis.png" alt="lapis icone" class="tamanho-iamgem-c2" id="lapis-icone">
-                <h3><b>Lorem Ipsum</b> is simply</h3>
+            <div class="conteiner-img-texto-secao1" id="conteiner-img-texto-secao1-central">
+                <button id="btn-secao-lapis" class="btn-troca-secao"></button>
+                <h4><b>Lorem Ipsum</b> is simply</h4>
                 <p class="subtexto-img">Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                </p>
+                    industry. </p>
             </div>
-            <div class="conteiner-img-texto-secao2" id="conteiner-img-texto-secao2-direita">
-                <img src="./img/paisagem.png" alt="paisagem icone" class="tamanho-iamgem-c2" id="paisagem-icone">
-                <h3><b>Lorem Ipsum</b> is simply</h3>
+            <div class="conteiner-img-texto-secao1" id="conteiner-img-texto-secao1-direita">
+                <button id="btn-secao-paisagem" class="btn-troca-secao"></button>
+                <h4><b>Lorem Ipsum</b> is simply</h4>
                 <p class="subtexto-img">Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                </p>
+                    industry. </p>
             </div>
 
         </div>
@@ -98,8 +93,9 @@
             <img src="./img/indicador.png" alt="indicador" id="indicador-da-seção">
         </div>
     </div>
-    <!-- SEÇÃO 3 -->
-    <div id="secao3">
+
+    <!-- SEÇÃO 2 -->
+    <div id="secao2">
 
         <div class="subsecao" id="subsecaoLapis">
             <div class="linha1-subsecao">
@@ -213,6 +209,95 @@
         </div>
 
     </div>
+
+    <!-- SEÇÃO 3 -->
+    <section class="secao3">
+        <div class="conteiner-secao3">
+            <p>Nossos clientes:</p>
+            <div class="div-logo-parceiros-linha1">
+                <a id="link-logotipo-dribbble" href="https://dribbble.com/" target="_blank"><img
+                        id="img-logotipo-dribbble" src="./img/logo-parceiro1.png" alt="logotipo dribbble"
+                        title="Dribbble"></a>
+                <a id="link-logotipo-leopardsMedia" href="https://www.leopardmediagroup.com/" target="_blank"><img
+                        id="img-logotipo-leopardsMedia" src="./img/logo-parceiro2.png" alt="logotipo leopards media"
+                        title="Leopards media"></a>
+                <a id="link-logotipo-behance" href="https://www.behance.net/" target="_blank"><img
+                        id="img-logotipo-behance" src="./img/logo-parceiro3.png" alt="logotipo behance"
+                        title="Behance"></a>
+                <a id="link-logotipo-puma" href="https://us.puma.com/" target="_blank"><img id="img-logotipo-puma"
+                        src="./img/logo-parceiro4.png" alt="logotipo puma" title="Puma"></a>
+            </div>
+            <div class="div-logo-parceiros-linha2">
+                <a id="link-logotipo-b2w" href="https://ri.b2w.digital/" target="_blank"><img id="img-logotipo-b2w"
+                        src="./img/logo-parceiro5.png" alt="logotipo b2w" title="B2w Digital"></a>
+                <a id="link-logotipo-netshoes" href="https://www.netshoes.com.br/" target="_blank"><img
+                        id="img-logotipo-netshoes" src="./img/logo-parceiro6.png" alt="logotipo netshoes"
+                        title="Netshoes"></a>
+                <a id="link-logotipo-adidas" href="https://www.adidas.com.br/" target="_blank"><img
+                        id="img-logotipo-adidas" src="./img/logo-parceiro7.png" alt="logotipo Adidas"
+                        title="Adidas"></a>
+                <a id="link-logotipo-ferrari" href="https://www.ferrari.com/" target="_blank"><img
+                        id="img-logotipo-ferrari" src="./img/logo-parceiro8.png" alt="logotipo ferrari"
+                        title="Ferrari"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER DA PÁGINA-->
+    <footer id="footer1-da-pagina">
+        <div class="footer1-conteiner-line">
+            <div id="bloco1" class="bloco-imagem-texto-footer1">
+                <h3>Populr Post</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                <p id="data-post">25-September 2013</p>
+                <hr>
+                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                <p id="data-post">25-September 2013</p>
+            </div>
+            <div id="bloco2" class="bloco-imagem-texto-footer1">
+                <h3>Tags</h3>
+                <p>apps <span>blog</span> blogroll coda concert <span>daily design</span> develop dialog
+                    drinks gallery holiday icon <span>illustration</span> ipad iphone journal
+                    <span>jquery</span> label link marketing photo <span>profession</span> quotation
+                    recipes typography <span>video</span></p>
+            </div>
+            <div id="bloco3" class="bloco-imagem-texto-footer1">
+                <h3>A little about us</h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, even slightly believable.
+                    <br><br>
+                    If you are going to use a passage of Lorem Ipsum, you need to be .</p>
+            </div>
+            <div id="bloco4" class="bloco-imagem-texto-footer1">
+                <h3>Get in touch</h3>
+                <p>Lorem Ipsum is of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since.<br><br></p>
+                <p id="adress" class="p-contato">Texas, US</p>
+                <p id="email" class="p-contato">email@email.com</p>
+                <p id="tel" class="p-contato"> 890-09880-45590</p>
+            </div>
+        </div>
+
+    </footer>
+    <footer id="footer2-da-pagina">
+        <div class="footer2-conteiner-line">
+            <p>© 2013 Web world. All rights reserved. Theme by cssautther</p>
+            <div class="icones-redesSociais-footer">
+                <a href="https://pt.wikihow.com/Criar-um-Feed-RSS" target="_blank">
+                    <img src="./img/rss.png" alt="logotipo RSS" title="feed RSS">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./img/face.png" alt="logotipo facebook" title="Facebook">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="./img/tw.png" alt="logotipo twetter" title="twetter">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="./img/linkedin.png" alt="logotipo linkeIn" title="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <!--Biblioteca slick slider-->
     <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
