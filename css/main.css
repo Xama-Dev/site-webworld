@@ -13,72 +13,6 @@ a {
     text-decoration: none;
 }
 
-.alinhamento-vertical {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-}
-
-.largura-100porcento {
-    width: 100%;
-}
-
-.altura-100porcento {
-    height: 100%;
-}
-
-.grid-largura-padrão {
-    width: 880px;
-}
-
-.cor-texto-cinza-padrão {
-    color: #999999;
-}
-
-.cor-texto-branco-padrão {
-    color: white;
-}
-
-.cor-strong-padrão {
-    color: #666666;
-}
-
-.tamanho-texto-pequeno-13px {
-    font-size: 13px;
-}
-
-.tamanho-texto-medio-15px {
-    font-size: 15px;
-}
-
-.background-color-cinzaEscuro-padrão {
-    background-color: #333333;
-}
-
-.margin-0-auto {
-    margin: 0 auto;
-}
-
-.float-right {
-    float: right;
-}
-
-.float-left {
-    float: left;
-}
-
-.text-align-center {
-    text-align: center;
-}
-
-.largura-31porcento {
-    width: 31%;
-}
-
-.display-flex {
-    display: flex;
-}
 
 /*-------HEADER: Logotipo, icones redes sociais-------*/
 #header {
@@ -136,8 +70,9 @@ a {
     background-image: url('../img/lupa.png');
     background-repeat: no-repeat;
     background-position: 96%;
-    border: 1px solid #cccccc;
+    border: 0.2px solid #cccccc;
 }
+
 
 /*----------------SLIDER--------------------------*/
 .secao-slider:hover {

@@ -13,60 +13,14 @@ a {
     text-decoration: none;
 }
 
-main {
-    height: 1500PX;
+input:focus {
+    outline: none;
 }
 
-#p-main {
-    text-align: center;
+textarea:focus {
+    outline: none;
 }
 
-.largura-100porcento {
-    width: 100%;
-}
-
-.background-color-cinzaEscuro-padrão {
-    background-color: #333333;
-}
-
-.grid-largura-padrão {
-    width: 880px;
-}
-
-.altura-100porcento {
-    height: 100%;
-}
-
-.margin-0-auto {
-    margin: 0 auto;
-}
-
-.alinhamento-vertical {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-}
-
-.float-right {
-    float: right;
-}
-
-.float-left {
-    float: left;
-}
-
-.cor-texto-branco-padrão {
-    color: white;
-}
-
-.tamanho-texto-pequeno-13px {
-    font-size: 13px;
-}
-
-.tamanho-texto-medio-15px {
-    font-size: 15px;
-}
 
 /*-------HEADER: Logotipo, icones redes sociais-------*/
 #header {
@@ -125,6 +79,95 @@ main {
     background-repeat: no-repeat;
     background-position: 96%;
     border: 1px solid #cccccc;
+}
+
+/*-------SEÇÃO entre em contato---------*/
+#getting-in-touch {
+    height: 800px;
+}
+
+.section-left {
+    height: 800px;
+    width: 49%;
+    display: inline-block;
+}
+
+.section-right {
+    height: 800px;
+    width: 49%;
+    display: inline-block;
+}
+
+.conteiner-section-left {
+    width: 440px;
+    float: right;
+    margin-top: 60px;
+    margin-right: 40px;
+}
+
+.input-form-contactUs {
+    border: none;
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.text-area-form-contactUs {
+    border: none;
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 45px;
+    font-family: inherit;
+}
+
+.label-form-contactUs {
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.input-line {
+    margin-top: 15px;
+}
+
+#btn-submit-form {
+    width: 150px;
+    height: 55px;
+    border: none;
+    background-color: #00cccc;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.conteiner-section-right {
+    width: 440px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.info-contact-line {
+    margin-left: 20px;
+    width: 420px;
+    margin-top: 20px;
+}
+
+.info-contact-line p {
+    margin-left: 10px;
+}
+
+#p-adress {
+    width: 390px;
+}
+
+#map-localization-company {
+    height: 750px;
 }
 
 /*-------FOOTER 1 DA PÁGINA---------*/
@@ -230,6 +273,7 @@ main {
 #bloco4 {
     margin-left: 30px;
 }
+
 
 /*-------FOOTER 2 DA PÁGINA---------*/
 #footer2-da-pagina {

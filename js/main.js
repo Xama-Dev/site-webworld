@@ -39,6 +39,7 @@ document.getElementById("a-pages").onmouseover = function () {
 }
 document.getElementById("a-pages").onmouseout = function () {
   document.getElementById("p-pages").style.borderBottom = "2px solid #efefef";
+
 }
 
 document.getElementById("a-blog").onmouseover = function () {
