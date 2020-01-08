@@ -1,7 +1,6 @@
 /*----------------SLIDER--------------------------*/
-.secao-slider:hover {
-    cursor: pointer;
-    transition: content 0.5s;
+.secao-slider {
+    transition: translate3d 1s;
 }
 
 .slick-list {
@@ -74,9 +73,12 @@ ul.slick-dots {
 
 
 /*-------------SEÇÃO 1----------------*/
+#section1 {
+    height: fit-content;
+}
 
 .conteiner1-secao1 {
-    margin-top: 50px;
+    margin: 100px auto 0px auto;
 }
 
 .conteiner1-secao1 h1 {
@@ -87,11 +89,12 @@ ul.slick-dots {
 .conteiner2-secao1 {
     height: 290px;
     display: flex;
-    margin-top: 50px;
+    margin: 50px auto 0px auto;
 }
 
 .conteiner-img-texto-secao1 {
     transition: margin-top 0.5s;
+    width: 31%;
 }
 
 .btn-troca-secao {

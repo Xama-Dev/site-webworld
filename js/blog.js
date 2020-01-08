@@ -5,7 +5,9 @@ $(document).ready(function () {
         dots: true,
         autoplay: true,
         speed: 200,
-        arrows: true
+        arrows: true,
+        pauseOnFocus: false,
+        pauseOnDotsHover: true
     });
 });
 
