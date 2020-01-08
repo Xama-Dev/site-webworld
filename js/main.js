@@ -10,49 +10,84 @@ $('.secao-slider').slick({
   pauseOnFocus: false
 });
 
-
-/*Estiliza os links do menu nav*/
-
-document.getElementById("a-home").onmouseover = function () {
-  document.getElementById("p-home").style.borderBottom = "2px solid #00cccc";
+/* MENU NAVEGAÇÃO estilização dos links*/
+var aHome = document.getElementById("a-home");
+var liHome = document.getElementById("li-home");
+aHome.onmouseover = function () {
+  liHome.style.borderBottom = "2px solid #00cccc"
+  aHome.style.color = "#00cccc";
 }
-document.getElementById("a-home").onmouseout = function () {
-  document.getElementById("p-home").style.borderBottom = "2px solid #efefef";
-}
-
-document.getElementById("a-aboutUs").onmouseover = function () {
-  document.getElementById("p-aboutUs").style.borderBottom = "2px solid #00cccc";
-}
-document.getElementById("a-aboutUs").onmouseout = function () {
-  document.getElementById("p-aboutUs").style.borderBottom = "2px solid #efefef";
+aHome.onmouseout = function () {
+  liHome.style.borderBottom = "2px solid transparent"
+  aHome.style.color = "#999999";
 }
 
-document.getElementById("a-service").onmouseover = function () {
-  document.getElementById("p-service").style.borderBottom = "2px solid #00cccc";
+var aAboutUs = document.getElementById("a-aboutUs");
+var liAboutUs = document.getElementById("li-aboutUs");
+aAboutUs.onmouseover = function () {
+  liAboutUs.style.borderBottom = "2px solid #00cccc"
+  aAboutUs.style.color = "#00cccc";
 }
-document.getElementById("a-service").onmouseout = function () {
-  document.getElementById("p-service").style.borderBottom = "2px solid #efefef";
-}
-
-document.getElementById("a-pages").onmouseover = function () {
-  document.getElementById("p-pages").style.borderBottom = "2px solid #00cccc";
-}
-document.getElementById("a-pages").onmouseout = function () {
-  document.getElementById("p-pages").style.borderBottom = "2px solid #efefef";
-
+aAboutUs.onmouseout = function () {
+  liAboutUs.style.borderBottom = "2px solid transparent"
+  aAboutUs.style.color = "#999999";
 }
 
-document.getElementById("a-blog").onmouseover = function () {
-  document.getElementById("p-blog").style.borderBottom = "2px solid #00cccc";
+var aServices = document.getElementById("a-services");
+var liServices = document.getElementById("li-services");
+aServices.onmouseover = function () {
+  liServices.style.borderBottom = "2px solid #00cccc"
+  aServices.style.color = "#00cccc";
 }
-document.getElementById("a-blog").onmouseout = function () {
-  document.getElementById("p-blog").style.borderBottom = "2px solid #efefef";
+aServices.onmouseout = function () {
+  liServices.style.borderBottom = "2px solid transparent"
+  aServices.style.color = "#999999";
 }
-document.getElementById("a-contactUs").onmouseover = function () {
-  document.getElementById("p-contactUs").style.borderBottom = "2px solid #00cccc";
+
+var aPages = document.getElementById("a-pages");
+var submenuPages = document.getElementById("submenu-pages");
+var liPages = document.getElementById("li-pages");
+aPages.onmouseover = function () {
+  liPages.style.borderBottom = "2px solid #00cccc"
+  aPages.style.color = "#00cccc";
+  submenuPages.style.visibility = "visible";
+  submenuPages.style.opacity = "1";
 }
-document.getElementById("a-contactUs").onmouseout = function () {
-  document.getElementById("p-contactUs").style.borderBottom = "2px solid #efefef";
+submenuPages.onmouseover = function () {
+  submenuPages.style.visibility = "visible";
+  submenuPages.style.opacity = "1";
+}
+aPages.onmouseout = function () {
+  liPages.style.borderBottom = "2px solid transparent"
+  aPages.style.color = "#999999";
+  submenuPages.style.visibility = "hidden";
+  submenuPages.style.opacity = "0";
+}
+submenuPages.onmouseout = function () {
+  submenuPages.style.visibility = "hidden";
+  submenuPages.style.opacity = "0";
+}
+
+var aBlog = document.getElementById("a-blog");
+var liBlog = document.getElementById("li-blog");
+aBlog.onmouseover = function () {
+  liBlog.style.borderBottom = "2px solid #00cccc"
+  aBlog.style.color = "#00cccc";
+}
+aBlog.onmouseout = function () {
+  liBlog.style.borderBottom = "2px solid transparent"
+  aBlog.style.color = "#999999";
+}
+
+var aContacUs = document.getElementById("a-contactUs");
+var liContactUs = document.getElementById("li-contactUs");
+aContacUs.onmouseover = function () {
+  liContactUs.style.borderBottom = "2px solid #00cccc"
+  aContacUs.style.color = "#00cccc";
+}
+aContacUs.onmouseout = function () {
+  liContactUs.style.borderBottom = "2px solid transparent"
+  aContacUs.style.color = "#999999";
 }
 
 /*Função para troca de imagem no onmouseover subseção na seção 3*/
