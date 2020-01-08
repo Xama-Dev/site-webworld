@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/blog.css">
     <link rel="stylesheet" type="text/css" href="./css/fadeIn.css">
+    <link rel="stylesheet" type="text/css" href="./css/header-and-menu-navigation.css">
+    <link rel="stylesheet" type="text/css" href="./css/generic-classes.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css">
     <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -41,14 +44,29 @@
     <!-- MENU NAVEGAÇÃO: Links para as sessões do site, campo de busca-->
     <nav id="menu-navegacao" class="largura-100porcento">
         <div class="grid-largura-padrão altura-100porcento margin-0-auto">
-            <div class="menu alinhamento-vertical altura-100porcento">
-                <p id="p-home"><a id="a-home" href="index.html">Home</a></p>
-                <p id="p-aboutUs"><a id="a-aboutUs" href="aboutUs.html">About Us</a></p>
-                <p id="p-service"><a id="a-service" href="services.html">Services</a></p>
-                <p id="p-pages"><a id="a-pages" href="pages.html">Pages</a></p>
-                <p id="p-blog"><a id="a-blog" href="blog.html">Blog</a></p>
-                <p id="p-contactUs"><a id="a-contactUs" href="contactUs.html">Contact Us</a></p>
-            </div>
+            <ul class="menu">
+                <li id="li-home" class="li-menu"><a id="a-home" class="a-menu" href="index.html">HOME</a></li>
+                <li id="li-aboutUs" class="li-menu"><a id="a-aboutUs" class="a-menu" href="aboutUs.html">ABOUT US</a>
+                </li>
+                <li id="li-services" class="li-menu"><a id="a-services" class="a-menu" href="services.html">SERVICES</a>
+                <li id="li-pages" class="li-menu" class="altura-100porcento">
+                    <a id="a-pages" class="a-menu" href="">PAGES</a>
+                    <ul id="submenu-pages">
+                        <li class="li-submenu"><a class="a-submenu" href="service-page-01.html">Client value</a></li>
+                        <li class="li-submenu"><a class="a-submenu" href="service-page-02.html">Reliable service</a>
+                        </li>
+                        <li class="li-submenu"><a class="a-submenu" href="service-page-03.html">Innovate at work</a>
+                        </li>
+                        <li class="li-submenu"><a class="a-submenu" href="service-page-04.html">Fast SSD Servers</a>
+                        </li>
+                        <li class="li-submenu"><a class="a-submenu" href="service-page-05.html">Constant Update</a></li>
+                        <li class="li-submenu"><a class="a-submenu" href="service-page-06.html">Largest Network</a></li>
+                    </ul>
+                </li class="">
+                <li id="li-blog" class="li-menu"><a id="a-blog" class="a-menu" href="blog.html">BLOG</a></li>
+                <li id="li-contactUs" class="li-menu"><a id="a-contactUs" class="a-menu" href="contactUs.html">CONTACT
+                        US</a></li>
+            </ul>
             <div class="alinhamento-vertical float-right">
                 <input id="campo-de-busca" placeholder="Sourch Something" type="text">
             </div>
@@ -340,6 +358,7 @@
     <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript" src="./js/blog.js"></script>
+    <script type="text/javascript" src="./js/menu-navigation.js"></script>
     <script>
         $(document).ready(function () {
             $('.carrosel-menu').slick({
