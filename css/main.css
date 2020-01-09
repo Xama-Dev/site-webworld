@@ -1,5 +1,5 @@
 /*----------------SLIDER--------------------------*/
-.secao-slider {
+.section-slider {
     transition: translate3d 1s;
 }
 
@@ -77,27 +77,27 @@ ul.slick-dots {
     height: fit-content;
 }
 
-.conteiner1-secao1 {
+.container1-secton1 {
     margin: 100px auto 0px auto;
 }
 
-.conteiner1-secao1 h1 {
+.container1-secton1 h1 {
     text-transform: uppercase;
     font-size: 24px;
 }
 
-.conteiner2-secao1 {
+.container2-secton1 {
     height: 290px;
     display: flex;
     margin: 50px auto 0px auto;
 }
 
-.conteiner-img-texto-secao1 {
+.cotainer-img-text-section1 {
     transition: margin-top 0.5s;
     width: 31%;
 }
 
-.btn-troca-secao {
+.btn-change-subsection {
     width: 80px;
     height: 80px;
     font-size: 0px;
@@ -108,107 +108,107 @@ ul.slick-dots {
 
 }
 
-#indicador-da-secao-esquerda {
+#pointer-subsection-left {
     margin-left: 11%;
     opacity: 0;
     transition: opacity 0.5s;
 }
 
-#indicador-da-secao-central {
+#pointer-subsection-central {
     margin-left: 23%;
     opacity: 1;
     transition: opacity 0.5s;
 }
 
-#indicador-da-secao-direita {
+#pointer-subsection-right {
     margin-left: 23%;
     opacity: 0;
     transition: opacity 0.5s;
 }
 
-#btn-secao-imac {
+#btn-subsection-imac {
     background-image: url(../img/imac.png);
 }
 
-#btn-secao-lapis {
+#btn-subsection-pencil {
     background-image: url(../img/lapis-azul.png);
 }
 
-#btn-secao-paisagem {
+#btn-subsection-landscape {
     background-image: url(../img/paisagem.png);
 }
 
-#conteiner-img-texto-secao1-central {
+#cotainer-img-text-section1-central {
     margin-top: 11%;
 }
 
 /*-----------SEÇÃO 2----------------*/
 
-#secao2 {
+#section2 {
     height: 620px;
     background-color: #efefef;
 }
 
-#subsecaoLapis {
+#subsection-pencil {
     display: block;
 }
 
-#subsecaoImac {
+#subsection-imac {
     display: none;
 }
 
-#subsecaoPaisagem {
+#subsection-landscape {
     display: none;
 }
 
-#linha1-subsecao {
+#line1-subsection {
     display: flex;
 }
 
-#linha2-subsecao {
+#line2-subsection {
     display: flex;
     margin-top: 20px;
 }
 
-.container-imagem-texto-subsecao {
+.box-content-section1-subsection {
     display: inline-block;
     border: 0.5px solid #dedede;
 }
 
-.container-imagem-texto-subsecao p {
+.box-content-section1-subsection p {
     padding: 4%;
     margin: 0px;
 }
 
-.container-imagem-texto-subsecao b {
+.box-content-section1-subsection b {
     line-height: 2;
 }
 
-.tamanho-imagem-subsecao {
+.size-img-subsection {
     width: 100%;
 }
 
 /*-----------SEÇÃO 3 nossos parceiros----------------*/
-#secao3 {
+#section3 {
     height: 382px;
 }
 
-#p-secao3 {
+#p-section3 {
     height: 30px;
     margin: 0px;
     margin-top: 30px;
 }
 
-#div-logo-parceiros-linha1 {
+#container-logo-partners-line1 {
     height: 161px;
 }
 
-#div-logo-parceiros-linha2 {
+#container-logo-partners-line2 {
     height: 161px;
     margin-top: -35px;
 }
 
-.img-logo-parceiros-linha {
+.img-logo-partners {
     margin-right: 117px;
     margin-top: 53px;
     filter: grayscale(100%);
@@ -219,21 +219,21 @@ ul.slick-dots {
     transition: filter 0.5s;
 }
 
-.img-logo-parceiros-linha:hover {
+.img-logo-partners:hover {
     filter: grayscale(0%);
 }
 
-#img-logotipo-behance {
+#img-logo-behance {
     padding-bottom: 9px;
 }
 
-#img-logotipo-puma {
+#img-logo-puma {
     float: right;
     margin-right: 0px;
     margin-top: 38px;
 }
 
-#img-logotipo-ferrari {
+#img-logo-ferrari {
     float: right;
     margin-right: 0px;
 }

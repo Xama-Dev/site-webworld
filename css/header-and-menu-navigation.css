@@ -3,12 +3,12 @@
     height: 50px;
 }
 
-.link-redes-socias-header {
+.links-social-medias-header {
     margin-left: 20px;
 }
 
 /*-------MENU NAVEGAÇÃO-------*/
-#menu-navegacao {
+#navigation-menu {
     border-bottom: 4px solid #efefef;
     height: 60px;
 }
@@ -77,7 +77,7 @@
     height: 42px;
 }
 
-#campo-de-busca {
+#search-field {
     height: 13px;
     padding: 10px;
     background-image: url('../img/lupa.png');

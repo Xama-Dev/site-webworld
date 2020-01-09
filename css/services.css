@@ -1,76 +1,76 @@
 /*------- SEÇÃO 1 - Services, what we do ---------*/
-#secao1 {
+#section1 {
     height: 1720px;
 }
 
-.conteiner-imagem-texto-secao1 {
+.box-content-section1 {
     width: 293px;
     padding: 0px;
     border: 0.5px solid #efefef;
 }
 
-.img-servicos {
+.img-services {
     width: 293px;
 }
 
-#linha1-secao1 {
+#line1-section1 {
     margin-top: 30px;
 
 }
 
-#conteiner-principal-secao1 {
+#container-main-section1 {
     margin-top: 80px;
 }
 
-.altura-especial {
+.special-height {
     height: 267px;
 }
 
-.margin-top-icones {
+.margin-top-icons {
     margin-top: 30px;
 }
 
-.p-serviços {
+.p-services {
     width: 238px;
     margin-left: 25px;
 }
 
-.altura-padrao-secao1 {
+.height-parttner-section1 {
     height: 268px;
 }
 
-#indicador-servico1 {
+#pointer-service1 {
     position: absolute;
     margin-left: 145px;
     margin-top: -138px;
 }
 
-#indicador-servico2 {
+#pointer-service2 {
     position: absolute;
     margin-left: -34px;
     margin-top: 19px;
 }
 
-#indicador-servico3 {
+#pointer-service3 {
     position: absolute;
     margin-left: -174px;
     margin-top: -138px;
 }
 
-#indicador-servico6 {
+#pointer-service6 {
     position: absolute;
     margin-left: -174px;
     margin-top: -138px;
 }
 
-#indicador-servico4 {
+#pointer-service4 {
     position: absolute;
     margin-left: 146px;
     margin-top: -144px;
 
 }
 
-#indicador-servico5 {
+#pointer-service5 {
     position: absolute;
     margin-left: -30px;
     margin-top: 19px;
@@ -78,25 +78,25 @@
 
 /*-------SEÇÃO 2 - Depoimento clientes---------*/
 
-#secao2 {
+#section2 {
     height: 650px;
 }
 
-#conteiner-secao2 {
+#container-section2 {
     float: left;
     margin-top: 50px;
 }
 
-#foto1 {
+#picture1 {
     margin-left: 21%;
 }
 
-#foto3 {
+#picture3 {
     -webkit-filter: none;
     filter: none;
 }
 
-.fotoSecao2 {
+.pictures-section2 {
     border-radius: 50%;
     margin-right: 20px;
     -webkit-filter: grayscale(100%);
@@ -107,7 +107,7 @@
     transition: filter 0.5s;
 }
 
-#indicador-funcionario {
+#pictures-section3 {
     border-right: 2px solid #dddddd;
     height: 30px;
     width: 1px;
@@ -116,47 +116,47 @@
     margin-top: -5px;
 }
 
-.p-box-depoimento {
+.p-box-testimonial {
     width: 710px;
     height: fit-content;
     text-align: center;
     margin: 0 auto;
 }
 
-.abre-aspas {
+.img-open-quotes {
     margin-top: 56px;
 }
 
-.fecha-aspas {
+.img-close-quotes {
     margin-top: -24px;
 }
 
-.box-depoimento {
+.box-testimonial {
     width: 880px;
     padding-top: 65px;
     float: left;
 }
 
-#conteiner-fotos-secao2 {
+#container-pictures-section2 {
     border-bottom: 2px solid #dddddd;
 }
 
-#box-depoimento1 {
+#box-testimonial1 {
     display: none;
 }
 
-#box-depoimento2 {
+#box-testimonial2 {
     display: none;
 }
 
-#box-depoimento3 {
+#box-testimonial3 {
     display: block;
 }
 
-#box-depoimento4 {
+#box-testimonial4 {
     display: none;
 }
 
-#box-depoimento5 {
+#box-testimonial5 {
     display: none;
 }

@@ -1,21 +1,21 @@
-/*-------GRID principal---------*/
-#grid-principal {
+/*-------GRID main---------*/
+#main-grid {
     height: 1900px;
     margin-left: 25%;
 }
 
-#h1-principal {
+#main-h1 {
     margin-left: 126px;
     width: 438px;
 }
 
-#p-principal {
+#main-p {
     margin-left: 126px;
     width: 438px;
     margin-bottom: 20px;
 }
 
-.grid-largura-566 {
+.width-grid-566px {
     width: 566px;
 }
 
@@ -23,13 +23,13 @@
     margin-top: 90px;
 }
 
-.info-do-post {
+.info-of-posts {
     width: 113px;
     position: relative;
     top: -378px;
 }
 
-.img-autor-post {
+.img-author-of-post {
     margin-left: 43px;
     width: 60px;
     border-radius: 50%;
@@ -39,7 +39,7 @@
     background-color: #ff3399;
 }
 
-.p-autor-post {
+.p-of-box-author-post {
     width: fit-content;
     background-color: #ff3399;
     color: white;
@@ -50,43 +50,43 @@
     padding-right: 8px;
 }
 
-.p-dia-post {
+.p-day-of-post {
     margin-left: auto;
 }
 
-.p-data-post {
+.p-date-of-post {
     margin-left: auto;
 }
 
-.p-nome-autor-post {
+.p-name-author-of-post {
     margin: 0px;
     width: fit-content;
     margin-left: auto;
 }
 
-.box-de-noticias {
+.box-of-news {
     margin-left: 10px;
 }
 
-.img-box-de-noticias {
+.img-box-of-news {
     width: 438px;
 }
 
-.p-box-noticias {
+.p-box-of-news {
     width: 438px;
 }
 
-.box-de-noticias2 {
+.box-of-news2 {
     width: 438px;
     margin-top: 50px;
 }
 
-.img-box-de-noticias2 {
+.img-box-of-news2 {
     width: 219px;
     height: 219px;
 }
 
-.p-box-de-noticias2 {
+.p-box-of-news2 {
     width: 200px;
     float: right;
     margin: 0px;
@@ -94,7 +94,7 @@
     color: #999999;
 }
 
-#p2-box-de-noticias2 {
+#p2-box-of-news2 {
     margin-top: -90px;
     color: #ff3399;
     border-left: 3px solid #ff3399;
@@ -178,7 +178,7 @@
 }
 
 /*-------GRID lateral---------*/
-.grid-largura-283 {
+.width-grid-283px {
     width: 233px;
 }
 
@@ -214,30 +214,30 @@
     content: url(../img/lupa-branca.png);
 }
 
-.h3-categoria {
+.h3-category {
     margin: 0px;
     margin-top: 50px;
 }
 
-.categorias {
+.categories {
     width: 233px;
 }
 
-.categoria {
+.category {
     border-bottom: 1px solid #E4EAEC;
 }
 
-.p-categoria {
+.p-category {
     margin-left: 15px;
     transition: color 0.5s;
 }
 
-.p-categoria:hover {
+.p-category:hover {
     cursor: pointer;
     color: #00cccc;
 }
 
-.carrosel {
+.carousel {
     width: 233px;
     margin-top: 100px;
 }
@@ -328,7 +328,7 @@
     background-color: #8260E3 !important;
 }
 
-#assinatura-newsletter {
+#newsletter-signature {
     background-image: url(../img/newsletter.jpg);
     width: 233px;
     height: 380px;

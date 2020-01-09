@@ -1,10 +1,9 @@
 /*-------SEÇÃO 1 - Quem somos---------*/
-
-.conteiner-imagem-texto {
+.box-content-section1 {
     width: 438px;
 }
 
-.conteinerPequeno-imagem-texto {
+.cotainer-img-text-section1 {
     display: inline-block;
     border: 0.5px solid #cccccc;
     margin: 0px;
@@ -13,35 +12,35 @@
     width: 49%;
 }
 
-.conteinerPequeno-imagem-texto img {
+.cotainer-img-text-section1 img {
     margin-left: 25px;
 }
 
-.conteinerPequeno-imagem-texto p {
+.cotainer-img-text-section1 p {
     margin: 0px;
     padding-left: 12px;
 }
 
-#conteinerPequeno-esquerdo {
+#cotainer-img-text-section1-right {
     margin-left: -5px;
 }
 
-#grid-texto-img {
+#container-section1 {
     height: 450px;
 }
 
-#p-conteinerDireito-imagem-texto {
+#p-box-content-section1-right {
     top: 100px;
     margin-left: 30px;
 }
 
 
 /*-------SEÇÃO 2 - Porque nos escolher---------*/
-#secao2 {
+#section2 {
     height: 950px;
 }
 
-.conteiner-imagem-texto-secao2 {
+.container-img-text-section2 {
     height: 300px;
     padding: 18px;
     margin: 0 auto;
@@ -50,45 +49,44 @@
     transition: border 0.5s;
 }
 
-.conteiner-imagem-texto-secao2:hover {
+.container-img-text-section2:hover {
     border: 2px solid #00cccc;
 }
 
-#linha1-secao2 {
-    margin-top: 45px;
-    margin-bottom: 20px;
-
-}
-
-.conteiner-imagem-texto-secao2 img {
+.container-img-text-section2 img {
     margin-top: 30px;
 }
 
-#h1-secao2 {
+#line1-section2 {
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+#h1-section2 {
     margin-top: 50px;
 }
 
 /*-------SEÇÃO 3 - Nossa equipe---------*/
 
-#secao3 {
+#section3 {
     height: 650px;
 }
 
-#conteiner-secao3 {
+#container-section3 {
     float: left;
     margin-top: 50px;
 }
 
-#foto1 {
+#picture1 {
     margin-left: 21%;
 }
 
-#foto3 {
+#picture3 {
     -webkit-filter: none;
     filter: none;
 }
 
-.fotoSecao3 {
+.pictures-section3 {
     border-radius: 50%;
     margin-right: 20px;
     -webkit-filter: grayscale(100%);
@@ -99,7 +97,7 @@
     transition: filter 0.5s;
 }
 
-#indicador-funcionario {
+#pictures-section3 {
     border-right: 2px solid #efefef;
     height: 30px;
     width: 1px;
@@ -108,74 +106,74 @@
     margin-top: -5px;
 }
 
-.p-box-depoimento {
+.p-box-testimonial {
     width: 710px;
     height: fit-content;
     text-align: center;
     margin: 0 auto;
 }
 
-.abre-aspas {
+.img-open-quotes {
     margin-top: 56px;
 }
 
-.fecha-aspas {
+.img-close-quotes {
     margin-top: -24px;
 }
 
-.box-depoimento {
+.box-testimonial {
     width: 880px;
     padding-top: 65px;
     float: left;
 }
 
-#conteiner-fotos-secao3 {
+#container-pictures-section3 {
     border-bottom: 2px solid #efefef;
 }
 
-#box-depoimento1 {
+#box-testimonial1 {
     display: none;
 }
 
-#box-depoimento2 {
+#box-testimonial2 {
     display: none;
 }
 
-#box-depoimento3 {
+#box-testimonial3 {
     display: block;
 }
 
-#box-depoimento4 {
+#box-testimonial4 {
     display: none;
 }
 
-#box-depoimento5 {
+#box-testimonial5 {
     display: none;
 }
 
 /*-----------SEÇÃO 4 - nossos clientes----------------*/
-#secao4 {
+#section4 {
     height: 382px;
     border-top: 2px solid #efefef;
 
 }
 
-#p-secao4 {
+#p-section4 {
     height: 30px;
     margin: 0px;
     margin-top: 30px;
 }
 
-#div-logo-parceiros-linha1 {
+#container-logo-clients-line1 {
     height: 161px;
 }
 
-#div-logo-parceiros-linha2 {
+#container-logo-clients-line2 {
     height: 161px;
     margin-top: -35px;
 }
 
-.img-logo-parceiros-linha {
+.img-logo-clients {
     margin-right: 117px;
     margin-top: 53px;
     filter: grayscale(100%);
@@ -186,21 +184,21 @@
     transition: filter 0.5s;
 }
 
-.img-logo-parceiros-linha:hover {
+.img-logo-clients:hover {
     filter: grayscale(0%);
 }
 
-#img-logotipo-behance {
+#img-logo-behance {
     padding-bottom: 9px;
 }
 
-#img-logotipo-puma {
+#img-logo-puma {
     float: right;
     margin-right: 0px;
     margin-top: 38px;
 }
 
-#img-logotipo-ferrari {
+#img-logo-ferrari {
     float: right;
     margin-right: 0px;
 }

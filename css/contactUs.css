@@ -15,7 +15,7 @@
     display: inline-block;
 }
 
-.conteiner-section-left {
+.container-section-left {
     width: 440px;
     float: right;
     margin-top: 60px;
@@ -62,7 +62,7 @@
     font-weight: 600;
 }
 
-.conteiner-section-right {
+.container-section-right {
     width: 440px;
     float: left;
     margin-top: 60px;

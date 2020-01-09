@@ -1,21 +1,21 @@
-/*-------GRID principal---------*/
-#grid-principal {
+/*-------GRID main---------*/
+#main-grid {
     height: 1810px;
     margin-left: 25%;
 }
 
-#h1-principal {
+#main-h1 {
     margin-left: 126px;
     width: 438px;
 }
 
-#p-principal {
+#main-p {
     margin-left: 126px;
     width: 438px;
     margin-bottom: 20px;
 }
 
-.grid-largura-566 {
+.width-grid-566px {
     width: 566px;
 }
 
@@ -27,19 +27,19 @@
     margin-top: 90px;
 }
 
-.info-do-post-twitter {
+.info-of-post-twetter {
     width: 113px;
     position: relative;
     top: 50px;
 }
 
-.info-do-post {
+.info-of-posts {
     width: 113px;
     position: relative;
     top: -222px;
 }
 
-.img-autor-post {
+.img-author-of-post {
     margin-left: 43px;
     width: 60px;
     border-radius: 50%;
@@ -49,7 +49,7 @@
     background-color: #ff3399;
 }
 
-.p-autor-post {
+.p-of-box-author-post {
     width: fit-content;
     background-color: #ff3399;
     color: white;
@@ -60,25 +60,25 @@
     padding-right: 8px;
 }
 
-.p-dia-post {
+.p-day-of-post {
     margin-left: auto;
 }
 
-.p-data-post {
+.p-date-of-post {
     margin-left: auto;
 }
 
-.p-nome-autor-post {
+.p-name-author-of-post {
     margin: 0px;
     width: fit-content;
     margin-left: auto;
 }
 
-.box-de-noticias {
+.box-of-news {
     margin-left: 10px;
 }
 
-.box-de-noticia-twitter {
+.box-of-news-twitter {
     background-color: #8260E3;
     padding: 20px;
     width: 398px;
@@ -87,19 +87,19 @@
 
 }
 
-.img-box-de-noticias {
+.img-box-of-news {
     width: 438px;
 }
 
-.h1-box-noticias {
+.h1-box-of-news {
     width: 438px;
 }
 
-.p-box-noticias {
+.p-box-of-news {
     width: 438px;
 }
 
-.p-box-noticias-twitter {
+.p-box-of-news-twitter {
     width: 398px;
     font-size: 18px;
     margin-top: 25px;
@@ -120,7 +120,7 @@
     cursor: pointer;
 }
 
-.seletor-pagina-blog {
+.selector-page-blog {
     display: inline-block;
     border: 0.5px solid #cdcdcd;
     border-radius: 100%;
@@ -136,22 +136,22 @@
 }
 
 
-.seletor-pagina-blog:hover {
+.selector-page-blog:hover {
     border: 0.5px solid #00cccc;
     background-color: #00cccc;
     color: white;
 }
 
-.menu-paginas-blog {
+.menu-pages-blog {
     margin-left: 290px;
 }
 
-.carrosel-menu {
+.carousel-menu {
     width: 150px;
     margin-top: 150px;
 }
 
-.carrosel-menu .slick-next {
+.carousel-menu .slick-next {
     background-color: #00cccc !important;
     border-radius: 100% !important;
     width: 40px !important;
@@ -160,13 +160,13 @@
     margin-left: -31px;
 }
 
-.carrosel-menu .slick-next:before {
+.carousel-menu .slick-next:before {
     top: 5px !important;
     top: 8px !important;
     left: 15px !important;
 }
 
-.carrosel-menu .slick-prev {
+.carousel-menu .slick-prev {
     background-color: #00cccc !important;
     border-radius: 100% !important;
     width: 40px !important;
@@ -175,7 +175,7 @@
     margin-left: -231px;
 }
 
-.carrosel-menu .slick-prev:before {
+.carousel-menu .slick-prev:before {
     top: 5px !important;
     top: 8px !important;
     left: 15px !important;
@@ -183,7 +183,7 @@
 
 
 /*-------GRID lateral---------*/
-.grid-largura-283 {
+.width-grid-283px {
     width: 233px;
 }
 
@@ -219,30 +219,30 @@
     content: url(../img/lupa-branca.png);
 }
 
-.h3-categoria {
+.h3-category {
     margin: 0px;
     margin-top: 50px;
 }
 
-.categorias {
+.categories {
     width: 233px;
 }
 
-.categoria {
+.category {
     border-bottom: 1px solid #E4EAEC;
 }
 
-.p-categoria {
+.p-category {
     margin-left: 15px;
     transition: color 0.5s;
 }
 
-.p-categoria:hover {
+.p-category:hover {
     cursor: pointer;
     color: #00cccc;
 }
 
-.carrosel {
+.carousel {
     width: 233px;
     margin-top: 100px;
 }
@@ -333,7 +333,7 @@
     background-color: #8260E3 !important;
 }
 
-#assinatura-newsletter {
+#newsletter-signature {
     background-image: url(../img/newsletter.jpg);
     width: 233px;
     height: 380px;
