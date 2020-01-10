@@ -1,5 +1,4 @@
 /*troca fundo box servicços*/
-
 document.getElementById("link1-linha1").onmouseover = function () {
     document.getElementById("link1-linha1").style.backgroundColor = "#00cccc";
     document.getElementById("link1-linha1").style.border = "0.5px solid #00cccc";
@@ -119,178 +118,190 @@ document.getElementById("link6-linha4").onmouseout = function () {
 }
 
 /*colori pictures no onmouseover secao 2*/
-var picture1Desligado = true;
-var picture2Desligado = true;
-var picture3Desligado = false;
-var picture4Desligado = true;
-var picture5Desligado = true;
+var picture1Off = true;
+var picture2Off = true;
+var picture3Off = false;
+var picture4Off = true;
+var picture5Off = true;
 
-document.getElementById("picture1").onmouseover = function () {
-    document.getElementById("picture1").style.cursor = "pointer";
-    if (picture1Desligado) {
-        document.getElementById("picture1").style.filter = "none";
+var picture1 = document.getElementById("picture1");
+var picture2 = document.getElementById("picture2");
+var picture3 = document.getElementById("picture3");
+var picture4 = document.getElementById("picture4");
+var picture5 = document.getElementById("picture5");
+
+picture1.onmouseover = function () {
+    picture1.style.cursor = "pointer";
+    if (picture1Off) {
+        picture1.style.filter = "none";
     }
 }
-document.getElementById("picture1").onmouseout = function () {
-    if (picture1Desligado) {
-        document.getElementById("picture1").style.filter = "grayscale(100%)";
+picture1.onmouseout = function () {
+    if (picture1Off) {
+        picture1.style.filter = "grayscale(100%)";
     }
 }
-document.getElementById("picture2").onmouseover = function () {
-    document.getElementById("picture2").style.cursor = "pointer";
-    if (picture2Desligado) {
-        document.getElementById("picture2").style.filter = "none";
+picture2.onmouseover = function () {
+    picture2.style.cursor = "pointer";
+    if (picture2Off) {
+        picture2.style.filter = "none";
     }
 }
-document.getElementById("picture2").onmouseout = function () {
-    if (picture2Desligado) {
-        document.getElementById("picture2").style.filter = "grayscale(100%)";
+picture2.onmouseout = function () {
+    if (picture2Off) {
+        picture2.style.filter = "grayscale(100%)";
     }
 }
 
-document.getElementById("picture3").onmouseover = function () {
-    document.getElementById("picture3").style.cursor = "pointer";
-    if (picture3Desligado) {
-        document.getElementById("picture3").style.filter = "none";
+picture3.onmouseover = function () {
+    picture3.style.cursor = "pointer";
+    if (picture3Off) {
+        picture3.style.filter = "none";
     }
 }
-document.getElementById("picture3").onmouseout = function () {
-    if (picture3Desligado) {
-        document.getElementById("picture3").style.filter = "grayscale(100%)";
+picture3.onmouseout = function () {
+    if (picture3Off) {
+        picture3.style.filter = "grayscale(100%)";
     }
 
 }
-document.getElementById("picture4").onmouseover = function () {
-    document.getElementById("picture4").style.cursor = "pointer";
-    if (picture4Desligado) {
-        document.getElementById("picture4").style.filter = "none";
+picture4.onmouseover = function () {
+    picture4.style.cursor = "pointer";
+    if (picture4Off) {
+        picture4.style.filter = "none";
     }
 }
-document.getElementById("picture4").onmouseout = function () {
-    if (picture4Desligado) {
-        document.getElementById("picture4").style.filter = "grayscale(100%)";
+picture4.onmouseout = function () {
+    if (picture4Off) {
+        picture4.style.filter = "grayscale(100%)";
     }
 }
-document.getElementById("picture5").onmouseover = function () {
-    document.getElementById("picture5").style.cursor = "pointer";
-    if (picture5Desligado) {
-        document.getElementById("picture5").style.filter = "none";
+picture5.onmouseover = function () {
+    picture5.style.cursor = "pointer";
+    if (picture5Off) {
+        picture5.style.filter = "none";
     }
 }
-document.getElementById("picture5").onmouseout = function () {
-    if (picture5Desligado) {
-        document.getElementById("picture5").style.filter = "grayscale(100%)";
+picture5.onmouseout = function () {
+    if (picture5Off) {
+        picture5.style.filter = "grayscale(100%)";
     }
 }
 
 
 
 /*Troca box de depoimento clientes secao 2*/
-document.getElementById("picture1").onclick = function () {
-    picture1Desligado = false;
-    picture2Desligado = true;
-    picture3Desligado = true;
-    picture4Desligado = true;
-    picture5Desligado = true;
+var boxTestimonial1 = document.getElementById("box-testimonial1");
+var boxTestimonial2 = document.getElementById("box-testimonial2");
+var boxTestimonial3 = document.getElementById("box-testimonial3");
+var boxTestimonial4 = document.getElementById("box-testimonial4");
+var boxTestimonial5 = document.getElementById("box-testimonial5");
 
-    document.getElementById("box-testimonial1").style.display = "block";
-    document.getElementById("box-testimonial2").style.display = "none";
-    document.getElementById("box-testimonial3").style.display = "none";
-    document.getElementById("box-testimonial4").style.display = "none";
-    document.getElementById("box-testimonial5").style.display = "none";
+picture1.onclick = function () {
+    picture1Off = false;
+    picture2Off = true;
+    picture3Off = true;
+    picture4Off = true;
+    picture5Off = true;
 
-    document.getElementById("picture1").style.filter = "none";
-    document.getElementById("picture2").style.filter = "grayscale(100%)";
-    document.getElementById("picture3").style.filter = "grayscale(100%)";
-    document.getElementById("picture4").style.filter = "grayscale(100%)";
-    document.getElementById("picture5").style.filter = "grayscale(100%)";
+    boxTestimonial1.style.display = "block";
+    boxTestimonial2.style.display = "none";
+    boxTestimonial3.style.display = "none";
+    boxTestimonial4.style.display = "none";
+    boxTestimonial5.style.display = "none";
+
+    picture1.style.filter = "none";
+    picture2.style.filter = "grayscale(100%)";
+    picture3.style.filter = "grayscale(100%)";
+    picture4.style.filter = "grayscale(100%)";
+    picture5.style.filter = "grayscale(100%)";
 
     document.getElementById("pictures-section3").style.marginLeft = "25%";
 }
 
-document.getElementById("picture2").onclick = function () {
-    picture1Desligado = true;
-    picture2Desligado = false;
-    picture3Desligado = true;
-    picture4Desligado = true;
-    picture5Desligado = true;
+picture2.onclick = function () {
+    picture1Off = true;
+    picture2Off = false;
+    picture3Off = true;
+    picture4Off = true;
+    picture5Off = true;
 
-    document.getElementById("box-testimonial1").style.display = "none";
-    document.getElementById("box-testimonial2").style.display = "block";
-    document.getElementById("box-testimonial3").style.display = "none";
-    document.getElementById("box-testimonial4").style.display = "none";
-    document.getElementById("box-testimonial5").style.display = "none";
+    boxTestimonial1.style.display = "none";
+    boxTestimonial2.style.display = "block";
+    boxTestimonial3.style.display = "none";
+    boxTestimonial4.style.display = "none";
+    boxTestimonial5.style.display = "none";
 
-    document.getElementById("picture1").style.filter = "grayscale(100%)";
-    document.getElementById("picture2").style.filter = "none";
-    document.getElementById("picture3").style.filter = "grayscale(100%)";
-    document.getElementById("picture4").style.filter = "grayscale(100%)";
-    document.getElementById("picture5").style.filter = "grayscale(100%)";
+    picture1.style.filter = "grayscale(100%)";
+    picture2.style.filter = "none";
+    picture3.style.filter = "grayscale(100%)";
+    picture4.style.filter = "grayscale(100%)";
+    picture5.style.filter = "grayscale(100%)";
 
     document.getElementById("pictures-section3").style.marginLeft = "37%";
 }
 
-document.getElementById("picture3").onclick = function () {
-    picture1Desligado = true;
-    picture2Desligado = true;
-    picture3Desligado = false;
-    picture4Desligado = true;
-    picture5Desligado = true;
+picture3.onclick = function () {
+    picture1Off = true;
+    picture2Off = true;
+    picture3Off = false;
+    picture4Off = true;
+    picture5Off = true;
 
-    document.getElementById("box-testimonial1").style.display = "none";
-    document.getElementById("box-testimonial2").style.display = "none";
-    document.getElementById("box-testimonial3").style.display = "block";
-    document.getElementById("box-testimonial4").style.display = "none";
-    document.getElementById("box-testimonial5").style.display = "none";
+    boxTestimonial1.style.display = "none";
+    boxTestimonial2.style.display = "none";
+    boxTestimonial3.style.display = "block";
+    boxTestimonial4.style.display = "none";
+    boxTestimonial5.style.display = "none";
 
-    document.getElementById("picture1").style.filter = "grayscale(100%)";
-    document.getElementById("picture2").style.filter = "grayscale(100%)";
-    document.getElementById("picture3").style.filter = "none";
-    document.getElementById("picture4").style.filter = "grayscale(100%)";
-    document.getElementById("picture5").style.filter = "grayscale(100%)";
+    picture1.style.filter = "grayscale(100%)";
+    picture2.style.filter = "grayscale(100%)";
+    picture3.style.filter = "none";
+    picture4.style.filter = "grayscale(100%)";
+    picture5.style.filter = "grayscale(100%)";
     document.getElementById("pictures-section3").style.marginLeft = "49%";
 }
 
-document.getElementById("picture4").onclick = function () {
-    picture1Desligado = true;
-    picture2Desligado = true;
-    picture3Desligado = true;
-    picture4Desligado = false;
-    picture5Desligado = true;
+picture4.onclick = function () {
+    picture1Off = true;
+    picture2Off = true;
+    picture3Off = true;
+    picture4Off = false;
+    picture5Off = true;
 
-    document.getElementById("box-testimonial1").style.display = "none";
-    document.getElementById("box-testimonial2").style.display = "none";
-    document.getElementById("box-testimonial3").style.display = "none";
-    document.getElementById("box-testimonial4").style.display = "block";
-    document.getElementById("box-testimonial5").style.display = "none";
+    boxTestimonial1.style.display = "none";
+    boxTestimonial2.style.display = "none";
+    boxTestimonial3.style.display = "none";
+    boxTestimonial4.style.display = "block";
+    boxTestimonial5.style.display = "none";
 
-    document.getElementById("picture1").style.filter = "grayscale(100%)";
-    document.getElementById("picture2").style.filter = "grayscale(100%)";
-    document.getElementById("picture3").style.filter = "grayscale(100%)";
-    document.getElementById("picture4").style.filter = "none";
-    document.getElementById("picture5").style.filter = "grayscale(100%)";
+    picture1.style.filter = "grayscale(100%)";
+    picture2.style.filter = "grayscale(100%)";
+    picture3.style.filter = "grayscale(100%)";
+    picture4.style.filter = "none";
+    picture5.style.filter = "grayscale(100%)";
 
     document.getElementById("pictures-section3").style.marginLeft = "60%";
 }
 
-document.getElementById("picture5").onclick = function () {
-    picture1Desligado = true;
-    picture2Desligado = true;
-    picture3Desligado = true;
-    picture4Desligado = true;
-    picture5Desligado = false;
+picture5.onclick = function () {
+    picture1Off = true;
+    picture2Off = true;
+    picture3Off = true;
+    picture4Off = true;
+    picture5Off = false;
 
-    document.getElementById("box-testimonial1").style.display = "none";
-    document.getElementById("box-testimonial2").style.display = "none";
-    document.getElementById("box-testimonial3").style.display = "none";
-    document.getElementById("box-testimonial4").style.display = "none";
-    document.getElementById("box-testimonial5").style.display = "block";
+    boxTestimonial1.style.display = "none";
+    boxTestimonial2.style.display = "none";
+    boxTestimonial3.style.display = "none";
+    boxTestimonial4.style.display = "none";
+    boxTestimonial5.style.display = "block";
 
-    document.getElementById("picture1").style.filter = "grayscale(100%)";
-    document.getElementById("picture2").style.filter = "grayscale(100%)";
-    document.getElementById("picture3").style.filter = "grayscale(100%)";
-    document.getElementById("picture4").style.filter = "grayscale(100%)";
-    document.getElementById("picture5").style.filter = "none";
+    picture1.style.filter = "grayscale(100%)";
+    picture2.style.filter = "grayscale(100%)";
+    picture3.style.filter = "grayscale(100%)";
+    picture4.style.filter = "grayscale(100%)";
+    picture5.style.filter = "none";
 
     document.getElementById("pictures-section3").style.marginLeft = "72%";
 }

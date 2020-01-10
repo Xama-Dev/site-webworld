@@ -106,19 +106,19 @@ ul.slick-dots {
     background-repeat: no-repeat;
 }
 
-#pointer-subsection-left {
+#pointer-subsection-imac {
     margin-left: 11%;
     opacity: 0;
     transition: opacity 0.5s;
 }
 
-#pointer-subsection-central {
+#pointer-subsection-pencil {
     margin-left: 23%;
     opacity: 1;
     transition: opacity 0.5s;
 }
 
-#pointer-subsection-right {
+#pointer-subsection-landscape {
     margin-left: 23%;
     opacity: 0;
     transition: opacity 0.5s;
@@ -142,14 +142,14 @@ ul.slick-dots {
     transition: filter 0.3s;
 }
 
-#cotainer-img-text-section1-central {
+#cotainer-img-text-btn-pencil {
     margin-top: 11%;
 }
 
 /*-----------SEÇÃO 2----------------*/
 
 #section2 {
-    height: 620px;
+    height: 680px;
     background-color: #efefef;
 }
 
@@ -194,7 +194,11 @@ ul.slick-dots {
 
 /*-----------SEÇÃO 3 nossos parceiros----------------*/
 #section3 {
-    height: 382px;
+    height: 400px;
+}
+
+#container-section3 {
+    margin: 80px auto 0px auto;
 }
 
 #p-section3 {

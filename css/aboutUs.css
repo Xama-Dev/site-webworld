@@ -153,10 +153,15 @@
 
 /*-----------SEÇÃO 4 - nossos clientes----------------*/
 #section4 {
-    height: 382px;
+    height: 460px;
     border-top: 2px solid #efefef;
 
 }
+
+#container-section4 {
+    margin: 80px auto 0px auto;
+}
+
 
 #p-section4 {
     height: 30px;

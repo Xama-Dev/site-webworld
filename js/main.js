@@ -1,8 +1,8 @@
 $('.section-slider').slick({
-  dots: true, //legenda do slider que informa a quantidade de itens e a seleção atual
+  dots: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 1, //quantidade de slider mostrados por vez
+  slidesToShow: 1,
   adaptiveHeight: false,
   autoplay: true,
   arrows: true,
@@ -11,120 +11,137 @@ $('.section-slider').slick({
 });
 
 
-/*Função para troca de imagem no onmouseover subseção na seção 3*/
-var btnImacLigado = 0;
-var btnLapisLigado = 1;
-var btnPaisagemLigado = 0;
 
-document.getElementById("btn-subsection-imac").onmouseover = function () {
-  document.getElementById("btn-subsection-imac").style.cursor = "pointer";
-  if (btnImacLigado == 0) {
-    document.getElementById("btn-subsection-imac").style.filter = "grayscale(0%) brightness(100%)";
+var btnImacOn = 0;
+var btnPencilOn = 1;
+var btnLandscapeOn = 0;
+
+var btnSubsectionImac = document.getElementById("btn-subsection-imac");
+var btnSubsectionPencil = document.getElementById("btn-subsection-pencil");
+var btnSubsectionLandscape = document.getElementById("btn-subsection-landscape");
+
+var subsectionImac = document.getElementById("subsection-imac");
+var subsectionPencil = document.getElementById("subsection-pencil");
+var subsectionLandscape = document.getElementById("subsection-landscape");
+
+var containerImgTextBtnImac = document.getElementById("cotainer-img-text-btn-imac");
+var containerImgTextBtnPencil = document.getElementById("cotainer-img-text-btn-pencil");
+var containerImgTextBtnLandscape = document.getElementById("cotainer-img-text-btn-landscape");
+
+var pointerSubsectionImac = document.getElementById("pointer-subsection-imac");
+var pointerSubsectionPencil = document.getElementById("pointer-subsection-pencil");
+var pointerSubsectionLandsacape = document.getElementById("pointer-subsection-landscape");
+
+/*Função para troca de cor da imagem no onmouseover*/
+btnSubsectionImac.onmouseover = function () {
+  btnSubsectionImac.style.cursor = "pointer";
+  if (btnImacOn == 0) {
+    btnSubsectionImac.style.filter = "grayscale(0%) brightness(100%)";
   }
 
 }
-document.getElementById("btn-subsection-imac").onmouseout = function () {
-  if (btnImacLigado == 0) {
-    document.getElementById("btn-subsection-imac").style.filter = "grayscale(100%) brightness(120%)";
-  }
-}
-
-document.getElementById("btn-subsection-pencil").onmouseover = function () {
-  document.getElementById("btn-subsection-pencil").style.cursor = "pointer";
-  if (btnLapisLigado == 0) {
-    document.getElementById("btn-subsection-pencil").style.filter = "grayscale(0%) brightness(100%)";
-  }
-}
-document.getElementById("btn-subsection-pencil").onmouseout = function () {
-  if (btnLapisLigado == 0) {
-    document.getElementById("btn-subsection-pencil").style.filter = "grayscale(100%) brightness(120%)";
-  }
-}
-
-document.getElementById("btn-subsection-landscape").onmouseover = function () {
-  document.getElementById("btn-subsection-landscape").style.cursor = "pointer";
-  if (btnPaisagemLigado == 0) {
-    document.getElementById("btn-subsection-landscape").style.filter = "grayscale(0%) brightness(100%)";
-  }
-}
-document.getElementById("btn-subsection-landscape").onmouseout = function () {
-  if (btnPaisagemLigado == 0) {
-    document.getElementById("btn-subsection-landscape").style.filter = "grayscale(100%) brightness(120%)";
+btnSubsectionImac.onmouseout = function () {
+  if (btnImacOn == 0) {
+    btnSubsectionImac.style.filter = "grayscale(100%) brightness(120%)";
   }
 }
 
-/*Função para troca de subseção na seção 3*/
+btnSubsectionPencil.onmouseover = function () {
+  btnSubsectionPencil.style.cursor = "pointer";
+  if (btnPencilOn == 0) {
+    btnSubsectionPencil.style.filter = "grayscale(0%) brightness(100%)";
+  }
+}
+btnSubsectionPencil.onmouseout = function () {
+  if (btnPencilOn == 0) {
+    btnSubsectionPencil.style.filter = "grayscale(100%) brightness(120%)";
+  }
+}
+
+btnSubsectionLandscape.onmouseover = function () {
+  btnSubsectionLandscape.style.cursor = "pointer";
+  if (btnLandscapeOn == 0) {
+    btnSubsectionLandscape.style.filter = "grayscale(0%) brightness(100%)";
+  }
+}
+btnSubsectionLandscape.onmouseout = function () {
+  if (btnLandscapeOn == 0) {
+    btnSubsectionLandscape.style.filter = "grayscale(100%) brightness(120%)";
+  }
+}
+
+/*Função para troca de subseção*/
 function changeSubsectionImac() {
-  document.getElementById("subsection-imac").style.display = "block";
-  document.getElementById("subsection-pencil").style.display = "none";
-  document.getElementById("subsection-landscape").style.display = "none";
+  subsectionImac.style.display = "block";
+  subsectionPencil.style.display = "none";
+  subsectionLandscape.style.display = "none";
 
-  document.getElementById("btn-subsection-imac").style.filter = "grayscale(0%) brightness(100%)";
-  document.getElementById("btn-subsection-pencil").style.filter = "grayscale(100%) brightness(120%)";
-  document.getElementById("btn-subsection-landscape").style.filter = "grayscale(100%) brightness(120%)";
+  btnSubsectionImac.style.filter = "grayscale(0%) brightness(100%)";
+  btnSubsectionPencil.style.filter = "grayscale(100%) brightness(120%)";
+  btnSubsectionLandscape.style.filter = "grayscale(100%) brightness(120%)";
 
-  document.getElementById("cotainer-img-text-section1-esquerda").style.marginTop = "11%";
-  document.getElementById("cotainer-img-text-section1-central").style.marginTop = "0%";
-  document.getElementById("cotainer-img-text-section1-direita").style.marginTop = "0%";
+  containerImgTextBtnImac.style.marginTop = "11%";
+  containerImgTextBtnPencil.style.marginTop = "0%";
+  containerImgTextBtnLandscape.style.marginTop = "0%";
 
-  document.getElementById("pointer-subsection-left").style.opacity = "1";
-  document.getElementById("pointer-subsection-central").style.opacity = "0";
-  document.getElementById("pointer-subsection-right").style.opacity = "0";
+  pointerSubsectionImac.style.opacity = "1";
+  pointerSubsectionPencil.style.opacity = "0";
+  pointerSubsectionLandsacape.style.opacity = "0";
 
-  if (btnImacLigado == 0) {
-    btnImacLigado = 1;
-    btnLapisLigado = 0;
-    btnPaisagemLigado = 0;
+  if (btnImacOn == 0) {
+    btnImacOn = 1;
+    btnPencilOn = 0;
+    btnLandscapeOn = 0;
   }
 }
-document.getElementById("btn-subsection-imac").addEventListener("click", changeSubsectionImac);
+btnSubsectionImac.addEventListener("click", changeSubsectionImac);
 
 function changeSubsectionPencil() {
-  document.getElementById("subsection-pencil").style.display = "block";
-  document.getElementById("subsection-imac").style.display = "none";
-  document.getElementById("subsection-landscape").style.display = "none";
+  subsectionPencil.style.display = "block";
+  subsectionImac.style.display = "none";
+  subsectionLandscape.style.display = "none";
 
-  document.getElementById("btn-subsection-pencil").style.filter = "grayscale(0%) brightness(100%)";
-  document.getElementById("btn-subsection-landscape").style.filter = "grayscale(100%) brightness(120%)";
-  document.getElementById("btn-subsection-imac").style.filter = "grayscale(100%) brightness(120%)";
+  btnSubsectionPencil.style.filter = "grayscale(0%) brightness(100%)";
+  btnSubsectionLandscape.style.filter = "grayscale(100%) brightness(120%)";
+  btnSubsectionImac.style.filter = "grayscale(100%) brightness(120%)";
 
-  document.getElementById("cotainer-img-text-section1-central").style.marginTop = "11%";
-  document.getElementById("cotainer-img-text-section1-direita").style.marginTop = "0%";
-  document.getElementById("cotainer-img-text-section1-esquerda").style.marginTop = "0%";
+  containerImgTextBtnPencil.style.marginTop = "11%";
+  containerImgTextBtnLandscape.style.marginTop = "0%";
+  containerImgTextBtnImac.style.marginTop = "0%";
 
-  document.getElementById("pointer-subsection-left").style.opacity = "0";
-  document.getElementById("pointer-subsection-central").style.opacity = "1";
-  document.getElementById("pointer-subsection-right").style.opacity = "0";
+  pointerSubsectionImac.style.opacity = "0";
+  pointerSubsectionPencil.style.opacity = "1";
+  pointerSubsectionLandsacape.style.opacity = "0";
 
-  if (btnLapisLigado == 0) {
-    btnLapisLigado = 1;
-    btnImacLigado = 0;
-    btnPaisagemLigado = 0;
+  if (btnPencilOn == 0) {
+    btnPencilOn = 1;
+    btnImacOn = 0;
+    btnLandscapeOn = 0;
   }
 }
-document.getElementById("btn-subsection-pencil").addEventListener("click", changeSubsectionPencil);
+btnSubsectionPencil.addEventListener("click", changeSubsectionPencil);
 
 function changeSubsectionLandscape() {
-  document.getElementById("subsection-landscape").style.display = "block";
-  document.getElementById("subsection-imac").style.display = "none";
-  document.getElementById("subsection-pencil").style.display = "none";
+  subsectionLandscape.style.display = "block";
+  subsectionImac.style.display = "none";
+  subsectionPencil.style.display = "none";
 
-  document.getElementById("btn-subsection-landscape").style.filter = "grayscale(0%) brightness(100%)";
-  document.getElementById("btn-subsection-imac").style.filter = "grayscale(100%) brightness(120%)";
-  document.getElementById("btn-subsection-pencil").style.filter = "grayscale(100%) brightness(120%)";
+  btnSubsectionLandscape.style.filter = "grayscale(0%) brightness(100%)";
+  btnSubsectionImac.style.filter = "grayscale(100%) brightness(120%)";
+  btnSubsectionPencil.style.filter = "grayscale(100%) brightness(120%)";
 
-  document.getElementById("cotainer-img-text-section1-direita").style.marginTop = "11%"
-  document.getElementById("cotainer-img-text-section1-esquerda").style.marginTop = "0%";
-  document.getElementById("cotainer-img-text-section1-central").style.marginTop = "0%";
+  containerImgTextBtnLandscape.style.marginTop = "11%"
+  containerImgTextBtnImac.style.marginTop = "0%";
+  containerImgTextBtnPencil.style.marginTop = "0%";
 
-  document.getElementById("pointer-subsection-left").style.opacity = "0";
-  document.getElementById("pointer-subsection-central").style.opacity = "0";
-  document.getElementById("pointer-subsection-right").style.opacity = "1";
+  pointerSubsectionImac.style.opacity = "0";
+  pointerSubsectionPencil.style.opacity = "0";
+  pointerSubsectionLandsacape.style.opacity = "1";
 
-  if (btnPaisagemLigado == 0) {
-    btnPaisagemLigado = 1;
-    btnLapisLigado = 0;
-    btnImacLigado = 0;
+  if (btnLandscapeOn == 0) {
+    btnLandscapeOn = 1;
+    btnPencilOn = 0;
+    btnImacOn = 0;
   }
 }
-document.getElementById("btn-subsection-landscape").addEventListener("click", changeSubsectionLandscape);
+btnSubsectionLandscape.addEventListener("click", changeSubsectionLandscape);
