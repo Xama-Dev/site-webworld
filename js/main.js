@@ -19,37 +19,37 @@ var btnPaisagemLigado = 0;
 document.getElementById("btn-subsection-imac").onmouseover = function () {
   document.getElementById("btn-subsection-imac").style.cursor = "pointer";
   if (btnImacLigado == 0) {
-    document.getElementById("btn-subsection-imac").style.backgroundImage = "url(./img/imac-azul.png)";
+    document.getElementById("btn-subsection-imac").style.filter = "grayscale(0%) brightness(100%)";
   }
 
 }
 document.getElementById("btn-subsection-imac").onmouseout = function () {
   if (btnImacLigado == 0) {
-    document.getElementById("btn-subsection-imac").style.backgroundImage = "url(./img/imac.png)";
+    document.getElementById("btn-subsection-imac").style.filter = "grayscale(100%) brightness(120%)";
   }
 }
 
 document.getElementById("btn-subsection-pencil").onmouseover = function () {
   document.getElementById("btn-subsection-pencil").style.cursor = "pointer";
   if (btnLapisLigado == 0) {
-    document.getElementById("btn-subsection-pencil").style.backgroundImage = "url(./img/lapis-azul.png)";
+    document.getElementById("btn-subsection-pencil").style.filter = "grayscale(0%) brightness(100%)";
   }
 }
 document.getElementById("btn-subsection-pencil").onmouseout = function () {
   if (btnLapisLigado == 0) {
-    document.getElementById("btn-subsection-pencil").style.backgroundImage = "url(./img/lapis.png)";
+    document.getElementById("btn-subsection-pencil").style.filter = "grayscale(100%) brightness(120%)";
   }
 }
 
 document.getElementById("btn-subsection-landscape").onmouseover = function () {
   document.getElementById("btn-subsection-landscape").style.cursor = "pointer";
   if (btnPaisagemLigado == 0) {
-    document.getElementById("btn-subsection-landscape").style.backgroundImage = "url(./img/paisagem-azul.png)";
+    document.getElementById("btn-subsection-landscape").style.filter = "grayscale(0%) brightness(100%)";
   }
 }
 document.getElementById("btn-subsection-landscape").onmouseout = function () {
   if (btnPaisagemLigado == 0) {
-    document.getElementById("btn-subsection-landscape").style.backgroundImage = "url(./img/paisagem.png)";
+    document.getElementById("btn-subsection-landscape").style.filter = "grayscale(100%) brightness(120%)";
   }
 }
 
@@ -59,9 +59,9 @@ function changeSubsectionImac() {
   document.getElementById("subsection-pencil").style.display = "none";
   document.getElementById("subsection-landscape").style.display = "none";
 
-  document.getElementById("btn-subsection-imac").style.backgroundImage = "url(./img/imac-azul.png)";
-  document.getElementById("btn-subsection-pencil").style.backgroundImage = "url(./img/lapis.png)";
-  document.getElementById("btn-subsection-landscape").style.backgroundImage = "url(./img/paisagem.png)";
+  document.getElementById("btn-subsection-imac").style.filter = "grayscale(0%) brightness(100%)";
+  document.getElementById("btn-subsection-pencil").style.filter = "grayscale(100%) brightness(120%)";
+  document.getElementById("btn-subsection-landscape").style.filter = "grayscale(100%) brightness(120%)";
 
   document.getElementById("cotainer-img-text-section1-esquerda").style.marginTop = "11%";
   document.getElementById("cotainer-img-text-section1-central").style.marginTop = "0%";
@@ -84,9 +84,9 @@ function changeSubsectionPencil() {
   document.getElementById("subsection-imac").style.display = "none";
   document.getElementById("subsection-landscape").style.display = "none";
 
-  document.getElementById("btn-subsection-pencil").style.backgroundImage = "url(./img/lapis-azul.png)";
-  document.getElementById("btn-subsection-landscape").style.backgroundImage = "url(./img/paisagem.png)";
-  document.getElementById("btn-subsection-imac").style.backgroundImage = "url(./img/imac.png)";
+  document.getElementById("btn-subsection-pencil").style.filter = "grayscale(0%) brightness(100%)";
+  document.getElementById("btn-subsection-landscape").style.filter = "grayscale(100%) brightness(120%)";
+  document.getElementById("btn-subsection-imac").style.filter = "grayscale(100%) brightness(120%)";
 
   document.getElementById("cotainer-img-text-section1-central").style.marginTop = "11%";
   document.getElementById("cotainer-img-text-section1-direita").style.marginTop = "0%";
@@ -109,9 +109,9 @@ function changeSubsectionLandscape() {
   document.getElementById("subsection-imac").style.display = "none";
   document.getElementById("subsection-pencil").style.display = "none";
 
-  document.getElementById("btn-subsection-landscape").style.backgroundImage = "url(./img/paisagem-azul.png)";
-  document.getElementById("btn-subsection-imac").style.backgroundImage = "url(./img/imac.png)";
-  document.getElementById("btn-subsection-pencil").style.backgroundImage = "url(./img/lapis.png)";
+  document.getElementById("btn-subsection-landscape").style.filter = "grayscale(0%) brightness(100%)";
+  document.getElementById("btn-subsection-imac").style.filter = "grayscale(100%) brightness(120%)";
+  document.getElementById("btn-subsection-pencil").style.filter = "grayscale(100%) brightness(120%)";
 
   document.getElementById("cotainer-img-text-section1-direita").style.marginTop = "11%"
   document.getElementById("cotainer-img-text-section1-esquerda").style.marginTop = "0%";

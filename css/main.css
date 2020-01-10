@@ -104,8 +104,6 @@ ul.slick-dots {
     border: none;
     background-color: transparent;
     background-repeat: no-repeat;
-    transition: background-image 0.5s;
-
 }
 
 #pointer-subsection-left {
@@ -127,15 +125,21 @@ ul.slick-dots {
 }
 
 #btn-subsection-imac {
-    background-image: url(../img/imac.png);
+    background-image: url(../img/imac-azul.png);
+    filter: grayscale(100%) brightness(120%);
+    transition: filter 0.3s;
+
 }
 
 #btn-subsection-pencil {
     background-image: url(../img/lapis-azul.png);
+    transition: filter 0.3s;
 }
 
 #btn-subsection-landscape {
-    background-image: url(../img/paisagem.png);
+    background-image: url(../img/paisagem-azul.png);
+    filter: grayscale(100%) brightness(120%);
+    transition: filter 0.3s;
 }
 
 #cotainer-img-text-section1-central {
