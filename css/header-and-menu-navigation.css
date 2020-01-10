@@ -11,6 +11,10 @@
 #navigation-menu {
     border-bottom: 4px solid #efefef;
     height: 60px;
+    position: sticky;
+    background-color: white;
+    z-index: 10;
+    top: 0;
 }
 
 .menu {
