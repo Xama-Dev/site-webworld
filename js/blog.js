@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
 });
 
-/*MENU roda pagina */
+/*MENU roda pagina blog */
 var page1 = document.getElementById("page1");
 if (page1 != null) {
     page1.onload = function () {

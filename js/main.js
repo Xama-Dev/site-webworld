@@ -10,8 +10,6 @@ $('.section-slider').slick({
   pauseOnFocus: false
 });
 
-
-
 var btnImacOn = 0;
 var btnPencilOn = 1;
 var btnLandscapeOn = 0;
@@ -32,7 +30,7 @@ var pointerSubsectionImac = document.getElementById("pointer-subsection-imac");
 var pointerSubsectionPencil = document.getElementById("pointer-subsection-pencil");
 var pointerSubsectionLandsacape = document.getElementById("pointer-subsection-landscape");
 
-/*Função para troca de cor da imagem no onmouseover*/
+/*Função para troca de cor da imagem no onmouseover das subseções*/
 btnSubsectionImac.onmouseover = function () {
   btnSubsectionImac.style.cursor = "pointer";
   if (btnImacOn == 0) {

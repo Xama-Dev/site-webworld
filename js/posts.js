@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
 });
 
-/**/
+/*LINKS de movimentação dos posts*/
 var linkPrevius = document.getElementById("link-previus-blog");
 var linkNext = document.getElementById("link-next-blog");
 

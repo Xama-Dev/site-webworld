@@ -1,4 +1,4 @@
-/*colori pictures no onmouseover secao 3*/
+/*colori pictures no onmouseover secao 3 box de depoimentos*/
 var picture1Off = true;
 var picture2Off = true;
 var picture3Off = false;

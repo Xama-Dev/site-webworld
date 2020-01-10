@@ -1,3 +1,4 @@
+/* MENU Navegação*/
 var aHome = document.getElementById("a-home");
 var liHome = document.getElementById("li-home");
 aHome.onmouseover = function () {
