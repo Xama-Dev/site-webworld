@@ -14,7 +14,7 @@ document.getElementById("link1-linha1").onmouseout = function () {
     document.getElementById("icon-service1").style.filter = "grayscale(0%) brightness(100%)";
     document.getElementById("h3-servico1").style.color = "#666666"
     document.getElementById("p-servico1").style.color = "#666666"
-    document.getElementById("pointer-service1").style.content = "url(./img/pointer-services-direita.png)";
+    document.getElementById("pointer-service1").style.content = "url(./img/indicador-servicos-direita.png )";
 }
 
 
@@ -32,7 +32,7 @@ document.getElementById("link2-linha1").onmouseout = function () {
     document.getElementById("icon-service2").style.filter = "grayscale(0%) brightness(100%)";
     document.getElementById("h3-servico2").style.color = "#666666"
     document.getElementById("p-servico2").style.color = "#666666"
-    document.getElementById("pointer-service2").style.content = "url(./img/pointer-services-baixo.png)";
+    document.getElementById("pointer-service2").style.content = "url(./img/indicador-servicos-baixo.png)";
 }
 
 document.getElementById("link3-linha2").onmouseover = function () {
@@ -49,7 +49,7 @@ document.getElementById("link3-linha2").onmouseout = function () {
     document.getElementById("icon-service3").style.filter = "grayscale(0%) brightness(100%)";
     document.getElementById("h3-servico3").style.color = "#666666"
     document.getElementById("p-servico3").style.color = "#666666"
-    document.getElementById("pointer-service3").style.content = "url(./img/pointer-services-esquerdo.png)";
+    document.getElementById("pointer-service3").style.content = "url(./img/indicador-servicos-esquerdo.png)";
 }
 
 document.getElementById("link4-linha3").onmouseover = function () {
@@ -66,7 +66,7 @@ document.getElementById("link4-linha3").onmouseout = function () {
     document.getElementById("icon-service4").style.filter = "grayscale(0%) brightness(100%)";
     document.getElementById("h3-servico4").style.color = "#666666"
     document.getElementById("p-servico4").style.color = "#666666"
-    document.getElementById("pointer-service4").style.content = "url(./img/pointer-services-direita.png)";
+    document.getElementById("pointer-service4").style.content = "url(./img/indicador-servicos-direita.png )";
 }
 
 document.getElementById("link5-linha3").onmouseover = function () {
@@ -83,7 +83,7 @@ document.getElementById("link5-linha3").onmouseout = function () {
     document.getElementById("icon-service5").style.filter = "grayscale(0%) brightness(100%)";
     document.getElementById("h3-servico5").style.color = "#666666"
     document.getElementById("p-servico5").style.color = "#666666"
-    document.getElementById("pointer-service5").style.content = "url(./img/pointer-services-baixo.png)";
+    document.getElementById("pointer-service5").style.content = "url(./img/indicador-servicos-baixo.png)";
 }
 
 document.getElementById("link6-linha4").onmouseover = function () {
@@ -100,7 +100,7 @@ document.getElementById("link6-linha4").onmouseout = function () {
     document.getElementById("icon-service6").style.filter = "grayscale(0%) brightness(100%)";
     document.getElementById("h3-servico6").style.color = "#666666"
     document.getElementById("p-servico6").style.color = "#666666"
-    document.getElementById("pointer-service6").style.content = "url(./img/pointer-services-esquerdo.png)";
+    document.getElementById("pointer-service6").style.content = "url(./img/indicador-servicos-esquerdo.png)";
 }
 
 /*colori pictures no onmouseover secao 2*/
