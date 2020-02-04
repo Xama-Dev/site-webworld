@@ -97,6 +97,11 @@ ul.slick-dots {
     width: 31%;
 }
 
+.container-img-text-active {
+    margin-top: 11% !important;
+}
+
+
 .btn-change-subsection {
     width: 80px;
     height: 80px;
@@ -104,29 +109,34 @@ ul.slick-dots {
     border: none;
     background-color: transparent;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #pointer-subsection-imac {
     margin-left: 11%;
-    opacity: 0;
     transition: opacity 0.5s;
+    opacity: 0;
 }
 
 #pointer-subsection-pencil {
     margin-left: 23%;
-    opacity: 1;
     transition: opacity 0.5s;
+    opacity: 0;
 }
 
 #pointer-subsection-landscape {
     margin-left: 23%;
-    opacity: 0;
     transition: opacity 0.5s;
+    opacity: 0;
 }
+
+.pointer-subsection-active {
+    opacity: 1 !important;
+}
+
 
 #btn-subsection-imac {
     background-image: url(../img/imac-azul.png);
-    filter: grayscale(100%) brightness(120%);
     transition: filter 0.3s;
 
 }
@@ -138,12 +148,19 @@ ul.slick-dots {
 
 #btn-subsection-landscape {
     background-image: url(../img/paisagem-azul.png);
-    filter: grayscale(100%) brightness(120%);
     transition: filter 0.3s;
 }
 
-#cotainer-img-text-btn-pencil {
-    margin-top: 11%;
+.btn-subsection-active {
+    filter: grayscale(0%) brightness(100%);
+}
+
+.btn-subsection-no-active {
+    filter: grayscale(100%) brightness(120%);
+}
+
+.btn-subsection-on-mouse-over {
+    filter: grayscale(0%) brightness(100%);
 }
 
 /*-----------SEÇÃO 2----------------*/
@@ -151,18 +168,18 @@ ul.slick-dots {
 #section2 {
     height: 680px;
     background-color: #efefef;
+    display: flex;
 }
 
-#subsection-pencil {
+.subsection-display-none {
+    display: none;
+} 
+.subsection-display-block {
     display: block;
 }
 
-#subsection-imac {
-    display: none;
-}
-
-#subsection-landscape {
-    display: none;
+#subsection-pencil, #subsection-imac, #subsection-landscape {
+    margin-top: 70px;
 }
 
 #line1-subsection {

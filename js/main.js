@@ -10,136 +10,128 @@ $('.section-slider').slick({
   pauseOnFocus: false
 });
 
-var btnImacOn = 0;
-var btnPencilOn = 1;
-var btnLandscapeOn = 0;
+const btnSubsectionImac = document.getElementById("btn-subsection-imac");
+const btnSubsectionPencil = document.getElementById("btn-subsection-pencil");
+const btnSubsectionLandscape = document.getElementById("btn-subsection-landscape");
 
-var btnSubsectionImac = document.getElementById("btn-subsection-imac");
-var btnSubsectionPencil = document.getElementById("btn-subsection-pencil");
-var btnSubsectionLandscape = document.getElementById("btn-subsection-landscape");
+const subsectionImac = document.getElementById("subsection-imac");
+const subsectionPencil = document.getElementById("subsection-pencil");
+const subsectionLandscape = document.getElementById("subsection-landscape");
 
-var subsectionImac = document.getElementById("subsection-imac");
-var subsectionPencil = document.getElementById("subsection-pencil");
-var subsectionLandscape = document.getElementById("subsection-landscape");
+const containerImgTextBtnImac = document.getElementById("cotainer-img-text-btn-imac");
+const containerImgTextBtnPencil = document.getElementById("cotainer-img-text-btn-pencil");
+const containerImgTextBtnLandscape = document.getElementById("cotainer-img-text-btn-landscape");
 
-var containerImgTextBtnImac = document.getElementById("cotainer-img-text-btn-imac");
-var containerImgTextBtnPencil = document.getElementById("cotainer-img-text-btn-pencil");
-var containerImgTextBtnLandscape = document.getElementById("cotainer-img-text-btn-landscape");
+const pointerSubsectionImac = document.getElementById("pointer-subsection-imac");
+const pointerSubsectionPencil = document.getElementById("pointer-subsection-pencil");
+const pointerSubsectionLandsacape = document.getElementById("pointer-subsection-landscape");
 
-var pointerSubsectionImac = document.getElementById("pointer-subsection-imac");
-var pointerSubsectionPencil = document.getElementById("pointer-subsection-pencil");
-var pointerSubsectionLandsacape = document.getElementById("pointer-subsection-landscape");
 
 /*Função para troca de cor da imagem no onmouseover das subseções*/
 btnSubsectionImac.onmouseover = function () {
-  btnSubsectionImac.style.cursor = "pointer";
-  if (btnImacOn == 0) {
-    btnSubsectionImac.style.filter = "grayscale(0%) brightness(100%)";
+  if (!btnSubsectionImac.classList.contains('btn-subsection-active')) {
+    btnSubsectionImac.classList.add('btn-subsection-on-mouse-over')
   }
 
 }
 btnSubsectionImac.onmouseout = function () {
-  if (btnImacOn == 0) {
-    btnSubsectionImac.style.filter = "grayscale(100%) brightness(120%)";
+  if (!btnSubsectionImac.classList.contains('btn-subsection-active') || btnSubsectionImac.classList.contains('btn-subsection-on-mouse-over')) {
+    btnSubsectionImac.classList.remove('btn-subsection-on-mouse-over')
   }
 }
 
 btnSubsectionPencil.onmouseover = function () {
-  btnSubsectionPencil.style.cursor = "pointer";
-  if (btnPencilOn == 0) {
-    btnSubsectionPencil.style.filter = "grayscale(0%) brightness(100%)";
+  if (!btnSubsectionPencil.classList.contains('btn-subsection-active')) {
+    btnSubsectionPencil.classList.add('btn-subsection-on-mouse-over')
   }
+
 }
 btnSubsectionPencil.onmouseout = function () {
-  if (btnPencilOn == 0) {
-    btnSubsectionPencil.style.filter = "grayscale(100%) brightness(120%)";
+  if (!btnSubsectionPencil.classList.contains('btn-subsection-active') || btnSubsectionPencil.classList.contains('btn-subsection-on-mouse-over')) {
+    btnSubsectionPencil.classList.remove('btn-subsection-on-mouse-over')
   }
 }
 
 btnSubsectionLandscape.onmouseover = function () {
-  btnSubsectionLandscape.style.cursor = "pointer";
-  if (btnLandscapeOn == 0) {
-    btnSubsectionLandscape.style.filter = "grayscale(0%) brightness(100%)";
+  if (!btnSubsectionLandscape.classList.contains('btn-subsection-active')) {
+    btnSubsectionLandscape.classList.add('btn-subsection-on-mouse-over')
   }
+
 }
 btnSubsectionLandscape.onmouseout = function () {
-  if (btnLandscapeOn == 0) {
-    btnSubsectionLandscape.style.filter = "grayscale(100%) brightness(120%)";
+  if (!btnSubsectionLandscape.classList.contains('btn-subsection-active') || btnSubsectionLandscape.classList.contains('btn-subsection-on-mouse-over')) {
+    btnSubsectionLandscape.classList.remove('btn-subsection-on-mouse-over')
   }
 }
+
+
 
 /*Função para troca de subseção*/
 function changeSubsectionImac() {
-  subsectionImac.style.display = "block";
-  subsectionPencil.style.display = "none";
-  subsectionLandscape.style.display = "none";
+  btnSubsectionImac.classList.add('btn-subsection-active')
+  btnSubsectionImac.classList.remove('btn-subsection-no-active')
+  btnSubsectionPencil.classList.remove('btn-subsection-active')
+  btnSubsectionPencil.classList.add('btn-subsection-no-active')
+  btnSubsectionLandscape.classList.remove('btn-subsection-active') 
+  btnSubsectionLandscape.classList.add('btn-subsection-no-active')
 
-  btnSubsectionImac.style.filter = "grayscale(0%) brightness(100%)";
-  btnSubsectionPencil.style.filter = "grayscale(100%) brightness(120%)";
-  btnSubsectionLandscape.style.filter = "grayscale(100%) brightness(120%)";
+  containerImgTextBtnImac.classList.add('container-img-text-active')
+  containerImgTextBtnPencil.classList.remove('container-img-text-active')
+  containerImgTextBtnLandscape.classList.remove('container-img-text-active')
+  
+  pointerSubsectionImac.classList.add('pointer-subsection-active')
+  pointerSubsectionPencil.classList.remove('pointer-subsection-active')
+  pointerSubsectionLandsacape.classList.remove('pointer-subsection-active')
 
-  containerImgTextBtnImac.style.marginTop = "11%";
-  containerImgTextBtnPencil.style.marginTop = "0%";
-  containerImgTextBtnLandscape.style.marginTop = "0%";
+  subsectionImac.classList.add('subsection-display-block')
+  subsectionPencil.classList.remove('subsection-display-block')
+  subsectionLandscape.classList.remove('subsection-display-block')
 
-  pointerSubsectionImac.style.opacity = "1";
-  pointerSubsectionPencil.style.opacity = "0";
-  pointerSubsectionLandsacape.style.opacity = "0";
-
-  if (btnImacOn == 0) {
-    btnImacOn = 1;
-    btnPencilOn = 0;
-    btnLandscapeOn = 0;
-  }
 }
 btnSubsectionImac.addEventListener("click", changeSubsectionImac);
 
 function changeSubsectionPencil() {
-  subsectionPencil.style.display = "block";
-  subsectionImac.style.display = "none";
-  subsectionLandscape.style.display = "none";
+  btnSubsectionPencil.classList.add('btn-subsection-active')
+  btnSubsectionPencil.classList.remove('btn-subsection-no-active')
+  btnSubsectionImac.classList.remove('btn-subsection-active')
+  btnSubsectionImac.classList.add('btn-subsection-no-active')   
+  btnSubsectionLandscape.classList.remove('btn-subsection-active')
+  btnSubsectionLandscape.classList.add('btn-subsection-no-active')
 
-  btnSubsectionPencil.style.filter = "grayscale(0%) brightness(100%)";
-  btnSubsectionLandscape.style.filter = "grayscale(100%) brightness(120%)";
-  btnSubsectionImac.style.filter = "grayscale(100%) brightness(120%)";
+  containerImgTextBtnPencil.classList.add('container-img-text-active')
+  containerImgTextBtnImac.classList.remove('container-img-text-active')
+  containerImgTextBtnLandscape.classList.remove('container-img-text-active')
+  
+  pointerSubsectionPencil.classList.add('pointer-subsection-active')
+  pointerSubsectionImac.classList.remove('pointer-subsection-active')
+  pointerSubsectionLandsacape.classList.remove('pointer-subsection-active')
 
-  containerImgTextBtnPencil.style.marginTop = "11%";
-  containerImgTextBtnLandscape.style.marginTop = "0%";
-  containerImgTextBtnImac.style.marginTop = "0%";
+  subsectionPencil.classList.add('subsection-display-block')
+  subsectionImac.classList.remove('subsection-display-block')
+  subsectionLandscape.classList.remove('subsection-display-block')
 
-  pointerSubsectionImac.style.opacity = "0";
-  pointerSubsectionPencil.style.opacity = "1";
-  pointerSubsectionLandsacape.style.opacity = "0";
-
-  if (btnPencilOn == 0) {
-    btnPencilOn = 1;
-    btnImacOn = 0;
-    btnLandscapeOn = 0;
-  }
 }
 btnSubsectionPencil.addEventListener("click", changeSubsectionPencil);
 
 function changeSubsectionLandscape() {
-  subsectionLandscape.style.display = "block";
-  subsectionImac.style.display = "none";
-  subsectionPencil.style.display = "none";
+  btnSubsectionLandscape.classList.add('btn-subsection-active')
+  btnSubsectionLandscape.classList.remove('btn-subsection-no-active')
+  btnSubsectionImac.classList.remove('btn-subsection-active')
+  btnSubsectionImac.classList.add('btn-subsection-no-active')   
+  btnSubsectionPencil.classList.remove('btn-subsection-active')
+  btnSubsectionPencil.classList.add('btn-subsection-no-active')
 
-  btnSubsectionLandscape.style.filter = "grayscale(0%) brightness(100%)";
-  btnSubsectionImac.style.filter = "grayscale(100%) brightness(120%)";
-  btnSubsectionPencil.style.filter = "grayscale(100%) brightness(120%)";
+  containerImgTextBtnLandscape.classList.add('container-img-text-active')
+  containerImgTextBtnImac.classList.remove('container-img-text-active')
+  containerImgTextBtnPencil.classList.remove('container-img-text-active')
+  
+  pointerSubsectionLandsacape.classList.add('pointer-subsection-active')
+  pointerSubsectionImac.classList.remove('pointer-subsection-active')
+  pointerSubsectionPencil.classList.remove('pointer-subsection-active')
 
-  containerImgTextBtnLandscape.style.marginTop = "11%"
-  containerImgTextBtnImac.style.marginTop = "0%";
-  containerImgTextBtnPencil.style.marginTop = "0%";
-
-  pointerSubsectionImac.style.opacity = "0";
-  pointerSubsectionPencil.style.opacity = "0";
-  pointerSubsectionLandsacape.style.opacity = "1";
-
-  if (btnLandscapeOn == 0) {
-    btnLandscapeOn = 1;
-    btnPencilOn = 0;
-    btnImacOn = 0;
-  }
+  subsectionLandscape.classList.add('subsection-display-block')
+  subsectionImac.classList.remove('subsection-display-block')
+  subsectionPencil.classList.remove('subsection-display-block')
+  
 }
 btnSubsectionLandscape.addEventListener("click", changeSubsectionLandscape);
