@@ -1,5 +1,5 @@
-# Meu projeto de site
+# Front-end Template DEMO
 ### Site para demonstração das minhas qualificações técnicas como dev web front-end.
 
-Tecnologias usadas: HTML5, CSS, JavaScritp, jQuery e um pouquinho de PhotoShop (nenhum framework foi utilazado).
+Tecnologias usadas: HTML5, CSS3, JavaScritp, EcmaScript 6, jQuery e um pouquinho de PhotoShop.
 
