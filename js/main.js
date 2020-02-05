@@ -10,128 +10,87 @@ $('.section-slider').slick({
   pauseOnFocus: false
 });
 
-const btnSubsectionImac = document.getElementById("btn-subsection-imac");
-const btnSubsectionPencil = document.getElementById("btn-subsection-pencil");
-const btnSubsectionLandscape = document.getElementById("btn-subsection-landscape");
 
-const subsectionImac = document.getElementById("subsection-imac");
-const subsectionPencil = document.getElementById("subsection-pencil");
-const subsectionLandscape = document.getElementById("subsection-landscape");
+const buttonsSubsection = document.querySelectorAll('button.btn-change-subsection')
+const buttonImac = buttonsSubsection[0]
+const buttonPencil = buttonsSubsection[1]
+const buttonLandscape = buttonsSubsection[2]
 
-const containerImgTextBtnImac = document.getElementById("cotainer-img-text-btn-imac");
-const containerImgTextBtnPencil = document.getElementById("cotainer-img-text-btn-pencil");
-const containerImgTextBtnLandscape = document.getElementById("cotainer-img-text-btn-landscape");
+const containersImgText = document.querySelectorAll('div.cotainer-img-text-section1')
+const containerImgTextBtnImac = containersImgText[0]
+const containerImgTextBtnPencil = containersImgText[1]
+const containerImgTextBtnLandscape = containersImgText[2]
 
-const pointerSubsectionImac = document.getElementById("pointer-subsection-imac");
-const pointerSubsectionPencil = document.getElementById("pointer-subsection-pencil");
-const pointerSubsectionLandsacape = document.getElementById("pointer-subsection-landscape");
+const pointersSubsection = document.querySelectorAll('img.indicador-de-secao')
+const pointerSubsectionImac = pointersSubsection[0]
+const pointerSubsectionPencil = pointersSubsection[1]
+const pointerSubsectionLandsacape = pointersSubsection[2]
 
+const subsections = document.querySelectorAll('div.subsection-display-none')
+const subsectionImac = subsections[0]
+const subsectionPencil = subsections[1]
+const subsectionLandscape = subsections[2]
 
-/*Função para troca de cor da imagem no onmouseover das subseções*/
-btnSubsectionImac.onmouseover = function () {
-  if (!btnSubsectionImac.classList.contains('btn-subsection-active')) {
-    btnSubsectionImac.classList.add('btn-subsection-on-mouse-over')
-  }
-
-}
-btnSubsectionImac.onmouseout = function () {
-  if (!btnSubsectionImac.classList.contains('btn-subsection-active') || btnSubsectionImac.classList.contains('btn-subsection-on-mouse-over')) {
-    btnSubsectionImac.classList.remove('btn-subsection-on-mouse-over')
-  }
-}
-
-btnSubsectionPencil.onmouseover = function () {
-  if (!btnSubsectionPencil.classList.contains('btn-subsection-active')) {
-    btnSubsectionPencil.classList.add('btn-subsection-on-mouse-over')
-  }
-
-}
-btnSubsectionPencil.onmouseout = function () {
-  if (!btnSubsectionPencil.classList.contains('btn-subsection-active') || btnSubsectionPencil.classList.contains('btn-subsection-on-mouse-over')) {
-    btnSubsectionPencil.classList.remove('btn-subsection-on-mouse-over')
-  }
-}
-
-btnSubsectionLandscape.onmouseover = function () {
-  if (!btnSubsectionLandscape.classList.contains('btn-subsection-active')) {
-    btnSubsectionLandscape.classList.add('btn-subsection-on-mouse-over')
-  }
-
-}
-btnSubsectionLandscape.onmouseout = function () {
-  if (!btnSubsectionLandscape.classList.contains('btn-subsection-active') || btnSubsectionLandscape.classList.contains('btn-subsection-on-mouse-over')) {
-    btnSubsectionLandscape.classList.remove('btn-subsection-on-mouse-over')
-  }
-}
-
-
-
-/*Função para troca de subseção*/
-function changeSubsectionImac() {
-  btnSubsectionImac.classList.add('btn-subsection-active')
-  btnSubsectionImac.classList.remove('btn-subsection-no-active')
-  btnSubsectionPencil.classList.remove('btn-subsection-active')
-  btnSubsectionPencil.classList.add('btn-subsection-no-active')
-  btnSubsectionLandscape.classList.remove('btn-subsection-active') 
-  btnSubsectionLandscape.classList.add('btn-subsection-no-active')
-
-  containerImgTextBtnImac.classList.add('container-img-text-active')
-  containerImgTextBtnPencil.classList.remove('container-img-text-active')
-  containerImgTextBtnLandscape.classList.remove('container-img-text-active')
+function changeSubsection( button){
+  let buttonActive = document.querySelector('.btn-subsection-active')
+  let containerImgTextActive = document.querySelector('.container-img-text-active')
+  let pointerSubsectionActive = document.querySelector('.pointer-subsection-active')
+  let subsectionDisplayBlock = document.querySelector('.subsection-display-block') 
   
-  pointerSubsectionImac.classList.add('pointer-subsection-active')
-  pointerSubsectionPencil.classList.remove('pointer-subsection-active')
-  pointerSubsectionLandsacape.classList.remove('pointer-subsection-active')
-
-  subsectionImac.classList.add('subsection-display-block')
-  subsectionPencil.classList.remove('subsection-display-block')
-  subsectionLandscape.classList.remove('subsection-display-block')
-
-}
-btnSubsectionImac.addEventListener("click", changeSubsectionImac);
-
-function changeSubsectionPencil() {
-  btnSubsectionPencil.classList.add('btn-subsection-active')
-  btnSubsectionPencil.classList.remove('btn-subsection-no-active')
-  btnSubsectionImac.classList.remove('btn-subsection-active')
-  btnSubsectionImac.classList.add('btn-subsection-no-active')   
-  btnSubsectionLandscape.classList.remove('btn-subsection-active')
-  btnSubsectionLandscape.classList.add('btn-subsection-no-active')
-
-  containerImgTextBtnPencil.classList.add('container-img-text-active')
-  containerImgTextBtnImac.classList.remove('container-img-text-active')
-  containerImgTextBtnLandscape.classList.remove('container-img-text-active')
+  buttonActive.classList.remove('btn-subsection-active')
+  buttonActive.classList.add('btn-subsection-no-active')
+  button.classList.add('btn-subsection-active')
+  button.classList.remove('btn-subsection-no-active')  
   
-  pointerSubsectionPencil.classList.add('pointer-subsection-active')
-  pointerSubsectionImac.classList.remove('pointer-subsection-active')
-  pointerSubsectionLandsacape.classList.remove('pointer-subsection-active')
+  if ( button.id === 'btn-subsection-imac') {
+    containerImgTextActive.classList.remove('container-img-text-active')
+    containerImgTextBtnImac.classList.add('container-img-text-active')
+    pointerSubsectionActive.classList.remove('pointer-subsection-active')
+    pointerSubsectionImac.classList.add('pointer-subsection-active')
+    subsectionDisplayBlock.classList.remove('subsection-display-block')
+    subsectionImac.classList.add('subsection-display-block')
 
-  subsectionPencil.classList.add('subsection-display-block')
-  subsectionImac.classList.remove('subsection-display-block')
-  subsectionLandscape.classList.remove('subsection-display-block')
+  } else if (button.id === 'btn-subsection-pencil') {
+    containerImgTextActive.classList.remove('container-img-text-active')
+    containerImgTextBtnPencil.classList.add('container-img-text-active')
+    pointerSubsectionActive.classList.remove('pointer-subsection-active')
+    pointerSubsectionPencil.classList.add('pointer-subsection-active')
+    subsectionDisplayBlock.classList.remove('subsection-display-block')
+    subsectionPencil.classList.add('subsection-display-block')
 
+  } else if (button.id === 'btn-subsection-landscape') {
+    containerImgTextActive.classList.remove('container-img-text-active')
+    containerImgTextBtnLandscape.classList.add('container-img-text-active')
+    pointerSubsectionActive.classList.remove('pointer-subsection-active')
+    pointerSubsectionLandsacape.classList.add('pointer-subsection-active')
+    subsectionDisplayBlock.classList.remove('subsection-display-block')
+    subsectionLandscape.classList.add('subsection-display-block')
+  }
 }
-btnSubsectionPencil.addEventListener("click", changeSubsectionPencil);
 
-function changeSubsectionLandscape() {
-  btnSubsectionLandscape.classList.add('btn-subsection-active')
-  btnSubsectionLandscape.classList.remove('btn-subsection-no-active')
-  btnSubsectionImac.classList.remove('btn-subsection-active')
-  btnSubsectionImac.classList.add('btn-subsection-no-active')   
-  btnSubsectionPencil.classList.remove('btn-subsection-active')
-  btnSubsectionPencil.classList.add('btn-subsection-no-active')
 
-  containerImgTextBtnLandscape.classList.add('container-img-text-active')
-  containerImgTextBtnImac.classList.remove('container-img-text-active')
-  containerImgTextBtnPencil.classList.remove('container-img-text-active')
-  
-  pointerSubsectionLandsacape.classList.add('pointer-subsection-active')
-  pointerSubsectionImac.classList.remove('pointer-subsection-active')
-  pointerSubsectionPencil.classList.remove('pointer-subsection-active')
 
-  subsectionLandscape.classList.add('subsection-display-block')
-  subsectionImac.classList.remove('subsection-display-block')
-  subsectionPencil.classList.remove('subsection-display-block')
-  
-}
-btnSubsectionLandscape.addEventListener("click", changeSubsectionLandscape);
+buttonsSubsection.forEach(button => { 
+  button.onmouseover = function () {    
+    let activeClass = button.classList.contains('btn-subsection-active')
+    let onmouseoverClass = button.classList.contains('btn-subsection-on-mouse-over')
+    
+    if (!activeClass) {
+      button.classList.add('btn-subsection-on-mouse-over')
+    }
+  } 
+
+  button.onmouseout = function () {  
+    let activeClass = button.classList.contains('btn-subsection-active')
+    let onmouseoverClass = button.classList.contains('btn-subsection-on-mouse-over') 
+
+    if (!activeClass || onmouseoverClass) {
+      button.classList.remove('btn-subsection-on-mouse-over')
+    }
+  }
+
+  button.addEventListener('click', function(){
+    changeSubsection(button)
+  })
+    
+})
