@@ -12,59 +12,73 @@ $('.section-slider').slick({
 
 
 const buttonsSubsection = document.querySelectorAll('button.btn-change-subsection')
-const buttonImac = buttonsSubsection[0]
-const buttonPencil = buttonsSubsection[1]
-const buttonLandscape = buttonsSubsection[2]
-
 const containersImgText = document.querySelectorAll('div.cotainer-img-text-section1')
-const containerImgTextBtnImac = containersImgText[0]
-const containerImgTextBtnPencil = containersImgText[1]
-const containerImgTextBtnLandscape = containersImgText[2]
-
 const pointersSubsection = document.querySelectorAll('img.indicador-de-secao')
-const pointerSubsectionImac = pointersSubsection[0]
-const pointerSubsectionPencil = pointersSubsection[1]
-const pointerSubsectionLandsacape = pointersSubsection[2]
-
 const subsections = document.querySelectorAll('div.subsection-display-none')
-const subsectionImac = subsections[0]
-const subsectionPencil = subsections[1]
-const subsectionLandscape = subsections[2]
 
-function changeSubsection( button){
-  let buttonActive = document.querySelector('.btn-subsection-active')
-  let containerImgTextActive = document.querySelector('.container-img-text-active')
-  let pointerSubsectionActive = document.querySelector('.pointer-subsection-active')
-  let subsectionDisplayBlock = document.querySelector('.subsection-display-block') 
-  
-  buttonActive.classList.remove('btn-subsection-active')
-  buttonActive.classList.add('btn-subsection-no-active')
-  button.classList.add('btn-subsection-active')
-  button.classList.remove('btn-subsection-no-active')  
+const subsectionPrototype = {
+  button: {},
+  containerImgText: {},
+  pointer: {},
+  sectionImgText: {},
+  active: function () {
+    this.button.classList.add('btn-subsection-active')
+    this.button.classList.remove('btn-subsection-no-active')
+
+    this.containerImgText.classList.add('container-img-text-active')
+
+    this.pointer.classList.add('pointer-subsection-active')
+
+    this.sectionImgText.classList.add('subsection-display-block')
+  },
+  desable: function () {
+    this.button.classList.remove('btn-subsection-active')
+    this.button.classList.add('btn-subsection-no-active')
+
+    this.containerImgText.classList.remove('container-img-text-active')
+
+    this.pointer.classList.remove('pointer-subsection-active')
+
+    this.sectionImgText.classList.remove('subsection-display-block')
+  }
+
+}
+
+const subsectionImac = Object.create(subsectionPrototype)
+subsectionImac.button = buttonsSubsection[0]
+subsectionImac.containerImgText = containersImgText[0]
+subsectionImac.pointer = pointersSubsection[0]
+subsectionImac.sectionImgText = subsections[0]
+
+const subsectionPencil = Object.create(subsectionPrototype)
+subsectionPencil.button = buttonsSubsection[1]
+subsectionPencil.containerImgText = containersImgText[1]
+subsectionPencil.pointer = pointersSubsection[1]
+subsectionPencil.sectionImgText = subsections[1]
+
+const subsectionLandscape = Object.create(subsectionPrototype)
+subsectionLandscape.button = buttonsSubsection[2]
+subsectionLandscape.containerImgText = containersImgText[2]
+subsectionLandscape.pointer = pointersSubsection[2]
+subsectionLandscape.sectionImgText = subsections[2]
+
+
+function changeSubsection( button){  
   
   if ( button.id === 'btn-subsection-imac') {
-    containerImgTextActive.classList.remove('container-img-text-active')
-    containerImgTextBtnImac.classList.add('container-img-text-active')
-    pointerSubsectionActive.classList.remove('pointer-subsection-active')
-    pointerSubsectionImac.classList.add('pointer-subsection-active')
-    subsectionDisplayBlock.classList.remove('subsection-display-block')
-    subsectionImac.classList.add('subsection-display-block')
+    subsectionImac.active()
+    subsectionPencil.desable()
+    subsectionLandscape.desable()
 
   } else if (button.id === 'btn-subsection-pencil') {
-    containerImgTextActive.classList.remove('container-img-text-active')
-    containerImgTextBtnPencil.classList.add('container-img-text-active')
-    pointerSubsectionActive.classList.remove('pointer-subsection-active')
-    pointerSubsectionPencil.classList.add('pointer-subsection-active')
-    subsectionDisplayBlock.classList.remove('subsection-display-block')
-    subsectionPencil.classList.add('subsection-display-block')
+    subsectionImac.desable()
+    subsectionPencil.active()
+    subsectionLandscape.desable()    
 
   } else if (button.id === 'btn-subsection-landscape') {
-    containerImgTextActive.classList.remove('container-img-text-active')
-    containerImgTextBtnLandscape.classList.add('container-img-text-active')
-    pointerSubsectionActive.classList.remove('pointer-subsection-active')
-    pointerSubsectionLandsacape.classList.add('pointer-subsection-active')
-    subsectionDisplayBlock.classList.remove('subsection-display-block')
-    subsectionLandscape.classList.add('subsection-display-block')
+    subsectionImac.desable()
+    subsectionPencil.desable()
+    subsectionLandscape.active()    
   }
 }
 
