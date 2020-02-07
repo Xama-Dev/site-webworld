@@ -85,7 +85,7 @@ function changeSubsection( button){
 
 
 buttonsSubsection.forEach(button => { 
-  button.onmouseover = function () {    
+  button.onmouseover = () => {    
     let activeClass = button.classList.contains('btn-subsection-active')
     let onmouseoverClass = button.classList.contains('btn-subsection-on-mouse-over')
     
@@ -94,7 +94,7 @@ buttonsSubsection.forEach(button => {
     }
   } 
 
-  button.onmouseout = function () {  
+  button.onmouseout = () => {  
     let activeClass = button.classList.contains('btn-subsection-active')
     let onmouseoverClass = button.classList.contains('btn-subsection-on-mouse-over') 
 
@@ -103,7 +103,7 @@ buttonsSubsection.forEach(button => {
     }
   }
 
-  button.addEventListener('click', function(){
+  button.addEventListener('click', () => {
     changeSubsection(button)
   })
     

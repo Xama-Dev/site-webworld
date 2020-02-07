@@ -1,6 +1,6 @@
 const pictures = document.querySelectorAll('.pictures-section3')
 const boxTestimonials = document.querySelectorAll('.box-testimonial')
-let pointerEmployee = document.getElementById('pictures-section3')
+const pointerEmployee = document.getElementById('pictures-section3')
 const boxTestimonialColection = []
 
 
@@ -8,18 +8,22 @@ const boxTestimonialPrototype = {
     picture: {},
     boxTestimonial: {},
     positionPointerEmployee: null,
+    isActive: function () {
+        return this.boxTestimonial.classList.contains('box-testimonial-active')
+    },
     active: function () {
         this.picture.classList.remove('picture-no-active')
         this.picture.classList.add('picture-active')
 
         this.boxTestimonial.classList.remove('box-testimonial-no-active')
-
+        this.boxTestimonial.classList.add('box-testimonial-active')
     },
     desable: function () {
         this.picture.classList.add('picture-no-active')
         this.picture.classList.remove('picture-active')
 
         this.boxTestimonial.classList.add('box-testimonial-no-active')
+        this.boxTestimonial.classList.remove('box-testimonial-active')
     }
 }
 
@@ -48,61 +52,57 @@ boxTestimonial5.picture = pictures[4]
 boxTestimonial5.boxTestimonial = boxTestimonials[4]
 boxTestimonial5.pointerEmployee = '72%'
 
+boxTestimonialColection.push (
+    boxTestimonial1, 
+    boxTestimonial2,
+    boxTestimonial3,
+    boxTestimonial4,
+    boxTestimonial5
+)
 
-function changeBoxTestimonial (picture) {
+
+function changeBoxTestimonial (picture) {    
+    boxTestimonialColection.forEach( (boxTestimonial) => {
+        if (boxTestimonial.isActive() === true) {
+            boxTestimonial.desable()
+        }        
+    })
+
+
     if (picture.id === 'picture1'){
-        boxTestimonial1.active()
-        boxTestimonial2.desable()
-        boxTestimonial3.desable()
-        boxTestimonial4.desable()
-        boxTestimonial5.desable() 
-        document.getElementById('pictures-section3').style.marginLeft = boxTestimonial1.pointerEmployee;
+        boxTestimonial1.active()         
+        pointerEmployee.style.marginLeft = boxTestimonial1.pointerEmployee;
 
     }else if (picture.id === 'picture2'){
-        boxTestimonial1.desable()
-        boxTestimonial2.active()
-        boxTestimonial3.desable()
-        boxTestimonial4.desable()
-        boxTestimonial5.desable()
-        document.getElementById('pictures-section3').style.marginLeft = boxTestimonial2.pointerEmployee;
+        boxTestimonial2.active()        
+        pointerEmployee.style.marginLeft = boxTestimonial2.pointerEmployee;
 
     }else if (picture.id === 'picture3'){
-        boxTestimonial1.desable()
-        boxTestimonial2.desable()
         boxTestimonial3.active()
-        boxTestimonial4.desable()
-        boxTestimonial5.desable()
-        document.getElementById('pictures-section3').style.marginLeft = boxTestimonial3.pointerEmployee;
+        pointerEmployee.style.marginLeft = boxTestimonial3.pointerEmployee;
 
     }else if (picture.id === 'picture4'){
-        boxTestimonial1.desable()
-        boxTestimonial2.desable()
-        boxTestimonial3.desable()
         boxTestimonial4.active()
-        boxTestimonial5.desable()
-        document.getElementById('pictures-section3').style.marginLeft = boxTestimonial4.pointerEmployee;
+        pointerEmployee.style.marginLeft = boxTestimonial4.pointerEmployee;
         
     }else if (picture.id === 'picture5'){
-        boxTestimonial1.desable()
-        boxTestimonial2.desable()
-        boxTestimonial3.desable()
-        boxTestimonial4.desable()
         boxTestimonial5.active()
-        document.getElementById('pictures-section3').style.marginLeft = boxTestimonial5.pointerEmployee;
-        
+        pointerEmployee.style.marginLeft = boxTestimonial5.pointerEmployee;        
     }
 }
 
-pictures.forEach((picture) =>{
-    picture.onmouseover = function () {
-        picture.classList.remove('picture-no-active')
+
+boxTestimonialColection.forEach((boxTestimonial) =>{
+    boxTestimonial.picture.onmouseover = () => {
+        boxTestimonial.picture.classList.remove('picture-no-active')
+
     }
-    picture.onmouseout = function () {
-        picture.classList.add('picture-no-active')
+    boxTestimonial.picture.onmouseout = () => {
+        boxTestimonial.picture.classList.add('picture-no-active')
     }
 
-    picture.addEventListener('click', function(){
-        changeBoxTestimonial(picture)
+    boxTestimonial.picture.addEventListener('click', () => {
+        changeBoxTestimonial(boxTestimonial.picture)
     })
-
 })
+
