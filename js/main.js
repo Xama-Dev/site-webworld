@@ -21,7 +21,7 @@ const subsectionPrototype = {
   containerImgText: {},
   pointer: {},
   sectionImgText: {},
-  active: function () {
+  activate: function () {
     this.button.classList.add('btn-subsection-active')
     this.button.classList.remove('btn-subsection-no-active')
 
@@ -31,7 +31,7 @@ const subsectionPrototype = {
 
     this.sectionImgText.classList.add('subsection-display-block')
   },
-  desable: function () {
+  disable: function () {
     this.button.classList.remove('btn-subsection-active')
     this.button.classList.add('btn-subsection-no-active')
 
@@ -66,19 +66,19 @@ subsectionLandscape.sectionImgText = subsections[2]
 function changeSubsection( button){  
   
   if ( button.id === 'btn-subsection-imac') {
-    subsectionImac.active()
-    subsectionPencil.desable()
-    subsectionLandscape.desable()
+    subsectionImac.activate()
+    subsectionPencil.disable()
+    subsectionLandscape.disable()
 
   } else if (button.id === 'btn-subsection-pencil') {
-    subsectionImac.desable()
-    subsectionPencil.active()
-    subsectionLandscape.desable()    
+    subsectionImac.disable()
+    subsectionPencil.activate()
+    subsectionLandscape.disable()    
 
   } else if (button.id === 'btn-subsection-landscape') {
-    subsectionImac.desable()
-    subsectionPencil.desable()
-    subsectionLandscape.active()    
+    subsectionImac.disable()
+    subsectionPencil.disable()
+    subsectionLandscape.activate()    
   }
 }
 

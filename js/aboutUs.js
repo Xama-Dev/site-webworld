@@ -11,14 +11,14 @@ const boxTestimonialPrototype = {
     isActive: function () {
         return this.boxTestimonial.classList.contains('box-testimonial-active')
     },
-    active: function () {
+    activate: function () {
         this.picture.classList.remove('picture-no-active')
         this.picture.classList.add('picture-active')
 
         this.boxTestimonial.classList.remove('box-testimonial-no-active')
         this.boxTestimonial.classList.add('box-testimonial-active')
     },
-    desable: function () {
+    disable: function () {
         this.picture.classList.add('picture-no-active')
         this.picture.classList.remove('picture-active')
 
@@ -64,29 +64,29 @@ boxTestimonialColection.push (
 function changeBoxTestimonial (picture) {    
     boxTestimonialColection.forEach( (boxTestimonial) => {
         if (boxTestimonial.isActive() === true) {
-            boxTestimonial.desable()
+            boxTestimonial.disable()
         }        
     })
 
 
     if (picture.id === 'picture1'){
-        boxTestimonial1.active()         
+        boxTestimonial1.activate()         
         pointerEmployee.style.marginLeft = boxTestimonial1.pointerEmployee;
 
     }else if (picture.id === 'picture2'){
-        boxTestimonial2.active()        
+        boxTestimonial2.activate()        
         pointerEmployee.style.marginLeft = boxTestimonial2.pointerEmployee;
 
     }else if (picture.id === 'picture3'){
-        boxTestimonial3.active()
+        boxTestimonial3.activate()
         pointerEmployee.style.marginLeft = boxTestimonial3.pointerEmployee;
 
     }else if (picture.id === 'picture4'){
-        boxTestimonial4.active()
+        boxTestimonial4.activate()
         pointerEmployee.style.marginLeft = boxTestimonial4.pointerEmployee;
         
     }else if (picture.id === 'picture5'){
-        boxTestimonial5.active()
+        boxTestimonial5.activate()
         pointerEmployee.style.marginLeft = boxTestimonial5.pointerEmployee;        
     }
 }

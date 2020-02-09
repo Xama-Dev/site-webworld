@@ -37,6 +37,11 @@
     transition: border 0.3s;
 }
 
+.li-active {
+    border-bottom: 2px solid #00cccc;
+}
+
+
 .a-menu {
     color: #999999;
     font-size: 14px;
@@ -45,6 +50,10 @@
     display: block;
     margin-top: 22px;
     transition: color 0.3s;
+}
+
+.link-active {
+    color: #00cccc;
 }
 
 #submenu-pages {
@@ -58,6 +67,11 @@
     margin-left: -37px;
     padding-top: 15px;
     transition: opacity 0.3s, visibility 0.3s;
+}
+
+.submenu-pages-active {
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .li-submenu {
