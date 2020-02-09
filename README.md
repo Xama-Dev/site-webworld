@@ -5,6 +5,6 @@ Tecnologias usadas:
 - HTML5
 - CSS3
 - JavaScritp/EcmaScript 6: OOP, Clean code.
--jQuery
+- jQuery
 - Um pouquinho de PhotoShop
 
