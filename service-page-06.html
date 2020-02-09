@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/service-page.css">
+    <link rel="stylesheet" type="text/css" href="./css/box-testimonial.css">
     <link rel="stylesheet" type="text/css" href="./css/fadeIn.css">
     <link rel="stylesheet" type="text/css" href="./css/header-and-menu-navigation.css">
     <link rel="stylesheet" type="text/css" href="./css/generic-classes.css">
@@ -77,7 +78,6 @@
 
     <!-- SEÇÃO 1 - Services, what we do-->
     <section id="section1" class="section1 width-100percent">
-
         <div id="container-main-section1" class="grid-width-pattern margin-0-auto">
             <h1 id="h1-section1"
                 class="text-align-center color-to-strong-tags-pattern font-size-to-h1 text-align-left margin-0px">
@@ -114,23 +114,44 @@
     </section>
 
     <!-- SEÇÃO 2 - Depoimento clientes-->
-    <section id="section2" class="width-100percent display-flex background-color-lightGrey-pattern">
-        <div id="container-section2" class="grid-width-pattern margin-0-auto vertical-align-by-translateY">
-            <p class="tamanho-texto-grande-20px text-align-center color-to-strong-tags-pattern">What clients say about
-                Largest
-                Network<br><br></p>
-            <div id="container-pictures-section2">
-                <img id="picture1" class="pictures-section2" src="./img/CEO-01.jpg" alt="funcionário-diretoria">
-                <img id="picture2" class="pictures-section2" src="./img/CEO-02.jpg" alt="funcionário-diretoria">
-                <img id="picture3" class="pictures-section2" src="./img/CEO-03.jpg" alt="funcionário-diretoria">
-                <img id="picture4" class="pictures-section2" src="./img/CEO-04.jpg" alt="funcionário-diretoria">
-                <img id="picture5" class="pictures-section2" src="./img/CEO-05.jpg" alt="funcionário-diretoria">
+    <section id="section2" class="width-100percent display-flex">
+        <div id="container-testimonial" class="grid-width-pattern margin-0-auto">
+            <p class="tamanho-texto-grande-20px text-align-center color-to-strong-tags-pattern">
+                What clients say about our services<br><br>
+            </p>
+            <div id="container-pictures-section3">
+                <img id="picture1" class="pictures-section3 picture-no-active" src="./img/CEO-01.jpg" alt="funcionário-diretoria">
+                <img id="picture2" class="pictures-section3 picture-no-active" src="./img/CEO-02.jpg" alt="funcionário-diretoria">
+                <img id="picture3" class="pictures-section3 picture-active" src="./img/CEO-03.jpg" alt="funcionário-diretoria">
+                <img id="picture4" class="pictures-section3 picture-no-active" src="./img/CEO-04.jpg" alt="funcionário-diretoria">
+                <img id="picture5" class="pictures-section3 picture-no-active" src="./img/CEO-05.jpg" alt="funcionário-diretoria">
                 <p id="pictures-section3"></p>
-            </div>
-            <div id="box-testimonial3" class="box-testimonial fadeIn">
+            </div>          
+
+            <div id="box-testimonial1" class="box-testimonial fadeIn box-testimonial-no-active">
                 <img class="img-open-quotes float-left" src="./img/abre-aspas.png" alt="">
-                <p class="p-box-testimonial color-text-grey-pattern"><span
-                        class="color-text-greenish-blue-pattern">Victoria</span><br>
+                <p class="p-box-testimonial color-text-grey-pattern">
+                    <span class="color-text-greenish-blue-pattern">John</span><br>
+                    CEO, X company<br><br><br>
+                    Vivamus faucibus magna vitae purus blandit, rutrum aliquam turpis bibendum. Ut sit amet sapien
+                    dolor. Integer eget orci id leo consectetur iaculis ut vitae neque. Interdum et malesuada fames ac
+                    ante ipsum primis in faucibus.
+                </p>
+                <img class="img-close-quotes float-right" src="./img/fecha-aspas.png" alt="">
+            </div>
+            <div id="box-testimonial2" class="box-testimonial fadeIn box-testimonial-no-active">
+                <img class="img-open-quotes float-left" src="./img/abre-aspas.png" alt="">
+                <p class="p-box-testimonial color-text-grey-pattern">
+                    <span class="color-text-greenish-blue-pattern">Roger</span><br>
+                    CEO, X company<br><br><br>
+                    Cras vitae justo eu tellus maximus rutrum. Vestibulum nibh nibh, varius nec vehicula sed, finibus in
+                    tortor. Aliquam dictum, ligula vel euismod eleifend, libero est elementum.</p>
+                <img class="img-close-quotes float-right" src="./img/fecha-aspas.png" alt="">
+            </div>
+            <div id="box-testimonial3" class="box-testimonial fadeIn box-testimonial-active">
+                <img class="img-open-quotes float-left" src="./img/abre-aspas.png" alt="">
+                <p class="p-box-testimonial color-text-grey-pattern">
+                    <span class="color-text-greenish-blue-pattern">Victoria</span><br>
                     CEO, X company<br><br><br>
                     Vivamus faucibus magna vitae purus blandit, rutrum aliquam turpis bibendum. Ut sit amet sapien
                     dolor. Integer eget orci id leo consectetur iaculis ut vitae neque. Interdum et malesuada fames ac
@@ -138,46 +159,25 @@
                 <img class="img-close-quotes float-right" src="./img/fecha-aspas.png" alt="">
             </div>
 
-            <div id="box-testimonial1" class="box-testimonial fadeIn ">
+            <div id="box-testimonial4" class="box-testimonial fadeIn box-testimonial-no-active">
                 <img class="img-open-quotes float-left" src="./img/abre-aspas.png" alt="">
-                <p class="p-box-testimonial color-text-grey-pattern"><span
-                        class="color-text-greenish-blue-pattern">John</span><br>
-                    CEO, X company<br><br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ante purus, aliquet ut urna id, blandit
-                    lobortis nisl. Phasellus varius velit sed placerat euismod. Duis nisi massa, pretium at luctus.</p>
-                <img class="img-close-quotes float-right" src="./img/fecha-aspas.png" alt="">
-            </div>
-
-            <div id="box-testimonial2" class="box-testimonial fadeIn">
-                <img class="img-open-quotes float-left" src="./img/abre-aspas.png" alt="">
-                <p class="p-box-testimonial color-text-grey-pattern"><span
-                        class="color-text-greenish-blue-pattern">Roger</span><br>
-                    CEO, X company<br><br><br>
-                    Cras vitae justo eu tellus maximus rutrum. Vestibulum nibh nibh, varius nec vehicula sed, finibus in
-                    tortor. Aliquam dictum, ligula vel euismod eleifend, libero est elementum.</p>
-                <img class="img-close-quotes float-right" src="./img/fecha-aspas.png" alt="">
-            </div>
-
-            <div id="box-testimonial4" class="box-testimonial fadeIn ">
-                <img class="img-open-quotes float-left" src="./img/abre-aspas.png" alt="">
-                <p class="p-box-testimonial color-text-grey-pattern"><span
-                        class="color-text-greenish-blue-pattern">Liang</span><br>
+                <p class="p-box-testimonial color-text-grey-pattern">
+                    <span class="color-text-greenish-blue-pattern">Liang</span><br>
                     CEO, X company<br><br><br>
                     Pellentesque feugiat suscipit quam, quis dignissim massa. Suspendisse potenti. Donec porta tempus
                     ipsum id rhoncus. Aliquam hendrerit leo erat, non accumsan massa venenatis vitae.</p>
                 <img class="img-close-quotes float-right" src="./img/fecha-aspas.png" alt="">
             </div>
 
-            <div id="box-testimonial5" class="box-testimonial fadeIn ">
+            <div id="box-testimonial5" class="box-testimonial fadeIn box-testimonial-no-active">
                 <img class="img-open-quotes float-left" src="./img/abre-aspas.png" alt="">
-                <p class="p-box-testimonial color-text-grey-pattern"><span
-                        class="color-text-greenish-blue-pattern">Adam</span><br>
+                <p class="p-box-testimonial color-text-grey-pattern">
+                    <span class="color-text-greenish-blue-pattern">Adam</span><br>
                     CEO, X company<br><br><br>
                     Vivamus faucibus magna vitae purus blandit, rutrum aliquam turpis bibendum. Ut sit amet sapien
                     dolor. Integer eget orci id leo consectetur iaculis ut vitae neque.</p>
                 <img class="img-close-quotes float-right" src="./img/fecha-aspas.png" alt="">
             </div>
-
         </div>
     </section>
 
@@ -243,7 +243,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="./js/service-page.js"></script>
+    <script type="text/javascript" src="./js/box-testimonial.js"></script>
     <script type="text/javascript" src="./js/menu-navigation.js"></script>
 
 </body>
