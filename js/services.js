@@ -1,158 +1,103 @@
-/*troca fundo box servicços azul para branco*/
-
-var link1 = document.getElementById("link1-mosaic-services");
-var iconService1 = document.getElementById("icon-service1");
-var h3Service1 = document.getElementById("h3-service1");
-var pService1 = document.getElementById("p-service1");
-var pointerService1 = document.getElementById("pointer-service1");
-var pointerBlueService1 = document.getElementById("pointer-blue-service1");
-
-link1.onmouseover = function () {
-    link1.style.backgroundColor = "#00cccc";
-    link1.style.border = "0.5px solid #00cccc";
-    iconService1.style.filter = "grayscale(100%) brightness(200%)";
-    h3Service1.style.color = "white";
-    pService1.style.color = "white";
-    pointerService1.style.visibility = "hidden";
-    pointerBlueService1.style.visibility = "visible";
-}
-link1.onmouseout = function () {
-    link1.style.backgroundColor = "white";
-    link1.style.border = "0.5px solid #efefef";
-    iconService1.style.filter = "grayscale(0%) brightness(100%)";
-    h3Service1.style.color = "#666666"
-    pService1.style.color = "#666666"
-    pointerService1.style.visibility = "visible";
-    pointerBlueService1.style.visibility = "hidden";
-}
+const boxLinkCollection = []
+const linksMosaicServices = document.querySelectorAll('.link-container')
+const icons = document.querySelectorAll('.box-link-icon')
+const headers = document.querySelectorAll('.box-link-header')
+const paragraphs = document.querySelectorAll('.p-services')
+const pointersBlue = document.querySelectorAll('.box-link-pointer-blue')
+const pointersWhite = document.querySelectorAll('.box-link-pointer-white')
 
 
-var link2 = document.getElementById("link2-mosaic-services");
-var iconService2 = document.getElementById("icon-service2");
-var h3Service2 = document.getElementById("h3-servico2");
-var pServico2 = document.getElementById("p-servico2");
-var pointerService2 = document.getElementById("pointer-service2");
-var pointerBlueService2 = document.getElementById("pointer-blue-service2");
+const boxLinkPrototype = {
+    link: {},
+    icon: {},
+    header: {},
+    paragraph: {},
+    pointerBlue: {},
+    pointerWhite:{},
+    active: function () {
+        this.link.classList.add('link-container-active')
+        this.icon.classList.add('icon-active')
+        this.header.classList.add('header-active')
+        this.paragraph.classList.add('p-active')
+        this.pointerBlue.classList.add('pointer-active')
+        this.pointerWhite.classList.add('pointer-no-active')
 
-link2.onmouseover = function () {
-    link2.style.backgroundColor = "#00cccc";
-    link2.style.border = "0.5px solid #00cccc";
-    iconService2.style.filter = "grayscale(100%) brightness(200%)";
-    h3Service2.style.color = "white";
-    pServico2.style.color = "white";
-    pointerService2.style.visibility = "hidden";
-    pointerBlueService2.style.visibility = "visible";
-}
-link2.onmouseout = function () {
-    link2.style.backgroundColor = "white";
-    link2.style.border = "0.5px solid #efefef";
-    iconService2.style.filter = "grayscale(0%) brightness(100%)";
-    h3Service2.style.color = "#666666"
-    pServico2.style.color = "#666666"
-    pointerService2.style.visibility = "visible";
-    pointerBlueService2.style.visibility = "hidden";
+    },
+    diseble: function () {
+        this.link.classList.remove('link-container-active')
+        this.icon.classList.remove('icon-active')
+        this.header.classList.remove('header-active')
+        this.paragraph.classList.remove('p-active')
+        this.pointerBlue.classList.remove('pointer-active')
+        this.pointerWhite.classList.remove('pointer-no-active')
+
+    }
 }
 
-var link3 = document.getElementById("link3-mosaic-services");
-var iconService3 = document.getElementById("icon-service3");
-var h3Service3 = document.getElementById("h3-servico3");
-var pServico3 = document.getElementById("p-servico3");
-var pointerService3 = document.getElementById("pointer-service3");
-var pointerBlueService3 = document.getElementById("pointer-blue-service3");
+const boxLink1 = Object.create(boxLinkPrototype)
+boxLink1.link = linksMosaicServices[0]
+boxLink1.icon = icons[0]
+boxLink1.paragraph = paragraphs[0]
+boxLink1.header = headers[0]
+boxLink1.pointerBlue = pointersBlue[0]
+boxLink1.pointerWhite = pointersWhite[0]
 
-link3.onmouseover = function () {
-    link3.style.backgroundColor = "#00cccc";
-    link3.style.border = "0.5px solid #00cccc";
-    iconService3.style.filter = "grayscale(100%) brightness(200%)";
-    h3Service3.style.color = "white";
-    pServico3.style.color = "white";
-    pointerService3.style.visibility = "hidden";
-    pointerBlueService3.style.visibility = "visible";
-}
-link3.onmouseout = function () {
-    link3.style.backgroundColor = "white";
-    link3.style.border = "0.5px solid #efefef";
-    iconService3.style.filter = "grayscale(0%) brightness(100%)";
-    h3Service3.style.color = "#666666"
-    pServico3.style.color = "#666666"
-    pointerService3.style.visibility = "visible";
-    pointerBlueService3.style.visibility = "hidden";
-}
+const boxLink2 = Object.create(boxLinkPrototype)
+boxLink2.link = linksMosaicServices[1]
+boxLink2.icon = icons[1]
+boxLink2.header = headers[1]
+boxLink2.paragraph = paragraphs[1]
+boxLink2.pointerBlue = pointersBlue[1]
+boxLink2.pointerWhite = pointersWhite[1]
 
-var link4 = document.getElementById("link4-mosaic-services");
-var iconService4 = document.getElementById("icon-service4");
-var h3Service4 = document.getElementById("h3-servico4");
-var pService4 = document.getElementById("p-servico4");
-var pointerService4 = document.getElementById("pointer-service4");
-var pointerBlueService4 = document.getElementById("pointer-blue-service4");
+const boxLink3 = Object.create(boxLinkPrototype)
+boxLink3.link = linksMosaicServices[2]
+boxLink3.icon = icons[2]
+boxLink3.header = headers[2]
+boxLink3.paragraph = paragraphs[2]
+boxLink3.pointerBlue = pointersBlue[2]
+boxLink3.pointerWhite = pointersWhite[2]
 
-link4.onmouseover = function () {
-    link4.style.backgroundColor = "#00cccc";
-    link4.style.border = "0.5px solid #00cccc";
-    iconService4.style.filter = "grayscale(100%) brightness(200%)";
-    h3Service4.style.color = "white";
-    pService4.style.color = "white";
-    pointerService4.style.visibility = "hidden";
-    pointerBlueService4.style.visibility = "visible";
-}
-link4.onmouseout = function () {
-    link4.style.backgroundColor = "white";
-    link4.style.border = "0.5px solid #efefef";
-    iconService4.style.filter = "grayscale(0%) brightness(100%)";
-    h3Service4.style.color = "#666666"
-    pService4.style.color = "#666666"
-    pointerService4.style.visibility = "visible";
-    pointerBlueService4.style.visibility = "hidden";
-}
+const boxLink4 = Object.create(boxLinkPrototype)
+boxLink4.link = linksMosaicServices[3]
+boxLink4.icon = icons[3]
+boxLink4.header = headers[3]
+boxLink4.paragraph = paragraphs[3]
+boxLink4.pointerBlue = pointersBlue[3]
+boxLink4.pointerWhite = pointersWhite[3]
 
-var link5 = document.getElementById("link5-mosaic-services");
-var iconService5 = document.getElementById("icon-service5");
-var h3Service5 = document.getElementById("h3-servico5");
-var pService5 = document.getElementById("p-servico5");
-var pointerService5 = document.getElementById("pointer-service5");
-var pointerBlueService5 = document.getElementById("pointer-blue-service5");
+const boxLink5 = Object.create(boxLinkPrototype)
+boxLink5.link = linksMosaicServices[4]
+boxLink5.icon = icons[4]
+boxLink5.header = headers[4]
+boxLink5.paragraph = paragraphs[4]
+boxLink5.pointerBlue = pointersBlue[4]
+boxLink5.pointerWhite = pointersWhite[4]
 
-link5.onmouseover = function () {
-    link5.style.backgroundColor = "#00cccc";
-    link5.style.border = "0.5px solid #00cccc";
-    iconService5.style.filter = "grayscale(100%) brightness(200%)";
-    h3Service5.style.color = "white";
-    pService5.style.color = "white";
-    pointerService5.style.visibility = "hidden";
-    pointerBlueService5.style.visibility = "visible";
-}
-link5.onmouseout = function () {
-    link5.style.backgroundColor = "white";
-    link5.style.border = "0.5px solid #efefef";
-    iconService5.style.filter = "grayscale(0%) brightness(100%)";
-    h3Service5.style.color = "#666666"
-    pService5.style.color = "#666666"
-    pointerService5.style.visibility = "visible";
-    pointerBlueService5.style.visibility = "hidden";
-}
+const boxLink6 = Object.create(boxLinkPrototype)
+boxLink6.link = linksMosaicServices[5]
+boxLink6.icon = icons[5]
+boxLink6.header = headers[5]
+boxLink6.paragraph = paragraphs[5]
+boxLink6.pointerBlue = pointersBlue[5]
+boxLink6.pointerWhite = pointersWhite[5]
 
-var link6 = document.getElementById("link6-mosaic-services");
-var iconService6 = document.getElementById("icon-service6");
-var h3Service6 = document.getElementById("h3-servico6");
-var pService6 = document.getElementById("p-servico6");
-var pointerService6 = document.getElementById("pointer-service6");
-var pointerBlueService6 = document.getElementById("pointer-blue-service6");
+boxLinkCollection.push(
+    boxLink1,
+    boxLink2,
+    boxLink3,
+    boxLink4,
+    boxLink5,
+    boxLink6
+)
 
-link6.onmouseover = function () {
-    link6.style.backgroundColor = "#00cccc";
-    link6.style.border = "0.5px solid #00cccc";
-    iconService6.style.filter = "grayscale(100%) brightness(200%)";
-    h3Service6.style.color = "white";
-    pService6.style.color = "white";
-    pointerService6.style.visibility = "hidden";
-    pointerBlueService6.style.visibility = "visible";
-}
-link6.onmouseout = function () {
-    link6.style.backgroundColor = "white";
-    link6.style.border = "0.5px solid #efefef";
-    iconService6.style.filter = "grayscale(0%) brightness(100%)";
-    h3Service6.style.color = "#666666"
-    pService6.style.color = "#666666"
-    pointerService6.style.visibility = "visible";
-    pointerBlueService6.style.visibility = "hidden";
-}
+boxLinkCollection.forEach((boxLink) => {
+    boxLink.link.onmouseover = () => {
+        boxLink.active()
+    }
+
+    boxLink.link.onmouseout = () => {
+        boxLink.diseble()
+    }
+
+})

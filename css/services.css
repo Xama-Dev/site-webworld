@@ -3,10 +3,36 @@
     height: 1300px;
 }
 
-.box-content-section1 {
+
+.link-container {
     width: 293px;
     padding: 0px;
     border: 0.5px solid #efefef;
+}
+
+.link-container-active {
+    background-color: #00cccc;
+    border: 0.5px solid #00cccc
+}
+
+.icon-active {
+    filter: grayscale(100%) brightness(200%);
+}
+
+.header-active {
+    color: white !important;
+}
+
+.p-active {
+    color: white !important;
+}
+
+.pointer-active {
+    visibility: visible !important;
+}
+
+.pointer-no-active {
+    visibility: hidden;
 }
 
 .img-services {
@@ -26,7 +52,7 @@
     height: 267px;
 }
 
-.margin-top-icons {
+.box-link-icon {
     margin-top: 30px;
 }
 

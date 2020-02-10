@@ -1,9 +1,9 @@
-const links = document.querySelectorAll('.a-menu')
+const linksMenuNavigation = document.querySelectorAll('.a-menu')
 const liMenuCollection = document.querySelectorAll('.li-menu')
 const menuDropDown = document.getElementById('submenu-pages')
 
 
-links.forEach((link, index) => {
+linksMenuNavigation.forEach((link, index) => {
     if (link.id === 'a-pages') {
         link.onmouseover = () => {
             link.classList.add('link-active')
