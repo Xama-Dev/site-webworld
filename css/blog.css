@@ -119,7 +119,7 @@
 .btn-read-more:hover {
     cursor: pointer;
 }
-
+/*pagination*/
 .selector-page-blog {
     display: inline-block;
     border: 0.5px solid #cdcdcd;
@@ -132,7 +132,6 @@
     padding-top: 8px;
     margin-right: 5px;
     transition: background-color 0.2s, color 0.2s;
-
 }
 
 
@@ -140,6 +139,12 @@
     border: 0.5px solid #00cccc;
     background-color: #00cccc;
     color: white;
+}
+
+.actual-selection {
+    background-color: #00cccc;
+    color: white;
+    border: 0.5px solid #00cccc
 }
 
 .menu-pages-blog {

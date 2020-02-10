@@ -16,7 +16,7 @@
     <title>Blog</title>
 </head>
 
-<body id="page1" class="fadeIn">
+<body id="blog-home" class="fadeIn">
     <!-- HEADER: Logotipo, icones redes sociais-->
     <header id="header" class="width-100percent background-color-darkGrey-pattern">
         <div class="grid-width-pattern height-100percent margin-0-auto">
@@ -259,7 +259,7 @@
             <div class="carousel-menu">
                 <div>
                     <a class="" href="blog.html" name="seletor-page1">
-                        <p id="seletor-page1" class="selector-page-blog">1</p>
+                        <p id="seletor-page1" class="selector-page-blog actual-selection">1</p>
                     </a>
                 </div>
                 <div>
@@ -360,19 +360,7 @@
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript" src="./js/blog.js"></script>
     <script type="text/javascript" src="./js/menu-navigation.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.carousel-menu').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: true,
-                infinite: false,
-                initialSlide: 0
-            });
-        });
-    </script>
-
-
+    
 </body>
 
 </html>

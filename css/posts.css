@@ -130,9 +130,17 @@
 .element-filter-gray {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+    filter: gray; /* IE */
+}
 
-    filter: gray;
-    /* IE */
+.little-arrow-active {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none; /* IE */
+}
+
+.label-active {
+    color: #00cccc !important;
 }
 
 .fadeIn-change-post {

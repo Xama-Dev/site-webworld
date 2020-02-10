@@ -11,61 +11,73 @@ $(document).ready(function () {
     });
 });
 
-/*MENU roda pagina blog */
-var page1 = document.getElementById("page1");
-if (page1 != null) {
-    page1.onload = function () {
-        var seletor = document.getElementById("seletor-page1");
-        seletor.style.backgroundColor = "#00cccc";
-        seletor.style.color = "white";
-        seletor.style.border = "0.5px solid #00cccc";
-    }
-}
-var page2 = document.getElementById("page2");
-if (page2 != null) {
-    page2.onload = function () {
-        var seletor = document.getElementById("seletor-page2");
-        seletor.style.backgroundColor = "#00cccc";
-        seletor.style.color = "white";
-        seletor.style.border = "0.5px solid #00cccc";
-    }
-}
-var page3 = document.getElementById("page3");
-if (page3 != null) {
-    page3.onload = function () {
-        var seletor = document.getElementById("seletor-page3");
-        seletor.style.backgroundColor = "#00cccc";
-        seletor.style.color = "white";
-        seletor.style.border = "0.5px solid #00cccc";
-    }
-}
-var page4 = document.getElementById("page4");
-if (page4 != null) {
-    page4.onload = function () {
-        var seletor = document.getElementById("seletor-page4");
-        seletor.style.backgroundColor = "#00cccc";
-        seletor.style.color = "white";
-        seletor.style.border = "0.5px solid #00cccc";
+const actualPage = document.getElementsByTagName('body')
 
-    }
-}
-var page5 = document.getElementById("page5");
-if (page5 != null) {
-    page5.onload = function () {
-        var seletor = document.getElementById("seletor-page5");
-        seletor.style.backgroundColor = "#00cccc";
-        seletor.style.color = "white";
-        seletor.style.border = "0.5px solid #00cccc";
+if (actualPage[0].id === 'blog-home') {
+    $(document).ready(function () {
+        $('.carousel-menu').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: false,
+            initialSlide: 0
+        });
+    });
 
-    }
-}
-var page6 = document.getElementById("page6");
-if (page6 != null) {
-    page6.onload = function () {
-        var seletor = document.getElementById("seletor-page6");
-        seletor.style.backgroundColor = "#00cccc";
-        seletor.style.color = "white";
-        seletor.style.border = "0.5px solid #00cccc";
+} else if (actualPage[0].id === 'blog-page2' ) {
+    $(document).ready(function () {
+        $('.carousel-menu').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: false,
+            initialSlide: 0
+        });
+    });
 
-    }
+} else if (actualPage[0].id === 'blog-page3') {
+    $(document).ready(function () {
+        $('.carousel-menu').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: false,
+            initialSlide: 0
+        });
+    });
+
+}else if (actualPage[0].id === 'blog-page4') {
+    $(document).ready(function () {
+        $('.carousel-menu').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: false,
+            initialSlide: 1 /* tonra o botão selecionado visivel*/
+        });
+    });
+
+} else if (actualPage[0].id === 'blog-page5') {
+    $(document).ready(function () {
+        $('.carousel-menu').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: false,
+            initialSlide: 2 /* tonra o botão selecionado visivel*/
+        });
+    });
+
+} else if (actualPage[0].id === 'blog-page6') {
+    $(document).ready(function () {
+        $('.carousel-menu').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: false,
+            initialSlide: 3 /* tonra o botão selecionado visivel*/
+        });
+    });
+
 }
+
