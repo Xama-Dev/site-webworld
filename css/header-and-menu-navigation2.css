@@ -1,0 +1,116 @@
+header {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+}
+
+header > div {
+    width: 880px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div div a {
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 4px solid #efefef;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+nav div {
+    width: 880px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul.menu > li {
+    border-bottom: 2px solid transparent;
+    transition: border 0.3s;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+ul.menu > li > a {
+    text-decoration: none;
+    color: #999999;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+ul.menu + input {
+    height: 10px;
+    padding: 10px;
+    background-image: url('../img/lupa.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    border: 0.2px solid #cccccc;
+}
+
+ul.menu-drop-down {
+    background-color: #00cccc;
+    width: 230px;
+    height: 335px;
+    list-style: none;
+    position: absolute;
+    z-index: 10;    
+    margin-top: 206px;
+    padding-top: 15px;
+    margin-left: -30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+
+}
+
+ul.menu-drop-down > li {
+    width: 160px;
+    height: 33px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+ul.menu-drop-down > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;    
+}
+
+#link-pages {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}    
+
+.li-active {
+    border-bottom: 2px solid #00cccc !important;
+}
+
+.link-active {
+    color: #00cccc !important;
+}
+
+.menu-drop-down-active {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
