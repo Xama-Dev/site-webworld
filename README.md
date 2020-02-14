@@ -3,7 +3,7 @@
 
 Tecnologias usadas: 
 - HTML5
-- CSS3
+- CSS3: Grid layout, Flexbox.
 - JavaScritp/EcmaScript 6: OOP, Clean code.
 - jQuery
 - Um pouquinho de PhotoShop
