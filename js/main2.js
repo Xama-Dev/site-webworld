@@ -11,9 +11,9 @@ $('.section-slider').slick({
 });
 
 const imgButtons = document.querySelectorAll('.img-button')
-const boxDiscriptionCollection = document.querySelectorAll('div.div2-section1 div')
-const pointersGridNews = document.querySelectorAll('div.div3-section1 img')
-const gridNewsCollection = document.querySelectorAll('div.grid-news')
+const boxsDiscription = document.querySelectorAll('.div2-section-article div')
+const pointersGridNews = document.querySelectorAll('.div3-section-article img')
+const gridsNews = document.querySelectorAll('.grid-news')
 
 const sectionOfNews = {
   imgButton: {},
@@ -45,24 +45,23 @@ const sectionOfNews = {
 
 const sectionNewsImac = Object.create(sectionOfNews)
 sectionNewsImac.imgButton = imgButtons[0]
-sectionNewsImac.boxDiscription = boxDiscriptionCollection[0]
+sectionNewsImac.boxDiscription = boxsDiscription[0]
 sectionNewsImac.pointerGridNews = pointersGridNews[0]
-sectionNewsImac.gridNews = gridNewsCollection[0]
+sectionNewsImac.gridNews = gridsNews[0]
 
 const sectionNewsPencil = Object.create(sectionOfNews)
 sectionNewsPencil.imgButton = imgButtons[1]
-sectionNewsPencil.boxDiscription = boxDiscriptionCollection[1]
+sectionNewsPencil.boxDiscription = boxsDiscription[1]
 sectionNewsPencil.pointerGridNews = pointersGridNews[1]
-sectionNewsPencil.gridNews = gridNewsCollection[1]
+sectionNewsPencil.gridNews = gridsNews[1]
 
 const sectionNewsLandscape = Object.create(sectionOfNews)
 sectionNewsLandscape.imgButton = imgButtons[2]
-sectionNewsLandscape.boxDiscription = boxDiscriptionCollection[2]
+sectionNewsLandscape.boxDiscription = boxsDiscription[2]
 sectionNewsLandscape.pointerGridNews = pointersGridNews[2]
-sectionNewsLandscape.gridNews = gridNewsCollection[2]
+sectionNewsLandscape.gridNews = gridsNews[2]
 
-function changegridNews (imgButton){  
-  
+function changegridNews (imgButton){   
   if ( imgButton.id === 'img-button-imac') {
     sectionNewsImac.activate()
     sectionNewsPencil.disable()

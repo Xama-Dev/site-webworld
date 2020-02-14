@@ -2,50 +2,41 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
 footer .footer-line1 {
     flex-grow: 1;
     background-color: #666666;    
     display: flex;
     justify-content: center;
 }
-
 footer .important-informations {
     width: 880px;
     display: flex;
     justify-content: space-between;
 }
-
 .important-informations div {
     width: 170px;
 }
-
 .important-informations div h1 {
     color: white;
     font-size: 17px;
     margin-top: 50px;
     margin-bottom: 20px;
 }
-
 .important-informations div p{
     color: #cccccc;
     font-size: 13px;
 }
-
 .important-informations div hr {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 .important-informations div span {
     color: white;
     font-size: 17px;
 }
-
 p.adress-contact, p.email-contact, p.tel-contact {
     margin-top: 10px;
 }
-
 .important-informations div p.date-post::before {
     content: '';
     width: 15px;
@@ -57,7 +48,6 @@ p.adress-contact, p.email-contact, p.tel-contact {
     position: relative;
     top: 3px;
 }
-
 .important-informations div p.adress-contact::before {
     content: '';
     width: 17px;
@@ -69,7 +59,6 @@ p.adress-contact, p.email-contact, p.tel-contact {
     position: relative;
     top: 4px;
 }
-
 .important-informations div p.email-contact::before {
     content: '';
     width: 17px;
@@ -81,7 +70,6 @@ p.adress-contact, p.email-contact, p.tel-contact {
     position: relative;
     top: 10px;
 }
-
 .important-informations div p.tel-contact::before {
     content: '';
     width: 17px;
@@ -94,26 +82,22 @@ p.adress-contact, p.email-contact, p.tel-contact {
     top: 7px;
     left: 2px;
 }
-
 footer .footer-line2{
-    height: 70px;
+    height: 60px;
     background-color: #333333;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
-.footer-line2 div.end-page {
+.footer-line2 .end-page {
     width: 880px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
 .end-page p {
     color: #cccccc;
 }
-
 .end-page a {
     margin-left: 20px;
 }
-

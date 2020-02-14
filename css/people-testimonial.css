@@ -1,0 +1,85 @@
+.people-testimonial {
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.people-testimonial h1 {
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+.people-pictures {
+    width: 510px;
+    display: flex;
+    justify-content: space-around;
+}
+.people-pictures img {
+    border-radius: 50%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: gray; /* IE */
+    transition: filter 0.5s;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: filter 0.5s;
+}
+.people-pictures img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none; /* IE */
+}
+img.picture-active {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none; /* IE */
+}
+.pointers-testimonial {
+    width: 880px;
+    border-bottom: 2px solid #efefef;
+    display: flex;
+    justify-content: space-around;
+}
+.pointers-testimonial div {
+    width: 510px;
+    display: flex;
+    justify-content: space-around;
+}
+.pointers-testimonial p {
+    width: 2px;
+    height: 30px;
+    border-left: 2px solid #efefef;
+    opacity: 0;
+}
+p.pointer-active {
+    opacity: 1;
+}
+.box-testimonial{
+    display: none;
+    margin-top: 40px;
+}
+.box-testimonial-active {
+    display: block;
+}
+.box-testimonial p {
+    font-size: 16px;
+    color: #999999;
+    text-align: center;    
+}
+.box-testimonial div {
+    display: flex;
+    align-items: center;
+}
+.box-testimonial div p {
+    margin: 0px 30px 0px 30px;
+}
+p.name-people {
+    color: #00cccc;
+}
+.abre-aspas {
+    margin-bottom: 80px;
+}
+.fecha-aspas {
+    margin-top: 60px;
+}
