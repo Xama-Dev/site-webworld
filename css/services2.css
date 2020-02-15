@@ -3,7 +3,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 50px 64px 400px 1300px 590px 420px;
 }
-.banner-page img {
+.section-banner-page img {
     width: 100%;
 }
 .section-mosaic-services {

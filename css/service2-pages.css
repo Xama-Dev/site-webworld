@@ -1,0 +1,106 @@
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 64px 400px 1080px 590px 420px;
+}
+.section-banner-page img {
+    width: 100%;
+}
+.section-service-presentation {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #efefef;
+}
+.container-service-presentation > h1 {
+    color: #666666;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.container-service-presentation > p {
+    color: #999999;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.service-description-contacts {
+    display: flex;
+    position: absolute;
+    margin-top: -130px;
+}
+.box-discription {
+    width: 400px;
+    height: 400px;
+    background-color: #00cccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-discription .box-pointer {
+    position: absolute;
+    margin-top: -26px;
+}
+.box-discription .icon-service {
+    filter: grayscale(100%) brightness(200%);
+    -webkit-filter: grayscale(100%) brightness(200%);
+    margin-top: 40px;
+}
+.box-discription h1 {
+    color: white;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.box-discription p {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 15px 25px 10px 25px;
+}
+.box-discription button {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-top: 30px;
+    border-radius: 23px;
+    cursor: pointer;
+}
+.email-telephone-contact {
+    width: 480px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.email-telephone-contact > div {
+    display: flex;
+    align-items: flex-end;
+    height: 90px;
+}
+.email-telephone-contact img {
+    margin: 0px 20px 0px 50px;
+}
+.email-telephone-contact #tel-text-p {
+    font-size: 13px;
+}
+.email-telephone-contact #tel-number-p {
+    font-size: 30px;
+}
+.email-telephone-contact #email-text-p {
+    font-size: 13px;
+}
+.email-telephone-contact #email-number-p {
+    font-size: 30px;
+}
+.email-telephone-contact hr {
+    color: #eeeeee;
+    width: 430px;
+    margin-left: 50px;
+    border-style: inset;
+    border-width: 0.5px;
+    margin-top: 30px;
+}
+.section-clients-testimonial {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
