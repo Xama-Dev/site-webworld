@@ -1,153 +1,97 @@
-/*------- SEÇÃO 1 - Services, what we do ---------*/
-#section1 {
-    height: 1300px;
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 64px 400px 1300px 590px 420px;
 }
-
-
-.link-container {
-    width: 293px;
-    padding: 0px;
-    border: 0.5px solid #efefef;
+.section-banner-page img {
+    width: 100%;
 }
-
-.link-container-active {
-    background-color: #00cccc;
-    border: 0.5px solid #00cccc
+.section-mosaic-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-bottom: 2px solid #efefef;  
+    margin-top: 50px;
 }
-
-.icon-active {
-    filter: grayscale(100%) brightness(200%);
+.section-mosaic-services > h1 {
+    color: #666666;
+    font-size: 30px;
+    width: 880px;
 }
-
-.header-active {
-    color: white !important;
+.section-mosaic-services > p {
+    color: #999999;
+    font-size: 13px;
+    width: 880px;
+    margin-bottom: 35px;
 }
-
-.p-active {
-    color: white !important;
+.grid-services {
+    width: 880px;
+    box-shadow: 0 10px 30px 0 rgba(14, 13, 13, 0.32);
 }
-
-.pointer-active {
-    visibility: visible !important;
+.grid-services-line {
+    display: flex;
 }
-
-.pointer-no-active {
-    visibility: hidden;
-}
-
-.img-services {
-    width: 293px;
-}
-
-#line1-section1 {
-    margin-top: 30px;
-
-}
-
-#container-main-section1 {
-    margin-top: 80px;
-}
-
-.special-height {
-    height: 267px;
-}
-
-.box-link-icon {
-    margin-top: 30px;
-}
-
-.p-services {
-    width: 238px;
-    margin-left: 25px;
-}
-
-.height-parttner-section1 {
+.box-link {
+    width: 294px;
     height: 268px;
 }
-
-#pointer-service1 {
-    position: absolute;
-    margin-left: 144px;
-    margin-top: -138px;
+a.box-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
 }
-
-#pointer-blue-service1 {
-    position: absolute;
-    margin-left: 144px;
-    margin-top: -138px;
-    visibility: hidden;
+a.box-link .icon-service {
+    margin: 33px 0px 30px 0px;
 }
-
-#pointer-service2 {
-    position: absolute;
-    margin-left: -34px;
-    margin-top: 17px;
+a.box-link h1 {
+    color: #666666;
+    font-size: 17px;
 }
-
-#pointer-blue-service2 {
-    position: absolute;
-    margin-left: -34px;
-    margin-top: 17px;
-    visibility: hidden;
+a.box-link p {
+    color: #999999;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 30px 30px 30px;
 }
-
-#pointer-service3 {
-    position: absolute;
-    margin-left: -174px;
-    margin-top: -138px;
+.pointer-right {
+    position: relative;
+    margin-left: 319px;
+    margin-top: -157px;
+    filter: grayscale(100%) brightness(200%);
+    -webkit-filter: grayscale(100%) brightness(200%);
 }
-
-#pointer-blue-service3 {
-    position: absolute;
-    margin-left: -174px;
-    margin-top: -138px;
-    visibility: hidden;
+.pointer-down {
+    position: relative;
+    margin-top: 2px;
+    filter: grayscale(100%) brightness(200%);
+    -webkit-filter: grayscale(100%) brightness(200%);
 }
-
-#pointer-service6 {
-    position: absolute;
-    margin-left: -174px;
-    margin-top: -138px;
+.pointer-left {
+    margin-right: 319px;
+    margin-top: -140px;
+    filter: grayscale(100%) brightness(200%);
+    -webkit-filter: grayscale(100%) brightness(200%);
 }
-
-#pointer-blue-service6 {
-    position: absolute;
-    margin-left: -174px;
-    margin-top: -138px;
-    visibility: hidden;
+.link-container-active {
+    background-color: #00cccc;
 }
-
-#pointer-service4 {
-    position: absolute;
-    margin-left: 144px;
-    margin-top: -144px;
-
+.icon-box-link-active {
+    filter: grayscale(100%) brightness(200%);
+    -webkit-filter: grayscale(100%) brightness(200%);
 }
-
-#pointer-blue-service4 {
-    position: absolute;
-    margin-left: 144px;
-    margin-top: -144px;
-    visibility: hidden;
+.header-box-link-active {
+    color: white !important;
 }
-
-#pointer-service5 {
-    position: absolute;
-    margin-left: -30px;
-    margin-top: 17px;
+.paragraph-box-link-active {
+    color: white !important;
 }
-
-#pointer-blue-service5 {
-    position: absolute;
-    margin-left: -30px;
-    margin-top: 17px;
-    visibility: hidden;
+.pointer-box-link-active {
+    filter: none !important;
+    -webkit-filter: none !important;
 }
-
-/*-------SEÇÃO 2 - Depoimento clientes---------*/
-
-#section2 {
-    height: 590px;
-    border-top: 2px solid #efefef;
-
+.section-clients-testimonial {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

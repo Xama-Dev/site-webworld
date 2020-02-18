@@ -1,342 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./css/blog.css">
-    <link rel="stylesheet" type="text/css" href="./css/fadeIn.css">
-    <link rel="stylesheet" type="text/css" href="./css/header-and-menu-navigation.css">
-    <link rel="stylesheet" type="text/css" href="./css/generic-classes.css">
-    <link rel="stylesheet" type="text/css" href="./css/footer.css">
-    <link rel="stylesheet" type="text/css" href="./css/slick.css">
-    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Blog-page3</title>
-</head>
 
-<body id="blog-page3" class="fadeIn">
-    <!-- HEADER: Logotipo, icones redes sociais-->
-    <header id="header" class="width-100percent background-color-darkGrey-pattern">
-        <div class="grid-width-pattern height-100percent margin-0-auto">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fadeIn.css">
+    <link rel="stylesheet" href="./css/header-and-menu-navigation2.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" >
+
+    <title>Blog - page3</title>
+</head>
+<body class="fadeIn">
+    <header>
+        <div>
             <a href="">
-                <img class="vertical-align-by-translateY" src="img/logo.png" alt="logotipo WebWorld" title="WebWorld">
+                <img src="img/logo.png" alt="logotipo WebWorld" title="WebWorld">
             </a>
 
-            <div class="vertical-align-by-translateY float-right">
-                <a class="links-social-medias-header" href="https://pt.wikihow.com/Criar-um-Feed-RSS" target="_blank">
-                    <img src="./img/rss.png" alt="logotipo RSS" title="feed RSS">
-                </a>
-                <a class="links-social-medias-header" href="https://www.facebook.com/" target="_blank">
-                    <img src="./img/face.png" alt="logotipo facebook" title="Facebook">
-                </a>
-                <a class="links-social-medias-header" href="https://twitter.com/" target="_blank">
-                    <img src="./img/tw.png" alt="logotipo twetter" title="twetter">
-                </a>
-                <a class="links-social-medias-header" href="https://www.linkedin.com" target="_blank">
-                    <img src="./img/linkedin.png" alt="logotipo linkeIn" title="LinkedIn">
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- MENU NAVEGAÇÃO: Links para as sessões do site, campo de busca-->
-    <nav id="navigation-menu" class="width-100percent">
-        <div class="grid-width-pattern height-100percent margin-0-auto">
-            <ul class="menu">
-                <li id="li-home" class="li-menu"><a id="a-home" class="a-menu" href="index.html">HOME</a></li>
-                <li id="li-aboutUs" class="li-menu"><a id="a-aboutUs" class="a-menu" href="aboutUs.html">ABOUT US</a>
-                </li>
-                <li id="li-services" class="li-menu"><a id="a-services" class="a-menu" href="services.html">SERVICES</a>
-                <li id="li-pages" class="li-menu" class="height-100percent">
-                    <a id="a-pages" class="a-menu" href="">PAGES</a>
-                    <ul id="submenu-pages">
-                        <li class="li-submenu"><a class="a-submenu" href="service-page-01.html">Client value</a></li>
-                        <li class="li-submenu"><a class="a-submenu" href="service-page-02.html">Reliable service</a>
-                        </li>
-                        <li class="li-submenu"><a class="a-submenu" href="service-page-03.html">Innovate at work</a>
-                        </li>
-                        <li class="li-submenu"><a class="a-submenu" href="service-page-04.html">Fast SSD Servers</a>
-                        </li>
-                        <li class="li-submenu"><a class="a-submenu" href="service-page-05.html">Constant Update</a></li>
-                        <li class="li-submenu"><a class="a-submenu" href="service-page-06.html">Largest Network</a></li>
-                    </ul>
-                </li class="">
-                <li id="li-blog" class="li-menu"><a id="a-blog" class="a-menu" href="blog.html">BLOG</a></li>
-                <li id="li-contactUs" class="li-menu"><a id="a-contactUs" class="a-menu" href="contactUs.html">CONTACT
-                        US</a></li>
-            </ul>
-            <div class="vertical-align-by-translateY float-right">
-                <input id="search-field" placeholder="Search Something" type="text">
-            </div>
-        </div>
-    </nav>
-
-    <!-- BANNER tema da página-->
-    <img class="width-100percent display-block" src="./img/banner-blog.png" alt="noticias no tablet"
-        title="noticias no tablet">
-
-    <div id="main-grid" class="grid-width-pattern margin-0-auto">
-
-        <!-- GRID main -->
-        <div class="width-grid-566px display-inline-block">
-            <div class="post">
-                <h1 id="main-h1"
-                    class="text-align-center color-to-strong-tags-pattern font-size-to-h1 text-align-left margin-0px">
-                    Featured News
-                </h1>
-                <p id="main-p" class="color-text-grey-pattern font-size-13px text-align-left margin-0px">
-                    Latest blogs here</p>
-                <div class="info-of-posts display-inline-block">
-                    <img class="img-author-of-post" src="./img/avatar-post.jpg" alt="">
-                    <p class="p-day-of-post  tamanho-texto-grande-20px p-of-box-author-post">25</p>
-                    <p class="p-date-of-post font-size-13px p-of-box-author-post">
-                        December 2019</p>
-                    <p class="p-name-author-of-post font-size-13px">
-                        by <b class="">JOHN DOE</b></p>
-                </div>
-                <div class="box-of-news display-inline-block">
-                    <img class="img-box-of-news" src="./img/secaoPaisagem-imagem1.png" alt="">
-                    <h1 class="h1-box-of-news color-to-strong-tags-pattern font-size-to-h1">Lorem ipsum dolor sit amet
-                    </h1>
-                    <p class="p-box-of-news font-size-13px color-text-grey-pattern">Contrary to popular
-                        belief,
-                        Lorem Ipsum is not simply random text. It has
-                        roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
-                        Latin
-                        professor at Hampden-Sydney.</p>
-                    <a href="post4.html"><button class="btn-read-more">READ MORE</button></a>
-                </div>
-            </div>
-            <div class="post">
-                <div class="info-of-posts display-inline-block">
-                    <img class="img-author-of-post" src="./img/avatar-post.jpg" alt="">
-                    <p class="p-day-of-post  tamanho-texto-grande-20px p-of-box-author-post">25</p>
-                    <p class="p-date-of-post font-size-13px p-of-box-author-post">
-                        December 2019</p>
-                    <p class="p-name-author-of-post font-size-13px">
-                        by <b class="">JOHN DOE</b></p>
-                </div>
-                <div class="box-of-news display-inline-block">
-                    <video class="img-box-of-news" src="video/chicagoPdSample.mp4" controls></video>
-                    <h1 class="h1-box-of-news color-to-strong-tags-pattern font-size-to-h1">Lorem ipsum dolor sit amet
-                    </h1>
-                    <p class="p-box-of-news font-size-13px color-text-grey-pattern">Contrary to popular
-                        belief,
-                        Lorem Ipsum is not simply random text. It has
-                        roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
-                        Latin
-                        professor at Hampden-Sydney.</p>
-                    <a href="post-video.html"><button class="btn-read-more">READ MORE</button></a>
-                </div>
-            </div>
-            <div class="post-twitter">
-                <div class="info-of-post-twetter display-inline-block">
-                    <img class="img-author-of-post" src="./img/avatar-post.jpg" alt="">
-                    <p class="p-day-of-post  tamanho-texto-grande-20px p-of-box-author-post">25</p>
-                    <p class="p-date-of-post font-size-13px p-of-box-author-post">
-                        December 2019</p>
-                    <p class="p-name-author-of-post font-size-13px">
-                        by <b class="">JOHN DOE</b></p>
-                </div>
-                <div class="display-inline-block box-of-news-twitter">
-                    <p class="p-box-of-news-twitter color-text-white">" Lorem Ipsum is
-                        dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                        standard dummy text ever since the 1500s make."</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- GRID lateral -->
-        <div class="width-grid-283px display-inline-block float-right">
-            <input id="search-blog" type="search" placeholder="Search">
-            <button id="btn-search"></button>
-            <div class="categories">
-                <h3 class="h3-category color-to-strong-tags-pattern">Category</h3>
-                <div class="category">
-                    <img class="display-inline-block" src="./img/seta-categoria.png" alt="">
-                    <a href="">
-                        <p class="display-inline-block p-category color-text-grey-pattern">The generated Lorem</p>
-                    </a>
-                </div>
-                <div class="category">
-                    <img class="display-inline-block " src="./img/seta-categoria.png" alt="">
-                    <a href="">
-                        <p class="display-inline-block p-category color-text-grey-pattern">Generator on the Internet
-                        </p>
-                    </a>
-                </div>
-                <div class="category">
-                    <img class="display-inline-block" src="./img/seta-categoria.png" alt="">
-                    <a href="">
-                        <p class="display-inline-block p-category color-text-grey-pattern">Suffered alteration some</p>
-                    </a>
-                </div>
-                <div class="category">
-                    <img class="display-inline-block" src="./img/seta-categoria.png" alt="">
-                    <a href="">
-                        <p class="display-inline-block p-category color-text-grey-pattern"> Scrambled make a type</p>
-                    </a>
-                </div>
-                <div class="category">
-                    <img class="display-inline-block" src="./img/seta-categoria.png" alt="">
-                    <a href="">
-                        <p class="display-inline-block p-category color-text-grey-pattern">The generated Lorem</p>
-                    </a>
-                </div>
-            </div>
-            <div class="carousel">
-                <h3 class="color-to-strong-tags-pattern">Popular Posts</h3>
-
-                <div class="container-carousel">
-                    <div>
-                        <a href="post6.html"><img class="img-slider" src="./img/secaoLapis-imagem2.png" alt=""></a>
-                        <h3 class="color-text-grey-pattern font-size-18px">Lorem ipsum dolor sit amet</h3>
-                        <p class="font-size-13px color-text-grey-pattern p-slider">Contrary to popular
-                            belief, Lorem Ipsum is not simply random...
-                        </p>
-                    </div>
-                    <div>
-                        <a href="post5.html"><img class="img-slider" src="./img/secaoImac-imagem1.png" alt=""></a>
-                        <h3 class="color-text-grey-pattern font-size-18px">Lorem ipsum dolor sit amet</h3>
-                        <p class="font-size-13px color-text-grey-pattern p-slider">Contrary to popular
-                            belief, Lorem Ipsum is not simply random...
-                        </p>
-                    </div>
-                    <div>
-                        <a href="post4.html"><img class="img-slider" src="./img/secaoPaisagem-imagem1.png" alt=""></a>
-                        <h3 class="color-text-grey-pattern font-size-18px">Lorem ipsum dolor sit amet</h3>
-                        <p class="font-size-13px color-text-grey-pattern p-slider">Contrary to popular
-                            belief, Lorem Ipsum is not simply random...
-                        </p>
-                    </div>
-                    <div>
-                        <a href="post3.html"><img class="img-slider" src="./img/secaoLapis-imagem3.png" alt=""></a>
-                        <h3 class="color-text-grey-pattern font-size-18px">Lorem ipsum dolor sit amet</h3>
-                        <p class="font-size-13px color-text-grey-pattern p-slider">Contrary to popular
-                            belief, Lorem Ipsum is not simply random...
-                        </p>
-                    </div>
-                    <div>
-                        <a href="post2.html"><img class="img-slider" src="./img/secaoImac-imagem4.png" alt=""></a>
-                        <h3 class="color-text-grey-pattern font-size-18px">Lorem ipsum dolor sit amet</h3>
-                        <p class="font-size-13px color-text-grey-pattern p-slider">Contrary to popular
-                            belief, Lorem Ipsum is not simply random...
-                        </p>
-                    </div>
-                    <div>
-                        <a href="post1.html"><img class="img-slider" src="./img/secaoPaisagem-imagem6.png" alt=""></a>
-                        <h3 class="color-text-grey-pattern font-size-18px">Lorem ipsum dolor sit amet</h3>
-                        <p class="font-size-13px color-text-grey-pattern p-slider">Contrary to popular
-                            belief, Lorem Ipsum is not simply random...
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <div id="newsletter-signature">
-                <img class="margin-left-90px margin-top-30px" src="./img/email2-branco.png" alt="mail--icon" title="">
-                <h3 class="color-text-white text-align-center margin-0px">NEWS LETTER</h3>
-                <p class="color-text-white font-size-13px text-align-center padding-10px margin-0px">
-                    Enter your email address for getting daily news letter </p>
-                <form action="">
-                    <input id="input-name" class="inputs-newsletter" type="text" placeholder="Name*">
-                    <input id="input-email" class="inputs-newsletter" type="email" placeholder="E-mail*">
-                    <input id="input-submit" class="" type="submit" value="SIGNUP NOW">
-                </form>
-
-            </div>
-        </div>
-
-        <!-- MENU rodapé -->
-        <div class="menu-pages-blog display-flex">
-            <div class="carousel-menu">
-                <div>
-                    <a class="" href="blog.html">
-                        <p id="seletor-page1" class="selector-page-blog">1</p>
-                    </a>
-                </div>
-                <div>
-                    <a class="" href="blog-page2.html">
-                        <p id="seletor-page2" class="selector-page-blog">2</p>
-                    </a>
-                </div>
-                <div>
-                    <a class="" href="blog-page3.html" name="seletor-page3">
-                        <p id="seletor-page3" class="selector-page-blog actual-selection">3</p>
-                    </a>
-                </div>
-                <div>
-                    <a class="" href="blog-page4.html">
-                        <p id="seletor-page4" class="selector-page-blog">4</p>
-                    </a>
-                </div>
-                <div>
-                    <a class="" href="blog-page5.html">
-                        <p id="seletor-page5" class="selector-page-blog">5</p>
-                    </a>
-                </div>
-                <div>
-                    <a class="" href="blog-page6.html">
-                        <p id="seletor-page6" class="selector-page-blog">6</p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- FOOTER DA PÁGINA -->
-    <footer id="footer1-da-pagina" class="width-100percent">
-        <div id="footer1-container-line" class="grid-width-pattern margin-0-auto">
-            <div id=" bloco1" class="bloco-imagem-texto-footer1">
-                <h3 class="color-text-white">Popular Post</h3>
-                <p class="font-size-13px">Lorem Ipsum is simply dummy text of the printing.</p>
-                <p id="data-post" class="font-size-13px">25-September 2013</p>
-                <hr>
-                <p class="font-size-13px">Lorem Ipsum is simply dummy text of the printing.</p>
-                <p id="data-post" class="font-size-13px">25-September 2013</p>
-            </div>
-            <div id="bloco2" class="bloco-imagem-texto-footer1">
-                <h3 class="color-text-white">Tags</h3>
-                <p class="font-size-13px">apps <span>blog</span> blogroll coda concert <span>daily
-                        design</span> develop dialog
-                    drinks gallery holiday icon <span>illustration</span> ipad iphone journal
-                    <span>jquery</span> label link marketing photo <span>profession</span> quotation
-                    recipes typography <span>video</span></p>
-            </div>
-            <div id="bloco3" class="bloco-imagem-texto-footer1">
-                <h3 class="color-text-white">A little about us</h3>
-                <p class="font-size-13px">There are many variations of passages of Lorem Ipsum available,
-                    but the majority have suffered
-                    alteration in some form, by injected humour, even slightly believable.
-                    <br><br>
-                    If you are going to use a passage of Lorem Ipsum, you need to be .</p>
-            </div>
-            <div id="bloco4" class="bloco-imagem-texto-footer1">
-                <h3 class="color-text-white">Get in touch</h3>
-                <p class="font-size-13px">Lorem Ipsum is of the printing and typesetting industry. Lorem
-                    Ipsum has been the
-                    industry's standard dummy text ever since.<br><br></p>
-                <p id="adress" class="p-contato font-size-13px">Texas, US</p>
-                <p id="email" class="p-contato font-size-13px">email@email.com</p>
-                <p id="tel" class="p-contato font-size-13px"> 890-09880-45590</p>
-            </div>
-        </div>
-
-    </footer>
-    <footer id="footer2-da-pagina" class="width-100percent">
-        <div id="footer2-container-line" class=" grid-width-pattern margin-0-auto">
-            <p id="p-footer2" class="vertical-align-by-translateY margin-0-auto">© 2013 Web world. All rights reserved.
-                Theme bycssautther</p>
-
-            <div class="icones-redesSociais-footer float-right vertical-align-by-translateY">
+            <div>
                 <a href="https://pt.wikihow.com/Criar-um-Feed-RSS" target="_blank">
                     <img src="./img/rss.png" alt="logotipo RSS" title="feed RSS">
                 </a>
@@ -351,14 +36,312 @@
                 </a>
             </div>
         </div>
+    </header>
+
+    <nav>
+        <div>
+            <ul class="menu">
+                <li><a  href="index.html">HOME</a></li>
+                <li><a  href="aboutUs.html">ABOUT US</a></li>
+                <li><a  href="services.html">SERVICES</a></li>
+                <li>
+                    <a id="link-pages"  href="">PAGES</a> 
+                    <ul class="menu-drop-down">
+                        <li><a href="service1.html">Client value</a></li>
+                        <li><a href="service2.html">Reliable service</a></li>
+                        <li><a href="service3.html">Innovate at work</a></li>
+                        <li><a href="service4.html">Fast SSD Servers</a></li>
+                        <li><a href="service5.html">Constant Update</a></li>
+                        <li><a href="service6.html">Largest Network</a></li>
+                    </ul>
+                </li>
+                <li><a  href="blog.html">BLOG</a></li>
+                <li><a  href="contactUs.html">CONTACT US</a></li>
+            </ul>
+            <input id="search-field" placeholder="Search Something" type="text">
+        </div>
+    </nav>
+
+    <section class="section-banner-page">
+        <img src="./img/banner-blog.png" alt="">
+    </section>
+
+    <main>
+        <section class="section-principal-column">
+            <h1>Featured News</h1>
+            <p>Latest blogs here</p>
+            <div class="box-post">
+                <div class="box-post-first-line">
+                    <div class="box-post-info">
+                        <img src="./img/avatar-post.jpg" alt="">
+                        <p class="day">25</p>
+                        <p class="month-year">December 2019</p>
+                        <p class="author">by <span>JOHN DOE</span></p>
+                    </div>
+                    <div class="box-post-media">
+                        <img src="./img/secaoPaisagem-imagem1.png" alt="">                        
+                    </div>
+                </div>               
+                <div class="box-post-content">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old. Richard McClintock, a Latin 
+                        professor at Hampden-Sydney.
+                    </p>
+                    <a href="post4.html">
+                        <button>READ MORE</button>                     
+                    </a>
+                </div>
+            </div>
+            <div class="box-post">
+                <div class="box-post-first-line">
+                    <div class="box-post-info">
+                        <img src="./img/avatar-post.jpg" alt="">
+                        <p class="day">25</p>
+                        <p class="month-year">December 2019</p>
+                        <p class="author">by <span>JOHN DOE</span></p>
+                    </div>
+                    <div class="box-post-media">
+                        <video src="./video/chicagoPdSample.mp4" controls></video>                        
+                    </div>
+                </div>             
+                <div class="box-post-content">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old. Richard McClintock, a Latin 
+                        professor at Hampden-Sydney.
+                    </p>
+                    <a href="post-video.html">
+                        <button>READ MORE</button>                     
+                    </a>
+                </div>
+            </div>
+            <div class="box-post">
+                <div class="box-post-first-line">
+                    <div class="box-post-info">
+                        <img src="./img/avatar-post.jpg" alt="">
+                        <p class="day">25</p>
+                        <p class="month-year">December 2019</p>
+                        <p class="author">by <span>JOHN DOE</span></p>
+                    </div>
+                    <div class="box-post-media">
+                        <p class="twetter">
+                            " Lorem Ipsum is simply dummy text of the printing and typesetting 
+                            industry. Lorem Ipsum has been the industry's standard dummy text 
+                            ever since the 1500s make."
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <aside>
+            <div class="search-input">
+                <input type="text" placeholder="Search">
+                <button></button>
+            </div>
+            <div class="box-category">
+                <h1>Category</h1>
+                <div>
+                    <img src="./img/seta-categoria.png" alt="">
+                    <a href="">
+                        <p>The generated Lorem</p>    
+                    </a>                    
+                </div>
+                <div>
+                    <img src="./img/seta-categoria.png" alt="">
+                    <a href="">
+                        <p>Generator on the Internet</p>
+                    </a>                    
+                </div>
+                <div>
+                    <img src="./img/seta-categoria.png" alt="">
+                    <a href="">
+                        <p>Suffered alteration some</p>
+                    </a>                    
+                </div>
+                <div>
+                    <img src="./img/seta-categoria.png" alt="">
+                    <a href="">
+                        <p>Scrambled make a type</p>
+                    </a>                    
+                </div>
+                <div>
+                    <img src="./img/seta-categoria.png" alt="">
+                    <a href="">
+                        <p>The generated Lorem</p>
+                    </a>                    
+                </div>
+            </div>
+            <div class="slider-aside">
+                <h1>Popular Posts</h1>
+                <div class="sliders-container">
+                    <div>
+                        <a href="post6.html">
+                            <img src="./img/secaoLapis-imagem2.png" alt="">
+                        </a>                        
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random...
+                        </p>
+                    </div>
+                    <div>
+                        <a href="post5.html">
+                            <img src="./img/secaoImac-imagem1.png" alt="">
+                        </a>                        
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random...
+                        </p>
+                    </div>
+                    <div>
+                        <a href="post4.html">
+                            <img src="./img/secaoPaisagem-imagem1.png" alt="">
+                        </a>                        
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random...
+                        </p>
+                    </div>
+                    <div>
+                        <a href="post3.html">
+                            <img src="./img/secaoLapis-imagem3.png" alt="">
+                        </a>                        
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random...
+                        </p>
+                    </div>
+                    <div>
+                        <a href="post2.html">
+                            <img src="./img/secaoImac-imagem4.png" alt="">
+                        </a>                        
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random...
+                        </p>
+                    </div>
+                    <div>
+                        <a href="post1.html">
+                            <img src="./img/secaoPaisagem-imagem6.png" alt="">
+                        </a>                        
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random...
+                        </p>
+                    </div>
+                </div>                                                
+            </div>
+            <div class="box-news-letter-signature">
+                <img src="./img/email2-branco.png" alt="">
+                <h1>NEWS LETTER</h1>
+                <p>Enter your email address for getting daily news letter</p>
+                <input id="name-input" type="text" placeholder="Name*">
+                <input id="email-input" type="text" placeholder="E-mail*">
+                <button type="submit">SIGNUP NOW</button>
+            </div>
+        </aside>
+    </main>
+
+    <section class="section-pagination">
+        <div class="section-pagination-container">            
+            <div class="slider-pagination">
+                <a href="blog.html" >
+                    <p >1</p>
+                </a>
+                <a href="blog-page2.html">
+                    <p>2</p>
+                </a>
+                <a href="blog-page3.html">
+                    <p class="page-actual-selector">3</p>
+                </a>
+                <a href="blog-page4.html">
+                    <p>4</p>
+                </a>
+                <a href="blog-page5.html">
+                    <p>5</p>
+                </a>
+                <a href="blog-page6.html">
+                    <p>6</p>
+                </a>
+            </div>                       
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-line1">
+            <div class="important-informations">
+                <div>
+                    <h1>Popular Post</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    <p class="date-post">25-September 2013</p>
+                    <hr>
+                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    <p class="date-post">25-September 2013</p>
+                </div>
+                <div>
+                    <h1>Tags</h1>
+                    <p>
+                        apps <span>blog</span> blogroll coda concert <span>daily design</span> 
+                        develop dialog drinks gallery holiday icon <span>illustration</span> 
+                        ipad iphone journal <span>jquery</span> label link marketing photo 
+                        <span>profession</span> quotation recipes typography 
+                        <span>video</span>
+                    </p>
+                </div>
+                <div>
+                    <h1>A little about us</h1>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, 
+                        but the majority have suffered alteration in some form, by 
+                        injected humour, even slightly believable. <br><br>
+                        If you are going to use a passage of Lorem Ipsum, you need to be.
+                    </p>
+                </div>
+                <div>
+                    <h1>Get in touch</h1>
+                    <p>
+                        Lorem Ipsum is of the printing and typesetting industry. Lorem Ipsum 
+                        has been the industry's standard dummy text ever since.
+                    </p>
+                    <p class="adress-contact">Texas, US</p>
+                    <p class="email-contact">email@email.com</p>
+                    <p class="tel-contact">890-09880-45590</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line2">
+            <div class="end-page">
+                <p>© 2013 Web world. All rights reserved. Theme bycssautther</p>
+                <div>
+                    <a href="https://pt.wikihow.com/Criar-um-Feed-RSS" target="_blank">
+                        <img src="./img/rss.png" alt="logotipo RSS" title="feed RSS">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./img/face.png" alt="logotipo facebook" title="Facebook">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="./img/tw.png" alt="logotipo twetter" title="twetter">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="./img/linkedin.png" alt="logotipo linkeIn" title="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./js/slick.min.js"></script>
-    <script type="text/javascript" src="./js/blog.js"></script>
-    <script type="text/javascript" src="./js/menu-navigation.js"></script>
+    <!--Biblioteca slick slider-->
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <!--Biblioteca slick slider-->
 
+    <script src="./js/blog.js"></script>
+    <script src="./js/menu-navigation.js"></script>
+    
 </body>
-
 </html>
