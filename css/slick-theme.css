@@ -1,4 +1,8 @@
 @charset 'UTF-8';
+
+.section-slider {
+    height: fit-content;
+}
 /* Slider */
 .slick-loading .slick-list
 {

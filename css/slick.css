@@ -36,6 +36,10 @@
     cursor: hand;
 }
 
+.slick-slider {
+    height: fit-content;
+}
+
 .slick-slider .slick-track,
 .slick-slider .slick-list {
     -webkit-transform: translate3d(0, 0, 0);
@@ -84,6 +88,7 @@
 
 .slick-slide img {
     display: block;
+    width: 100vw;
 }
 
 .slick-slide.slick-loading img {

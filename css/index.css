@@ -13,7 +13,7 @@ button.slick-prev {
     background-image: url('../img/seta-esquerda.png');
     position: absolute;
     z-index: 9;
-    top: 174.5px;
+    top: 45%;
     left: 300px;
 }
 button.slick-prev:hover {
@@ -28,7 +28,7 @@ button.slick-next {
     background-color: transparent;
     background-image: url('../img/seta-direita.png');
     position: absolute;
-    top: 174.5px;
+    top: 45%;
     right: 300px;
 }
 button.slick-next:hover {
@@ -64,9 +64,6 @@ ul.slick-dots {
 }
 .div1-section-article, .div2-section-article, .div3-section-article {
     width: 880px;
-}
-.div1-section-article {
-    margin-top: 100px;
 }
 .div1-section-article h1 {
     color: #999999;
