@@ -7,7 +7,6 @@ body {
 }
 .section-banner-page img {
     width: 100%;
-    height: 400px;
 }
 .section-about-us {
     display: flex;
@@ -18,7 +17,6 @@ body {
     width: 880px;
     color: #666666;
     font-size: 30px;
-    margin-top: 75px;
 }
 .section-about-us h2 {
     width: 880px;

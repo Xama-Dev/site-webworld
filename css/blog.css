@@ -10,7 +10,6 @@ main {
 }
 .section-banner-page img {
     width: 100%;
-    height: 100%;
 }
 .section-principal-column {
     grid-column-start: 2;
@@ -21,7 +20,6 @@ main {
     font-size: 30px;
     width: 438px;
     margin-left: 128px;
-    margin-top: 80px;
 }
 .section-principal-column > p {
     color: #999999;
@@ -127,7 +125,6 @@ aside {
     border: 2px solid #E4EAEC;
     padding-left: 30px;
     font-size: 14px;
-    margin-top: 80px;
     outline: none;
 }
 .search-input button {
@@ -143,7 +140,6 @@ aside {
     background-position-y: center;
     background-position-x: center;
     position: absolute;
-    margin-top: 80px;
     margin-left: 183px;
 }
 .box-category {
@@ -188,7 +184,7 @@ aside {
     margin-top: 20px;
 }
 .sliders-container img {
-    width: 233px;
+    width: 233px !important;
 }
 .slider-aside .slick-dots {
     border-bottom: 1px solid #E4EAEC;
